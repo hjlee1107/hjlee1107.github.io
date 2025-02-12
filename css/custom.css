@@ -1,4 +1,23 @@
 @charset "UTF-8";
+
+@font-face {
+  font-family: Pretendard GOV;
+  font-weight: normal;
+  src: url("../fonts/PretendardGOV-Regular.subset.woff");
+}
+
+@font-face {
+  font-family: Pretendard GOV;
+  font-weight: 500;
+  src: url(../fonts/PretendardGOV-Medium.subset.woff);
+}
+
+@font-face {
+  font-family: Pretendard GOV;
+  font-weight: 700;
+  src: url(../fonts/PretendardGOV-Bold.subset.woff);
+}
+
 :root {
   --krds-font-family-base: var(--krds-typo-font-type);
   --krds-font-size-base: 62.5%;
