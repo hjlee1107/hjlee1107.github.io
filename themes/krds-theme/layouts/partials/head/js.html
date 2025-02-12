@@ -8,8 +8,8 @@
   {{- if eq hugo.Environment "development" }}
       <script src="{{ $mergedJS.RelPermalink }}" defer></script>
   {{- else }}
-    {{- $opts := dict "minify" true }}
-    {{- with . | js.Build $opts | fingerprint }}
+    {{/*  {{- $opts := dict "minify" true }}  */}}
+    {{/*  {{- with . | js.Build $opts | fingerprint }}  */}}
       <script src="{{ $mergedJS.RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous" defer></script>
-    {{- end }}
+    {{/*  {{- end }}  */}}
   {{- end }}
