@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://hjlee1107.github.io/"
 languageCode = 'kr'
 title = '표준프레임워크 개발가이드드'
 theme = 'krds-theme'
