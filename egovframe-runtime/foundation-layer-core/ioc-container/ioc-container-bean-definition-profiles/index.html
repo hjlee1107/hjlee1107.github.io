@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Bean Definition Profiles | 표준프레임워크 개발가이드드</title>
+<title>Bean Definition Profiles | 표준프레임워크 개발가이드</title>
 
 
 
@@ -41,7 +41,6 @@
     
 
     
-
 
 
 </head>
@@ -1370,11 +1369,11 @@
             </ul>
       </nav>
       
-  <div class="in-page-navigation-header">
-    <p class="quick-caption">이 페이지의 구성</p>
+  
     
-    <p class="quick-title">Bean Definition Profiles</p>
-  </div>
+    
+    
+  
   
     <nav class="in-page-navigation-list">
   <ul>
@@ -1706,4 +1705,50 @@
 </div>
   </footer>
 </body>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const footer = document.querySelector("#krds-footer");
+    const header = document.querySelector("#krds-header");
+    const navArea = document.querySelector('.krds-in-page-navigation-area');
+    const scrollUpNavArea = document.querySelector('.scroll-up .krds-in-page-navigation-type .krds-in-page-navigation-area');
+    const fh = footer.clientHeight; 
+
+    const observerOptions = { threshold: 0.1 }; 
+
+    
+    const footerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              navArea.style.bottom = fh + "px";
+              navArea.style.top = "auto";
+            } else {
+              navArea.style.bottom = "auto";
+              
+            }
+        });
+    }, observerOptions);
+
+    
+    const headerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              console.log("header");
+              navArea.style.top = "auto";
+            }else{
+              navArea.style.top = "10rem";
+            }
+        });
+    }, observerOptions);
+
+    footerObserver.observe(footer);
+    headerObserver.observe(header);
+  });
+</script>
+
+
+
+
+
 </html>

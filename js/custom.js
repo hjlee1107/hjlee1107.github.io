@@ -1707,132 +1707,132 @@ const krds_calendar = {
 };
 
 /*** * krds_inPageNavigation * ***/
-const krds_inPageNavigation = {
-  quickIndicators: null,
-  init() {
-    this.quickIndicators = document.querySelectorAll(".krds-in-page-navigation-type .krds-in-page-navigation-area:not(.sample) .in-page-navigation-list");
+// const krds_inPageNavigation = {
+//   quickIndicators: null,
+//   init() {
+//     this.quickIndicators = document.querySelectorAll(".krds-in-page-navigation-type .krds-in-page-navigation-area:not(.sample) .in-page-navigation-list");
 
-    if (!this.quickIndicators.length) return;
+//     if (!this.quickIndicators.length) return;
 
-    this.observeListChanges();
-    this.setupAnchorScroll();
-    this.updateActiveSection();
-  },
-  observeListChanges() {
-    // in-page-navigation-list 변경 시 setupAnchorScroll 호출
-    const quickList = document.querySelector(".krds-in-page-navigation-type .in-page-navigation-list");
-    if (!quickList) return;
-    const observer = new MutationObserver(() => {
-      this.setupAnchorScroll();
-    });
-    observer.observe(quickList, {
-      childList: true,
-      subtree: true,
-    });
-  },
-  setupAnchorScroll() {
-    this.quickIndicators.forEach((indicator) => {
-      const locationList = indicator.querySelectorAll("a");
-      locationList.forEach((anchor) => {
-        // 수정 (page depth 3까지 증가)
-        const targetId = anchor.getAttribute("href").substring(1); // '#' 제거
-        const target = document.getElementById(targetId); // getElementById() 사용
-        // const target = document.querySelector(anchor.getAttribute("href"));
-        if (target) {
-          anchor.removeEventListener("click", this.applyScroll);
-          anchor.removeEventListener("keydown", this.applyScroll);
-          anchor.addEventListener("click", this.applyScroll.bind(this, target));
-          anchor.addEventListener("keydown", (event) => {
-            if (event.key === "Enter" || event.key === " ") {
-              this.applyScroll(target, event);
-            }
-          });
-        }
-      });
-    });
-  },
-  applyScroll(target, event) {
-    event.preventDefault();
-    const headerHeight = this.calculateHeaderHeight();
+//     this.observeListChanges();
+//     // this.setupAnchorScroll();
+//     this.updateActiveSection();
+//   },
+//   observeListChanges() {
+//     // in-page-navigation-list 변경 시 setupAnchorScroll 호출
+//     const quickList = document.querySelector(".krds-in-page-navigation-type .in-page-navigation-list");
+//     if (!quickList) return;
+//     const observer = new MutationObserver(() => {
+//       this.setupAnchorScroll();
+//     });
+//     observer.observe(quickList, {
+//       childList: true,
+//       subtree: true,
+//     });
+//   },
+  // setupAnchorScroll() {
+  //   this.quickIndicators.forEach((indicator) => {
+  //     const locationList = indicator.querySelectorAll("a");
+  //     locationList.forEach((anchor) => {
+  //       // 수정 (page depth 3까지 증가)
+  //       const targetId = anchor.getAttribute("href").substring(1); // '#' 제거
+  //       const target = document.getElementById(targetId); // getElementById() 사용
+  //       // const target = document.querySelector(anchor.getAttribute("href"));
+  //       if (target) {
+  //         anchor.removeEventListener("click", this.applyScroll);
+  //         anchor.removeEventListener("keydown", this.applyScroll);
+  //         anchor.addEventListener("click", this.applyScroll.bind(this, target));
+  //         anchor.addEventListener("keydown", (event) => {
+  //           if (event.key === "Enter" || event.key === " ") {
+  //             this.applyScroll(target, event);
+  //           }
+  //         });
+  //       }
+  //     });
+  //   });
+  // },
+  // applyScroll(target, event) {
+  //   event.preventDefault();
+  //   const headerHeight = this.calculateHeaderHeight();
 
-    window.scrollTo({
-      left: 0,
-      top: target.getBoundingClientRect().top + window.scrollY - headerHeight,
-      behavior: "smooth",
-    });
+  //   window.scrollTo({
+  //     left: 0,
+  //     top: target.getBoundingClientRect().top + window.scrollY - headerHeight,
+  //     behavior: "smooth",
+  //   });
 
-    // enter 초점 이동
-    if (event.type === "keydown") {
-      const focusable = target.querySelector(".sec-tit");
+  //   // enter 초점 이동
+  //   if (event.type === "keydown") {
+  //     const focusable = target.querySelector(".sec-tit");
 
-      if (focusable) {
-        focusable.setAttribute("tabindex", "-1");
-        focusable.focus({ preventScroll: true });
-      }
-    }
-  },
-  calculateHeaderHeight() {
-    const headerTop = document.querySelector("#krds-masthead")?.clientHeight || 0;
-    const headerInner = document.querySelector("#krds-header .header-in")?.clientHeight || 0;
-    return headerTop + headerInner;
-  },
-  updateActiveSection() {
-    if (!this.quickIndicators) return;
+  //     if (focusable) {
+  //       focusable.setAttribute("tabindex", "-1");
+  //       focusable.focus({ preventScroll: true });
+  //     }
+  //   }
+  // },
+  // calculateHeaderHeight() {
+  //   const headerTop = document.querySelector("#krds-masthead")?.clientHeight || 0;
+  //   const headerInner = document.querySelector("#krds-header .header-in")?.clientHeight || 0;
+  //   return headerTop + headerInner;
+  // },
+  // updateActiveSection() {
+  //   if (!this.quickIndicators) return;
   
-    const winHeight = window.innerHeight;
-    let sectionArea = [];
-    const activeTab = document.querySelector(".tab-conts:not(.sample).active");
+  //   const winHeight = window.innerHeight;
+  //   let sectionArea = [];
+  //   const activeTab = document.querySelector(".tab-conts:not(.sample).active");
   
-    // 탭이 아닐 때와 탭일 때 sectionArea 설정
-    if (activeTab) {
-      const id = activeTab.getAttribute("id");
-      const dataTrue = activeTab.getAttribute("data-quick-nav");
-      if (dataTrue === "true") {
-        sectionArea = document.querySelectorAll(`#${id} .sec-tit`); // sec-tit 클래스 찾기
-      }
-    } else {
-      sectionArea = document.querySelectorAll(".scroll-check .sec-tit"); // sec-tit 클래스 찾기
-    }
+  //   // 탭이 아닐 때와 탭일 때 sectionArea 설정
+  //   if (activeTab) {
+  //     const id = activeTab.getAttribute("id");
+  //     const dataTrue = activeTab.getAttribute("data-quick-nav");
+  //     if (dataTrue === "true") {
+  //       sectionArea = document.querySelectorAll(`#${id} .sec-tit`); // sec-tit 클래스 찾기
+  //     }
+  //   } else {
+  //     sectionArea = document.querySelectorAll(".scroll-check .sec-tit"); // sec-tit 클래스 찾기
+  //   }
   
     // 페이지 스크롤 시 퀵 네비게이션 해당 메뉴 active
-    if (sectionArea.length > 0) {
-      const topHeight = Math.ceil(winHeight / 5); // 윈도우의 20%
-      const firstSecTop = sectionArea[0].offsetTop;
-      const scrollBottom = window.scrollY + winHeight;
-      const scrollHeight = document.body.scrollHeight;
+  //   if (sectionArea.length > 0) {
+  //     const topHeight = Math.ceil(winHeight / 5); // 윈도우의 20%
+  //     const firstSecTop = sectionArea[0].offsetTop;
+  //     const scrollBottom = window.scrollY + winHeight;
+  //     const scrollHeight = document.body.scrollHeight;
   
-      sectionArea.forEach((current) => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - topHeight;
-        const sectionId = current.getAttribute("id"); // sec-tit의 id 가져오기
+  //     sectionArea.forEach((current) => {
+  //       const sectionHeight = current.offsetHeight;
+  //       const sectionTop = current.offsetTop - topHeight;
+  //       const sectionId = current.getAttribute("id"); // sec-tit의 id 가져오기
   
-        // 네비게이션에서 현재 sec-tit에 해당하는 항목 찾기
-        const navLink = document.querySelector(`.krds-in-page-navigation-area a[href="#${sectionId}"]`);
-        const firstAnchor = document.querySelector(".krds-in-page-navigation-area .in-page-navigation-list li:first-of-type a");
-        const lastAnchor = document.querySelector(".krds-in-page-navigation-area .in-page-navigation-list> ul > li:last-child a");
+  //       // 네비게이션에서 현재 sec-tit에 해당하는 항목 찾기
+  //       const navLink = document.querySelector(`.krds-in-page-navigation-area a[href="#${sectionId}"]`);
+  //       const firstAnchor = document.querySelector(".krds-in-page-navigation-area .in-page-navigation-list li:first-of-type a");
+  //       const lastAnchor = document.querySelector(".krds-in-page-navigation-area .in-page-navigation-list> ul > li:last-child a");
 
-        if (scrollBottom >= scrollHeight) {
-          this.setActiveIndicator(lastAnchor);
-        } else if (window.scrollY <= firstSecTop) {
-          this.setActiveIndicator(firstAnchor);
-        } else if (window.scrollY > sectionTop && window.scrollY <= sectionTop + sectionHeight) {
-          this.setActiveIndicator(navLink);
-        }
-      });
-    }
-  },
+  //       if (scrollBottom >= scrollHeight) {
+  //         this.setActiveIndicator(lastAnchor);
+  //       } else if (window.scrollY <= firstSecTop) {
+  //         this.setActiveIndicator(firstAnchor);
+  //       } else if (window.scrollY > sectionTop && window.scrollY <= sectionTop + sectionHeight) {
+  //         this.setActiveIndicator(navLink);
+  //       }
+  //     });
+  //   }
+  // },
   
-  setActiveIndicator(anchor) {
-    if (anchor) {
-      this.quickIndicators.forEach((indicator) => {
-        const locationList = indicator.querySelectorAll("a");
-        locationList.forEach((link) => {
-          link.classList.remove("active");
-        });
-      });
-      anchor.classList.add("active");
-    }
-  },
+  // setActiveIndicator(anchor) {
+  //   if (anchor) {
+  //     this.quickIndicators.forEach((indicator) => {
+  //       const locationList = indicator.querySelectorAll("a");
+  //       locationList.forEach((link) => {
+  //         link.classList.remove("active");
+  //       });
+  //     });
+  //     anchor.classList.add("active");
+  //   }
+  // },
   
   // updateActiveSection() {
   //   if (!this.quickIndicators) return;
@@ -1891,7 +1891,7 @@ const krds_inPageNavigation = {
   //     anchor.classList.add("active");
   //   }
   // },
-};
+// };
 
 /*** * krds_helpPanel * ***/
 const krds_helpPanel = {
@@ -2510,7 +2510,7 @@ window.addEventListener("DOMContentLoaded", () => {
   krds_disclosure.init();
   krds_dropEvent.init();
   krds_calendar.init();
-  krds_inPageNavigation.init();
+  // krds_inPageNavigation.init();
   krds_adjustContentScale.init();
   krds_toggleSwitch.init();
   krds_infoList.init();
@@ -2529,7 +2529,7 @@ window.addEventListener("scroll", () => {
   scrollManager.handleScrollDirection();
 
   krds_mainMenuPC.closeMainMenu();
-  krds_inPageNavigation.updateActiveSection();
+  // krds_inPageNavigation.updateActiveSection();
   krds_helpPanel.init();
 });
 

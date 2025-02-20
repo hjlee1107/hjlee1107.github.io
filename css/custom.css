@@ -8234,8 +8234,12 @@ caption {
   color: var(--krds-in-page-navigation--color-text-sub);
 }
 
+/*수정*/
 .scroll-down .krds-in-page-navigation-type .krds-in-page-navigation-area {
-  top: 10rem; /*수정*/
+  top: 10rem; 
+}
+.scroll-up .krds-in-page-navigation-type .krds-in-page-navigation-area{
+  top: 10rem;
 }
 
 [data-krds-mode=high-contrast] .krds-in-page-navigation-type .krds-in-page-navigation-area {
@@ -13949,8 +13953,6 @@ label {
     width: 24.8rem;
     padding: var(--krds-padding-8) 0 0;
     border: none;
-    /* padding-right: var(--krds-number-10); */
-    /* border-right: 0.1rem solid var(--krds-color-light-gray-20); */
 }
 
 /* Headeer */
@@ -14206,4 +14208,13 @@ h3,h4,h5,h6 {
         right: var(--krds-contents-padding-x);
         bottom: var(--krds-contents-padding-x);
     }
+}
+
+/* page navigation */
+.in-page-navigation-list{
+    padding-top: 1rem;
+    border-top: 1px solid var(--krds-color-light-gray-10);
+}
+.in-page-navigation-list ul li ul{
+    margin-left: 1rem;
 }
