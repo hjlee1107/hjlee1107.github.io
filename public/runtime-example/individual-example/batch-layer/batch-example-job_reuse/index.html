@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>기존 업무 재사용 예제 | 표준프레임워크 개발가이드드</title>
+<title>기존 업무 재사용 예제 | 표준프레임워크 개발가이드</title>
 
 
 
@@ -884,7 +884,7 @@
                         <h2 class="sec-tit" id="설명">설명</h2>
 <h3 class="sec-tit" id="설정">설정</h3>
 <h4 id="job-설정">Job 설정</h4>
-<p><!-- raw HTML omitted -->기존 업무 재사용 예제의 Job 설정파일인 delegatingJob.xml을 확인한다.<!-- raw HTML omitted --></p>
+<p><b>기존 업무 재사용 예제의 Job 설정파일인 delegatingJob.xml을 확인한다.</b></p>
 <p>아래의 예제에서는 targetObject로 정의된 기존 업무인 PersonService를 재사용한다. read시에는 targetMethod로 정의된 getData 메소드를 실행하고, write시에는 targetMethod로 정의된 processProcessPerson 메소드를 실행한다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;reader&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.adapter.ItemReaderAdapter&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>       <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;targetObject&#34;</span> <span style="color:#a6e22e">ref=</span><span style="color:#e6db74">&#34;delegateObject&#34;</span> <span style="color:#f92672">/&gt;</span>
@@ -902,8 +902,8 @@
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;delegateObject&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;egovframework.brte.sample.common.domain.person.PersonService&#34;</span> <span style="color:#f92672">/&gt;</span>
 </span></span></code></pre></div><h4 id="클래스-설정">클래스 설정</h4>
-<p><!-- raw HTML omitted -->위에서 정의된 기존 업무의 클래스를 확인한다.<!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted -->주의<!-- raw HTML omitted --> : reader의 역할을 하는 targetMethod는 다음과 같은 ItemReader의 동작방식을 만족해야 한다.</p>
+<p><b>위에서 정의된 기존 업무의 클래스를 확인한다.</b></p>
+<p><b>주의</b> : reader의 역할을 하는 targetMethod는 다음과 같은 ItemReader의 동작방식을 만족해야 한다.</p>
 <p>✔ 메소드 호출시 하나의 Item(Object)을 반환한다.</p>
 <p>✔ 더 이상 반환할 Item(Object)이 없는 경우 null을 반환한다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">//reader의 역할을 하는  getData() 호출시 generatedCounter가 1씩 증가하며 하나의 person이라는 Object를 반환한다. </span>
@@ -935,7 +935,7 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 class="sec-tit" id="junittest-구성-및-수행">JunitTest 구성 및 수행</h3>
 <h4 id="junittest-구성">JunitTest 구성</h4>
-<p><!-- raw HTML omitted -->기존 업무 재사용 예제를 수행하고 배치작업 결과에 대한 검증을 위해 다음과 같이 @Test를 구성하였다.<!-- raw HTML omitted --></p>
+<p><b>기존 업무 재사용 예제를 수행하고 배치작업 결과에 대한 검증을 위해 다음과 같이 @Test를 구성하였다.</b></p>
 <p>✔ JunitTest 클래스의 구조는 
 
 

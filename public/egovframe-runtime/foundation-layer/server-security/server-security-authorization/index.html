@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Authorization | 표준프레임워크 개발가이드드</title>
+<title>Authorization | 표준프레임워크 개발가이드</title>
 
 
 
@@ -2596,7 +2596,7 @@
                 
                     <div class="conts-wrap section-link" id="section_02">
                         <h2 class="sec-tit" id="설명">설명</h2>
-<p>Authorization은 <!-- raw HTML omitted -->XML<!-- raw HTML omitted --> 또는 DB에서 권한을 관리하며 계층적 권한을 지원한다.</p>
+<p>Authorization은 <Acronym title="Extensible Markup Language">XML</Acronym> 또는 DB에서 권한을 관리하며 계층적 권한을 지원한다.</p>
 <p>Server Security에서는 Filter Security Interceptor에 의해 처리되며, DB로부터 권한 정보를 처리하기 위해 다음과 같이 설정된다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;http</span> <span style="color:#960050;background-color:#1e0010">...</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>...
@@ -2657,9 +2657,9 @@
 <pre tabindex="0"><code>\A/sale/.*\.do\Z
 \A/cvpl/((?!EgovCvplLogin\.do).)*\Z
 </code></pre><h5 id="filtersecurityinterceptor">filterSecurityInterceptor</h5>
-<p>FilterSecurityInterceptor는 <!-- raw HTML omitted -->HTTP<!-- raw HTML omitted --> 자원의 보안을 처리할 책임이 있다.
+<p>FilterSecurityInterceptor는 <Acronym title="Hyper Text Transfer Protocol">HTTP</Acronym> 자원의 보안을 처리할 책임이 있다.
 다른 보안 인터셉터와 유사하게 FilterSecurityInterceptor는 AuthenticationManager와 AccessDecisionManager에 대한 참조를 필요로 한다.
-또한 FilterSecurityInterceptor는 서로 다른 <!-- raw HTML omitted -->HTTP<!-- raw HTML omitted --> <!-- raw HTML omitted -->URL<!-- raw HTML omitted --> 요청에 적용되는 설정 속성도 설정한다.</p>
+또한 FilterSecurityInterceptor는 서로 다른 <Acronym title="Hyper Text Transfer Protocol">HTTP</Acronym> <Acronym title="Uniform Resource Locator">URL</Acronym> 요청에 적용되는 설정 속성도 설정한다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;beans:bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;filterSecurityInterceptor&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.security.web.access.intercept.FilterSecurityInterceptor&#34;</span><span style="color:#f92672">&gt;</span>	
 </span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;beans:property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;authenticationManager&#34;</span> <span style="color:#a6e22e">ref=</span><span style="color:#e6db74">&#34;org.springframework.security.authenticationManager&#34;</span> <span style="color:#f92672">/&gt;</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;beans:property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;accessDecisionManager&#34;</span> <span style="color:#a6e22e">ref=</span><span style="color:#e6db74">&#34;org.springframework.security.access.vote.AffirmativeBased#0&#34;</span> <span style="color:#f92672">/&gt;</span>

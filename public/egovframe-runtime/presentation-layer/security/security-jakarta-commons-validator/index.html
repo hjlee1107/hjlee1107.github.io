@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Spring Framework &#43; Jakarta Commons Validator | 표준프레임워크 개발가이드드</title>
+<title>Spring Framework &#43; Jakarta Commons Validator | 표준프레임워크 개발가이드</title>
 
 
 
@@ -2691,7 +2691,32 @@ Spring에서는 Spring Modules 프로젝트에서 연계 모듈을 제공한다.
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">            ]]&gt;</span>
 </span></span><span style="display:flex;"><span>         <span style="color:#f92672">&lt;/javascript&gt;</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/validator&gt;</span>
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></div><div class="krds-table-wrap"><table class="tbl col data">
+  <tr>
+    <th>name</th>
+    <td>validation rule(required,mask,integer,email…)</td>
+  </tr>
+  <tr>
+    <th>classname</th>
+    <td>validation check를 수행하는 클래스명(org.springmodules.validation.commons.FieldChecks)</td>
+  </tr>
+  <tr>
+    <th>method</th>
+    <td>validation check를 수행하는 클래스의 메소드명(validateRequired,validateMask…)</td>
+  </tr>
+  <tr>
+    <th>methodParams</th>
+    <td>validation check를 수행하는 클래스의 메소드의 파라미터</td>
+  </tr>
+  <tr>
+    <th>msg</th>
+    <td>에러 메시지 key</td>
+  </tr>
+  <tr>
+    <th>javascript</th>
+    <td>client-side validation을 위한 자바스크립트 코드</td>
+  </tr>
+</table></div>
 <p>Spring Modules에서 제공하는 validation rule에 따라 구성해보자.</p>
 <p><strong>Spring Modules (0.9 기준)에서 제공하는 validation rule들은 아래와 같다.</strong></p>
 <div class="krds-table-wrap"><table class="tbl col data">

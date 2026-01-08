@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>프로그래밍 방식의 Transaction 관리 | 표준프레임워크 개발가이드드</title>
+<title>프로그래밍 방식의 Transaction 관리 | 표준프레임워크 개발가이드</title>
 
 
 
@@ -2597,7 +2597,7 @@
                         <h2 class="sec-tit" id="설명">설명</h2>
 <h3 class="sec-tit" id="transactiontemplate를-사용하는-방법">TransactionTemplate를 사용하는 방법</h3>
 <p>TransactionTemplate를 정의하고 callback 메소드 정의를 이용하여 Transaction 관리를 할 수 있도록 하는 방법이다.</p>
-<p><!-- raw HTML omitted -->Configuration<!-- raw HTML omitted --></p>
+<p><b>Configuration</b></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;transactionTemplate&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.transaction.support.TransactionTemplate&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;transactionManager&#34;</span> <span style="color:#a6e22e">ref=</span><span style="color:#e6db74">&#34;transactionManager&#34;</span><span style="color:#f92672">/&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>

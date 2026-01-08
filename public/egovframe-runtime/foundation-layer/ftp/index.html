@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>FTP Service | 표준프레임워크 개발가이드드</title>
+<title>FTP Service | 표준프레임워크 개발가이드</title>
 
 
 
@@ -2584,7 +2584,7 @@
                 
                     <div class="conts-wrap section-link" id="section_01">
                         <h2 class="sec-tit" id="개요">개요</h2>
-<p><strong>전자정부 표준프레임워크</strong>는 <!-- raw HTML omitted -->FTP<!-- raw HTML omitted --> 서비스제공을 위해 Apache Commons Net™ [단순 클라이언트측의 기본적인 Internet Protocol의 구현의 FTP기능을 편리하게 제공]을 오픈 소스로 채택하였다.</p>
+<p><strong>전자정부 표준프레임워크</strong>는 <acronym title="File Transfer Protocol">FTP</acronym> 서비스제공을 위해 Apache Commons Net™ [단순 클라이언트측의 기본적인 Internet Protocol의 구현의 FTP기능을 편리하게 제공]을 오픈 소스로 채택하였다.</p>
 <p>Apache Commons Net™은 Network utility collection 이다.
 Apache Commons Net™은 단순 클라이언트측의 기본적인 Internet Protocol을 구현함으로서 기본적인 프로토콜 access가 목적이기 때문에 부분적으로 object-orient 규칙에 위배가 되는 사항이 있다는 것을 참고적으로 알고 있어야 한다.</p>
 <h3 class="sec-tit" id="ftp정의">FTP정의</h3>
@@ -2628,12 +2628,12 @@ FTP는 보통 TCP/IP에 함께 제공되는 일련의 프로그램 속에 포함
 
 )에서 지원하는 프로토콜은 다음과 같다.</p>
 <ul>
-<li><!-- raw HTML omitted -->FTP<!-- raw HTML omitted -->/FTPS</li>
-<li><!-- raw HTML omitted -->FTP<!-- raw HTML omitted --> over <!-- raw HTML omitted -->HTTP<!-- raw HTML omitted --> (experimental)</li>
+<li><acronym title="File Transfer Protocol">FTP</acronym>/FTPS</li>
+<li><acronym title="File Transfer Protocol">FTP</acronym> over <acronym title="Hyper Text Transfer Protocol">HTTP</acronym> (experimental)</li>
 <li>NNTP</li>
-<li><!-- raw HTML omitted -->SMTP<!-- raw HTML omitted -->(S)</li>
-<li><!-- raw HTML omitted -->POP3<!-- raw HTML omitted -->(S)</li>
-<li><!-- raw HTML omitted -->IMAP<!-- raw HTML omitted -->(S)</li>
+<li><acronym title="Simple Mail Transfer Protocol">SMTP</acronym>(S)</li>
+<li><acronym title="Post Office Protocol 3">POP3</acronym>(S)</li>
+<li><acronym title="Internet Message Access Protocol">IMAP</acronym>(S)</li>
 <li>Telnet</li>
 <li>TFTP</li>
 <li>Finger</li>
@@ -2751,7 +2751,7 @@ FTP는 보통 TCP/IP에 함께 제공되는 일련의 프로그램 속에 포함
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>client.<span style="color:#a6e22e">sendCommand</span>(FTPCommand.<span style="color:#a6e22e">MAKE_DIRECTORY</span>,<span style="color:#e6db74">&#34;/public/test&#34;</span>);
 </span></span></code></pre></div><h4 id="파일-및-전송상태-설정">파일 및 전송상태 설정</h4>
 <ul>
-<li>파일 타입 : <!-- raw HTML omitted -->FTP<!-- raw HTML omitted -->.BINARY_FILE_TYPE, <!-- raw HTML omitted -->FTP<!-- raw HTML omitted -->.ASCII_FILE_TYPE, 등 설정 - 파일 전송 형태 : <!-- raw HTML omitted -->FTP<!-- raw HTML omitted -->.STREAM_TRANSFER_MODE, COMPRESSED_TRANSFER_MODE 등 설정</li>
+<li>파일 타입 : <acronym title="File Transfer Protocol">FTP</acronym>.BINARY_FILE_TYPE, <acronym title="File Transfer Protocol">FTP</acronym>.ASCII_FILE_TYPE, 등 설정 - 파일 전송 형태 : <acronym title="File Transfer Protocol">FTP</acronym>.STREAM_TRANSFER_MODE, COMPRESSED_TRANSFER_MODE 등 설정</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">/* 파일 타입*/</span>
 </span></span><span style="display:flex;"><span>client.<span style="color:#a6e22e">setFileType</span>(FTP.<span style="color:#a6e22e">BINARY_FILE_TYPE</span>);

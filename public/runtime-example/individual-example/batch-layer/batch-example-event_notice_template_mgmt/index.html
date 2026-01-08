@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>이벤트알림 템플릿(Template) 예제 | 표준프레임워크 개발가이드드</title>
+<title>이벤트알림 템플릿(Template) 예제 | 표준프레임워크 개발가이드</title>
 
 
 
@@ -884,8 +884,8 @@
                         <h2 class="sec-tit" id="설명">설명</h2>
 <h3 class="sec-tit" id="설정">설정</h3>
 <h4 id="job-설정">Job 설정</h4>
-<p><!-- raw HTML omitted -->이벤트알림 템플릿(Template) 예제의 Job 설정 파일인 eventNoticeTriggerJob.xml을 확인한다.<!-- raw HTML omitted --></p>
-<p>Job 의 구성을 보면 기본적인 <!-- raw HTML omitted --> 설정 외에 <!-- raw HTML omitted --> 를 통해 EgovEventNoticeCallListener를 호출하도록 설정되어 있고, 관련 클래스인 EgovEventNoticeCallProcessor와 EgovEmailEventNoticeTrigger는 빈으로 등록되어 있다.</p>
+<p><b>이벤트알림 템플릿(Template) 예제의 Job 설정 파일인 eventNoticeTriggerJob.xml을 확인한다.</b></p>
+<p>Job 의 구성을 보면 기본적인 <tasklet> 설정 외에 <listener> 를 통해 EgovEventNoticeCallListener를 호출하도록 설정되어 있고, 관련 클래스인 EgovEventNoticeCallProcessor와 EgovEmailEventNoticeTrigger는 빈으로 등록되어 있다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;job</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;eventNoticeTriggerJob&#34;</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/batch&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;step</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;eventNoticeTriggerStep1&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;tasklet&gt;</span>
@@ -901,7 +901,7 @@
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;EmailEventNoticeTrigger&#34;</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;egovframework.brte.sample.example.event.EgovEmailEventNoticeTrigger&#34;</span> <span style="color:#f92672">/&gt;</span>
 </span></span></code></pre></div><h4 id="클래스-설정">클래스 설정</h4>
-<p><!-- raw HTML omitted -->Email 전송을 위한 EgovEmailEventNoticeTrigger 클래스의 설정을 확인한다.<!-- raw HTML omitted --></p>
+<p><b>Email 전송을 위한 EgovEmailEventNoticeTrigger 클래스의 설정을 확인한다.</b></p>
 <p>Job 수행시 관련정보를 알리기 위한 설정은 
 
 
@@ -973,7 +973,7 @@ password : 해당 메일서버 계정의 패스워드를 입력한다.
 </span></span><span style="display:flex;"><span>		}
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><!-- raw HTML omitted -->EgovEventNoticeCallProcessor 클래스를 확인한다.<!-- raw HTML omitted --></p>
+</span></span></code></pre></div><p><b>EgovEventNoticeCallProcessor 클래스를 확인한다.</b></p>
 <p>이 클래스는 전자정부 표준프레임워크에서 제공하는 
 
 
@@ -1087,7 +1087,7 @@ password : 해당 메일서버 계정의 패스워드를 입력한다.
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 class="sec-tit" id="junittest-구성-및-수행">JunitTest 구성 및 수행</h3>
 <h4 id="junittest-구성">JunitTest 구성</h4>
-<p><!-- raw HTML omitted -->이벤트알림 템플릿(Template) 예제를 수행하고 배치작업 결과에 대한 검증을 위해 다음과 같이 @Test를 구성하였다.<!-- raw HTML omitted --></p>
+<p><b>이벤트알림 템플릿(Template) 예제를 수행하고 배치작업 결과에 대한 검증을 위해 다음과 같이 @Test를 구성하였다.</b></p>
 <p>✔ JunitTest 클래스의 구조는 
 
 

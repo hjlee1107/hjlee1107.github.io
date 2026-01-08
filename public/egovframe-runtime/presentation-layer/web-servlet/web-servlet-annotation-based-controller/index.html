@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Annotation 기반 Controller | 표준프레임워크 개발가이드드</title>
+<title>Annotation 기반 Controller | 표준프레임워크 개발가이드</title>
 
 
 
@@ -2776,17 +2776,17 @@
       <tr>
           <td>value</td>
           <td>String[]</td>
-          <td>URL 값으로 맵핑 조건을 부여한다.<!-- raw HTML omitted --> @RequestMapping(value=”/hello.do”) 또는 @RequestMapping(value={”/hello.do”, ”/world.do” })와 같이 표기하며,<!-- raw HTML omitted --> 기본값이기 때문에 @RequestMapping(”/hello.do”)으로 표기할 수도 있다.<!-- raw HTML omitted --> ”/myPath/*.do”와 같이 Ant-Style의 패턴매칭을 이용할 수도 있다.<!-- raw HTML omitted --> Spring 3.1부터 URL뒤에 중괄호를 이용하여 변수값을 직접 받을 수 있도록 하였다. 아래 설명(URI Template Variable Enhancements)을 참고하라</td>
+          <td>URL 값으로 맵핑 조건을 부여한다.<br> @RequestMapping(value=”/hello.do”) 또는 @RequestMapping(value={”/hello.do”, ”/world.do” })와 같이 표기하며,<br> 기본값이기 때문에 @RequestMapping(”/hello.do”)으로 표기할 수도 있다.<br> ”/myPath/*.do”와 같이 Ant-Style의 패턴매칭을 이용할 수도 있다.<br> Spring 3.1부터 URL뒤에 중괄호를 이용하여 변수값을 직접 받을 수 있도록 하였다. 아래 설명(URI Template Variable Enhancements)을 참고하라</td>
       </tr>
       <tr>
           <td>method</td>
           <td>RequestMethod[]</td>
-          <td>HTTP Request 메소드값을 맵핑 조건으로 부여한다.<!-- raw HTML omitted --> HTTP 요청 메소드값이 일치해야 맵핑이 이루어 지게 한다.<!-- raw HTML omitted --> @RequestMapping(method = RequestMethod.POST)같은 형식으로 표기한다.<!-- raw HTML omitted --> 사용 가능한 메소드는 GET, POST, HEAD, OPTIONS, PUT, DELETE, TRACE이다</td>
+          <td>HTTP Request 메소드값을 맵핑 조건으로 부여한다.<br> HTTP 요청 메소드값이 일치해야 맵핑이 이루어 지게 한다.<br> @RequestMapping(method = RequestMethod.POST)같은 형식으로 표기한다.<br> 사용 가능한 메소드는 GET, POST, HEAD, OPTIONS, PUT, DELETE, TRACE이다</td>
       </tr>
       <tr>
           <td>params</td>
           <td>String[]</td>
-          <td>HTTP Request 파라미터를 맵핑 조건으로 부여한다.<!-- raw HTML omitted --> params=“myParam=myValue”이면 HTTP Request URL중에 myParam이라는 파라미터가 있어야 하고 값은 myValue이어야 맵핑한다.<!-- raw HTML omitted --> params=“myParam”와 같이 파라미터 이름만으로 조건을 부여할 수도 있고, ”!myParam”하면 myParam이라는 파라미터가 없는 요청 만을 맵핑한다.<!-- raw HTML omitted --> @RequestMapping(params={“myParam1=myValue”, “myParam2”, ”!myParam3”})와 같이 조건을 주었다면,<!-- raw HTML omitted --> HTTP Request에는 파라미터 myParam1이 myValue값을 가지고 있고, myParam2 파라미터가 있어야 하고, myParam3라는 파라미터는 없어야 한다.</td>
+          <td>HTTP Request 파라미터를 맵핑 조건으로 부여한다.<br> params=“myParam=myValue”이면 HTTP Request URL중에 myParam이라는 파라미터가 있어야 하고 값은 myValue이어야 맵핑한다.<br> params=“myParam”와 같이 파라미터 이름만으로 조건을 부여할 수도 있고, ”!myParam”하면 myParam이라는 파라미터가 없는 요청 만을 맵핑한다.<br> @RequestMapping(params={“myParam1=myValue”, “myParam2”, ”!myParam3”})와 같이 조건을 주었다면,<br> HTTP Request에는 파라미터 myParam1이 myValue값을 가지고 있고, myParam2 파라미터가 있어야 하고, myParam3라는 파라미터는 없어야 한다.</td>
       </tr>
       <tr>
           <td>consumes</td>

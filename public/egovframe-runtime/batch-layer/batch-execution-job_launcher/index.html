@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>JobLauncher | 표준프레임워크 개발가이드드</title>
+<title>JobLauncher | 표준프레임워크 개발가이드</title>
 
 
 
@@ -2624,7 +2624,7 @@
 </ul>
 <p><img src="/egovframe-runtime/batch-layer/images/joblauncher_sync.png" alt="image"  >
 </p>
-<p>위의 흐름은 간단하며 스케줄러에서 실행하면 잘 동작하지만, HTTP 요청에서 시작하려고 할 때 문제가 발생한다. 배치 작업의 특성상 처리시간이 오래 걸리는 작업이 많을 것이고,그 작업시간동안 <!-- raw HTML omitted -->HTTP<!-- raw HTML omitted --> 응답을 계속 기다리는 것은 좋지 않다. 이 경우에는 아래와 같이 SimpleJobLauncher가 Client에게 즉시 JobExecution을 반환하는 비동기식 동작 방법이 필요하다.</p>
+<p>위의 흐름은 간단하며 스케줄러에서 실행하면 잘 동작하지만, HTTP 요청에서 시작하려고 할 때 문제가 발생한다. 배치 작업의 특성상 처리시간이 오래 걸리는 작업이 많을 것이고,그 작업시간동안 <Acronym title="Hyper Text Transfer Protocol">HTTP</Acronym> 응답을 계속 기다리는 것은 좋지 않다. 이 경우에는 아래와 같이 SimpleJobLauncher가 Client에게 즉시 JobExecution을 반환하는 비동기식 동작 방법이 필요하다.</p>
 <ul>
 <li>비동기</li>
 </ul>

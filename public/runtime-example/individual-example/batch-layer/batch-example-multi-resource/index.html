@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>MultiResource 예제 | 표준프레임워크 개발가이드드</title>
+<title>MultiResource 예제 | 표준프레임워크 개발가이드</title>
 
 
 
@@ -882,7 +882,7 @@
                         <h2 class="sec-tit" id="설명">설명</h2>
 <h3 class="sec-tit" id="설정">설정</h3>
 <h4 id="job-설정">Job 설정</h4>
-<p><!-- raw HTML omitted -->MultiResource 예제의 Job 설정파일인 multiResourceIoJob.xml을 확인한다.<!-- raw HTML omitted --></p>
+<p><b>MultiResource 예제의 Job 설정파일인 multiResourceIoJob.xml을 확인한다.</b></p>
 <p>MultiResourceItemReader는 resources로 정의된 파일들을 읽어와서, 파일 한 개씩 delegate로 정의된 reader가 read하도록 전달한다.</p>
 <p>아래의 예제는 실제로 파일을 read하는 reader는 delegate로 정의된 FlatFileItemReader이다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;itemReader&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.MultiResourceItemReader&#34;</span> <span style="color:#a6e22e">scope=</span><span style="color:#e6db74">&#34;step&#34;</span><span style="color:#f92672">&gt;</span>
@@ -939,7 +939,7 @@ value : /egovframework/data/input/delimited*.csv&#34;
   value : file:./target/test-outputs/multiResourceOutput.csv
 </code></pre><h3 class="sec-tit" id="junit-구성-및-수행">Junit 구성 및 수행</h3>
 <h4 id="junittest-구성">JunitTest 구성</h4>
-<p><!-- raw HTML omitted -->MutiResource 예제를 수행하고 배치작업 결과에 대한 검증을 위해 다음과 같이 @Test를 구성하였다.<!-- raw HTML omitted --></p>
+<p><b>MutiResource 예제를 수행하고 배치작업 결과에 대한 검증을 위해 다음과 같이 @Test를 구성하였다.</b></p>
 <p>✔ JunitTest 클래스의 구조는 
 
 

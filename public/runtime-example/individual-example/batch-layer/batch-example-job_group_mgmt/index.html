@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>작업그룹 예제 | 표준프레임워크 개발가이드드</title>
+<title>작업그룹 예제 | 표준프레임워크 개발가이드</title>
 
 
 
@@ -884,7 +884,7 @@
                         <h2 class="sec-tit" id="설명">설명</h2>
 <h3 class="sec-tit" id="설정">설정</h3>
 <h4 id="job-설정">Job 설정</h4>
-<p><!-- raw HTML omitted -->작업그룹 예제에서는 다른 예제에서 사용되는 delegatingJob 을 사용한다.<!-- raw HTML omitted --></p>
+<p><b>작업그룹 예제에서는 다른 예제에서 사용되는 delegatingJob 을 사용한다.</b></p>
 <p>Job 의 구성은 일반적인 Chunk 설정이 있다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;job</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;delegateJob&#34;</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/batch&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;step</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;delegateStep1&#34;</span><span style="color:#f92672">&gt;</span>
@@ -894,7 +894,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/step&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/job&gt;</span>
 </span></span></code></pre></div><h4 id="launcher-설정">Launcher 설정</h4>
-<p><!-- raw HTML omitted -->작업그룹 예제의 Launcher 설정 파일인 group-job-launcher-context 를 확인한다.<!-- raw HTML omitted --></p>
+<p><b>작업그룹 예제의 Launcher 설정 파일인 group-job-launcher-context 를 확인한다.</b></p>
 <p>✔ Job 그룹기능을 사용하기 위해서는 JobRegistryBeanPostProcessor 클래스와 관련한 빈에 ‘groupName’ 이라는 프로퍼티로 그룹명을 추가하면 된다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;jobLauncher&#34;</span>	<span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.core.launch.support.SimpleJobLauncher&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;jobRepository&#34;</span> <span style="color:#a6e22e">ref=</span><span style="color:#e6db74">&#34;jobRepository&#34;</span> <span style="color:#f92672">/&gt;</span>
@@ -923,7 +923,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;jobRegistry&#34;</span>	<span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.core.configuration.support.MapJobRegistry&#34;</span> <span style="color:#f92672">/&gt;</span>
 </span></span></code></pre></div><h3 class="sec-tit" id="junittest-구성-및-수행">JunitTest 구성 및 수행</h3>
 <h4 id="junittest-구성">JunitTest 구성</h4>
-<p><!-- raw HTML omitted -->group-job-launcher-context 설정과 수행할 배치 Job인 delegatingJob 설정들로 Junit Test를 수행한다. 이 때 배치가 수행되고, 관련된 내용을 확인할 수 있다.<!-- raw HTML omitted --></p>
+<p><b>group-job-launcher-context 설정과 수행할 배치 Job인 delegatingJob 설정들로 Junit Test를 수행한다. 이 때 배치가 수행되고, 관련된 내용을 확인할 수 있다.</b></p>
 <p>✔ JunitTest 클래스의 구조는 
 
 

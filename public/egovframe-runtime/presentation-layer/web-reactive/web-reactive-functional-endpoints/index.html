@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>스프링 WebFlux 함수형 프로그래밍 모델(WebFlux.fn) | 표준프레임워크 개발가이드드</title>
+<title>스프링 WebFlux 함수형 프로그래밍 모델(WebFlux.fn) | 표준프레임워크 개발가이드</title>
 
 
 
@@ -2588,8 +2588,8 @@
                 
                     <div class="conts-wrap section-link" id="section_01">
                         <h2 class="sec-tit" id="설명">설명</h2>
-<p>WebFlux.fn에선 HandlerFunction이 HTTP 요청을 처리한다. HandlerFunction은 ServerRequest를 받아 비동기 ServerResponse(예를 들어 Mono<!-- raw HTML omitted -->)를 리턴하는 함수다. 요청, 응답 객체 모두 불변하기 때문에 JDK 8 방식으로 HTTP 요청, 응답에 접근할 수 있다. HandlerFunction 역할은 어노테이션 프로그래밍 모델로 치면 @RequestMapping 메소드와 동일하다.</p>
-<p>요청은 RouterFunction이 핸들러 펑션에 라우팅한다. RouterFunction은 ServerRequest를 받아 비동기 HandlerFunction(예를 들어 Mono<!-- raw HTML omitted -->)을 리턴하는 함수다. 매칭되는 라이터 펑션이 있으면 핸들러 펑션을 리턴하고 그 외는 비어 있는 Mono를 리턴한다. RouterFunction이 하는 일은 @RequestMapping 어노테이션과 동일하지만 라우터 펑션은 테이터뿐 아니라 행동까지 제공한다는 점이 다르다.</p>
+<p>WebFlux.fn에선 HandlerFunction이 HTTP 요청을 처리한다. HandlerFunction은 ServerRequest를 받아 비동기 ServerResponse(예를 들어 Mono<ServerResponse>)를 리턴하는 함수다. 요청, 응답 객체 모두 불변하기 때문에 JDK 8 방식으로 HTTP 요청, 응답에 접근할 수 있다. HandlerFunction 역할은 어노테이션 프로그래밍 모델로 치면 @RequestMapping 메소드와 동일하다.</p>
+<p>요청은 RouterFunction이 핸들러 펑션에 라우팅한다. RouterFunction은 ServerRequest를 받아 비동기 HandlerFunction(예를 들어 Mono<HandlerFunction>)을 리턴하는 함수다. 매칭되는 라이터 펑션이 있으면 핸들러 펑션을 리턴하고 그 외는 비어 있는 Mono를 리턴한다. RouterFunction이 하는 일은 @RequestMapping 어노테이션과 동일하지만 라우터 펑션은 테이터뿐 아니라 행동까지 제공한다는 점이 다르다.</p>
 <p>라이터를 만들 때는 아래 예제처럼 RouterFunctions.route()가 제공하는 빌더를 사용할 수 있다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import static</span> org.springframework.http.MediaType.APPLICATION_JSON;
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import static</span> org.springframework.web.reactive.function.server.RequestPredicates.*;
@@ -2629,9 +2629,9 @@
 response body는 Flux와 Mono를 포함한 어떤 리액티브 스트림 Publisher든 상관없다.</p>
 <h4 id="serverrequest">ServerRequest</h4>
 <p>ServerRequest로 HTTP 메소드, URI, 헤더, 쿼리 파라미터에 접근할 수 있으며, body를 추출할 수 있는 메소드를 제공한다.
-다음은 request body를 Mono<!-- raw HTML omitted -->으로 추출하는 예제다.</p>
+다음은 request body를 Mono<String>으로 추출하는 예제다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Mono<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> string <span style="color:#f92672">=</span> request.<span style="color:#a6e22e">bodyToMono</span>(String.<span style="color:#a6e22e">class</span>);
-</span></span></code></pre></div><p>다음 예제는 body를 Flux<!-- raw HTML omitted -->으로 추출한다. Person 객체는 JSON이나 XML 같은 직렬화된 데이터로 디코딩한다.</p>
+</span></span></code></pre></div><p>다음 예제는 body를 Flux<Person>으로 추출한다. Person 객체는 JSON이나 XML 같은 직렬화된 데이터로 디코딩한다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Flux<span style="color:#f92672">&lt;</span>Person<span style="color:#f92672">&gt;</span> people <span style="color:#f92672">=</span> request.<span style="color:#a6e22e">bodyToFlux</span>(Person.<span style="color:#a6e22e">class</span>);
 </span></span></code></pre></div><p>위 예제에서 사용한 메소드는 함수형 인터페이스 BodyExtractor를 받는 ServerRequest.body(BodyExtractor) 메소드의 축약 버전이다. BodyExtractors 유틸리티 클래스에 있는 인터페이스를 활용해도 된다. 예를 들면 앞의 예제는 아래와 같이 작성할 수도 있다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Mono<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> string <span style="color:#f92672">=</span> request.<span style="color:#a6e22e">body</span>(BodyExtractors.<span style="color:#a6e22e">toMono</span>(String.<span style="color:#a6e22e">class</span>));
@@ -2772,7 +2772,7 @@ build()를 호출하면 빌더에 정의한 모든 라우터 펑션을 RouterFun
 <p>스프링 부트에서도 사용하는 좀 더 일반적인 옵션은 WebFlux Config로 컴포넌트를 스프링 빈으로 정의하고 DispatcherHandler와 함께 실행하는 것이다.
 프레임워크는 다음과 같은 컴포넌트로 함수형 엔드포인트를 지원하는데 웹플럭스 설정을 사용하면 이를 모두 스프링 빈으로 정의한다.</p>
 <ul>
-<li>RouterFunctionMapping: 스프링 설정에서 RouterFunction<!-- raw HTML omitted -->을 찾아 RouterFunction.andOther로 연결하고 최종 구성한 RouterFunction으로 요청을 라우팅한다.</li>
+<li>RouterFunctionMapping: 스프링 설정에서 RouterFunction<?>을 찾아 RouterFunction.andOther로 연결하고 최종 구성한 RouterFunction으로 요청을 라우팅한다.</li>
 <li>HandlerFunctionAdapter: 요청에 매핑된 HandlerFunction을 DispatcherHandler가 실행하게 도와주는 간단한 어댑터</li>
 <li>ServerResponseResultHandler: ServerResponse의 writeTo 메소드로 HandlerFunction 결과를 처리한다.
 위 컴포넌트가 함수형 엔드포인트를 DispatcherHandler의 요청 처리 패턴에 맞춰주기 때문에 어노테이션 컨트롤러와 함께 사용할 수도 있다. 스프링 부트 웹플럭스 스타터도 이 방법으로 함수형 엔드포인트를 지원한다.</li>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>재시도(Restart) 예제 | 표준프레임워크 개발가이드드</title>
+<title>재시도(Restart) 예제 | 표준프레임워크 개발가이드</title>
 
 
 
@@ -882,9 +882,9 @@
                         <h2 class="sec-tit" id="설명">설명</h2>
 <h3 class="sec-tit" id="설정">설정</h3>
 <h4 id="job-설정">Job 설정</h4>
-<p><!-- raw HTML omitted -->Restart 예제의 Job 설정파일인 restartFileSampleJob.xml을 확인한다.<!-- raw HTML omitted --></p>
+<p><b>Restart 예제의 Job 설정파일인 restartFileSampleJob.xml을 확인한다.</b></p>
 <p>job을 재실행할 수 있는지 여부를 Job 설정시 지정할 수 있다. 디폴트는 true이고 아래와 같이 restartable 설정에 따라 지정할 수 있다.</p>
-<p><!-- raw HTML omitted -->재실행 가능<!-- raw HTML omitted --></p>
+<p><b>재실행 가능</b></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>	<span style="color:#f92672">&lt;job</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;restartFileSampleJob&#34;</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/batch&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;step</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;restartFileSampleStep1&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;tasklet&gt;</span>
@@ -893,7 +893,7 @@
 </span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;/tasklet&gt;</span>
 </span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;/step&gt;</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/job&gt;</span>
-</span></span></code></pre></div><p><!-- raw HTML omitted -->재실행 불가능<!-- raw HTML omitted --></p>
+</span></span></code></pre></div><p><b>재실행 불가능</b></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span>	<span style="color:#f92672">&lt;job</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;restartFileSampleJob&#34;</span> <span style="color:#a6e22e">restartable=</span><span style="color:#e6db74">&#34;false&#34;</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/batch&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;step</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;restartFileSampleStep1&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;tasklet&gt;</span>
@@ -904,7 +904,7 @@
 </span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/job&gt;</span>
 </span></span></code></pre></div><h3 class="sec-tit" id="junittest-구성-및-수행">JunitTest 구성 및 수행</h3>
 <h4 id="junittest-구성">JunitTest 구성</h4>
-<p><!-- raw HTML omitted -->Restart 예제를 수행하고 배치작업 결과에 대한 검증을 위해 다음과 같이 @Test를 구성하였다.<!-- raw HTML omitted --></p>
+<p><b>Restart 예제를 수행하고 배치작업 결과에 대한 검증을 위해 다음과 같이 @Test를 구성하였다.</b></p>
 <p>✔ JunitTest 클래스의 구조는 
 
 

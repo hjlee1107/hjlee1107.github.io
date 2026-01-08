@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>Log4j 2 환경설정 (설정 파일 사용 시) | 표준프레임워크 개발가이드드</title>
+<title>Log4j 2 환경설정 (설정 파일 사용 시) | 표준프레임워크 개발가이드</title>
 
 
 
@@ -3159,7 +3159,19 @@ Connection 객체를 제공하기 위한 JNDI DataSource 혹은 Connection Facto
 <p>Layout은 발생한 로그 이벤트의 포맷을 지정하고, 원하는 형식으로 로그를 출력할 수 있다.<br>
 Appenders 설정과 마찬가지로 Log4j 2에서는 Layout을 class 속성이 아닌 태그로 구분한다.</p>
 <p>출력 형식에 따라 Layout의 종류가 달라지며, 아래와 같은 Layouts을 제공한다.</p>
-<!-- raw HTML omitted -->
+<div class="krds-table-wrap"><table class="tbl col data">
+  <tr>
+    <td colspan="6">내용</td>
+  </tr>
+  <tr>
+    <td>HTMLLayout</td>
+    <td><b>PatternLayout</b></td>
+    <td>RFC5424Layout</td>
+    <td>SerializedLayout</td>
+    <td>SyslogLayout</td>
+    <td>XMLLayout</td>
+  </tr>
+</table></div>
 <p>본페이지는 위의 Layouts 중 일반적으로 디버깅에 가장 적합한 PatternLayout만 설명한다.</p>
 <h4 id="patternlayout-선언과-정의">PatternLayout 선언과 정의</h4>
 <p>PatternLayout은 Appender 요소의 하위 요소로 정의한다.</p>
