@@ -1,0 +1,57 @@
+name: Auto Merge PR to main
+
+on:
+  pull_request_target:
+    types: [opened]
+    branches: [main]
+
+permissions:
+  pull-requests: write
+  contents: write
+
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge PR if possible
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            const prNumber = pr.number;
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const prInfo = await github.rest.pulls.get({
+              owner,
+              repo,
+              pull_number: prNumber
+            });
+
+            // 병합 가능한 상태 확인
+            const mergeable = prInfo.data.mergeable;
+            const mergeableState = prInfo.data.mergeable_state;
+
+            console.log(`mergeable: ${mergeable}`);
+            console.log(`mergeable_state: ${mergeableState}`);
+
+            // GitHub에서 병합 가능성 판단 중인 경우 취소
+            if (mergeable === null) {
+              core.setFailed("PR 상태 분석 중. 나중에 다시 시도하세요.");
+              return;
+            }
+
+            if (!mergeable || mergeableState !== "clean") {
+              core.setFailed(`병합할 수 없는 상태입니다: ${mergeableState}`);
+              return;
+            }
+
+            await github.rest.pulls.merge({
+              owner,
+              repo,
+              pull_number: prNumber,
+              merge_method: "squash"
+            });
+
+            console.log(`✅ PR #${prNumber} successfully merged`);
