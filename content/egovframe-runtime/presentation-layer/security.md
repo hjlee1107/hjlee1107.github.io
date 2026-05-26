@@ -8,7 +8,7 @@ menu:
         name: Security
         weight: 6
         parent: "presentation-layer"
-        identifier: "security"
+        identifier: "/egovframe-runtime/presentation-layer/security/"
 ---
 # Security Service
 
@@ -31,4 +31,5 @@ Configuration과 에러메시지를 client-side, server-side 별로 따로 하�
 
 ## 참고자료
 
+- [Spring Framework 6.2 - Web on Servlet Stack](https://docs.spring.io/spring-framework/reference/6.2/web.html)
 

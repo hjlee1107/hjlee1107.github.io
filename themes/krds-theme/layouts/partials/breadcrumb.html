@@ -34,19 +34,22 @@
         {{- $partName := cond (and $page $page.Title) $page.Title $part -}} <!-- Title이 존재하면 사용, 없으면 $part -->
 
         {{ if $page}}
-          {{if ne $url $page.RelPermalink}}
+          {{/*  {{if ne $url $page.RelPermalink}}  */}} 
+          {{if ne $url $currentPath}}
             {{/* "{{ $currentPath | absURL }}" 이게 자꾸 baseURl을 무시해서, 아래처럼 수정*/}}
             <li><a href="{{ $.Site.BaseURL }}{{ $currentPath }}" class="txt">{{ $partName }}</a></li>
           {{ end }}
         {{ end }}
         
-        {{/*  <li>
+{{/*
+		<li>
           {{- if lt (add $index 1) (sub (len $urlParts) 1)  -}} <!-- 마지막 항목이 아니면 링크 생성 -->
             <a href="{{ $currentPath | absURL }}" class="txt">{{ $partName }}</a>
           {{- else -}} <!-- 마지막 항목은 링크 없이 텍스트로 표시 -->
             <span>{{ $name }}</span>
           {{- end -}}
-        </li>  */}}
+        </li>
+*/}}
       {{- end -}}
     {{- end -}}
   </ol>

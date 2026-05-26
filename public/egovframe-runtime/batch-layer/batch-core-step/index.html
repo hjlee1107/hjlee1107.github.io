@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="kr" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Step | 표준프레임워크 개발가이드</title>
@@ -12,7 +12,7 @@
 
 
 
-  <link rel="stylesheet" href="https://hjlee1107.github.io/css/custom.css" integrity="" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:1313/css/custom.css">
 
 
 
@@ -22,10 +22,7 @@
 
 
 
-  
-  
-    <script src="https://hjlee1107.github.io/js/custom.js" integrity="" crossorigin="anonymous" defer></script>
-  
+  <script src="http://localhost:1313/js/custom.js" defer></script>
 
 
 
@@ -50,9 +47,32 @@
     
     <div class="header-container">
         <div class="inner" style="padding-bottom:0">
+            <div class="header-utility">
+                <ul class="utility-list">
+                <li>
+                    <div class="krds-drop-wrap">
+                    <button type="button" class="krds-btn small text drop-btn">
+                        버전 <i class="svg-icon ico-toggle"></i>
+                    </button>
+                    <div class="drop-menu">
+                        <div class="drop-in">
+                        <ul class="drop-list">
+                            
+                             
+                                <li><a href="https://www.egovframe.go.kr/docs/5.0/" class="item-link" >5.0</a></li>
+                             
+                                <li><a href="https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:all_index" class="item-link" target="_blank">Archive</a></li>
+                             
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                </ul>
+            </div>
             <div class="header-branding">
                 <h2 class="logo">
-                    <a href="https://hjlee1107.github.io/"></a>
+                    <a href="http://localhost:1313/"></a>
                 </h2>
                 <div class="header-actions">
                     
@@ -62,7 +82,7 @@
     <ul class="gnb-menu">
       
       <li>
-          <a href="/egovframe-development/" class="gnb-main-trigger is-link ">개발환경</a>
+          <a href="/getting-started/" class="gnb-main-trigger is-link ">시작하기</a>
       </li>
       
       <li>
@@ -70,26 +90,20 @@
       </li>
       
       <li>
-          <a href="/runtime-example/" class="gnb-main-trigger is-link ">실행환경 예제</a>
-      </li>
-      
-      <li>
-          <a href="/common-component/" class="gnb-main-trigger is-link ">공통컴포넌트</a>
+          <a href="/egovframe-development/" class="gnb-main-trigger is-link ">개발환경</a>
       </li>
       
     </ul>
   </div>
 </nav>
-                    
                     <button type="button" class="btn-navi all" aria-controls="mobile-nav"></button>
-                    
                 </div>
             </div>
         </div>
     </div>
 </div>
     
-    
+
 <nav id="mobile-nav" class="krds-main-menu-mobile" style="display:none">
   <div class="gnb-wrap" style="width:80%">
     
@@ -102,13 +116,11 @@
       
       <div class="gnb-service-menu" style="flex-direction:column">
         
-          <a href="/egovframe-development/" class="link" style="width:auto; flex-direction:row; height:auto">개발환경</a>
+          <a href="/getting-started/" class="link" style="width:auto; flex-direction:row; height:auto">시작하기</a>
         
           <a href="/egovframe-runtime/" class="link" style="width:auto; flex-direction:row; height:auto">실행환경</a>
         
-          <a href="/runtime-example/" class="link" style="width:auto; flex-direction:row; height:auto">실행환경 예제</a>
-        
-          <a href="/common-component/" class="link" style="width:auto; flex-direction:row; height:auto">공통컴포넌트</a>
+          <a href="/egovframe-development/" class="link" style="width:auto; flex-direction:row; height:auto">개발환경</a>
         
       </div>
       
@@ -166,9 +178,12 @@
                     <a href="#mGnb-anchor7" class="gnb-main-trigger active ">배치처리</a>
                   </li>
               
+                  
+                  <li>
+                    <a href="#mGnb-anchor8" class="gnb-main-trigger ">AI 통합</a>
+                  </li>
+              
             </ul>
-            
-          
             
           
             
@@ -321,7 +336,7 @@
                           
                           
                           
-                          <li><a href="/egovframe-runtime/foundation-layer/server-security/server-security-simplifying-settings/" class="depth3-trigger" data-url="/egovframe-runtime/foundation-layer/server-security/server-security-simplifying-settings/">설정 간소화</a></li>
+                          <li><a href="/egovframe-runtime/foundation-layer/server-security/server-security-simplification/" class="depth3-trigger" data-url="/egovframe-runtime/foundation-layer/server-security/server-security-simplification/">설정 간소화</a></li>
                           
                           
                           
@@ -333,7 +348,7 @@
                     
                   
                     
-                    <li><a href="/egovframe-runtime/foundation-layer/session-based-access-control-permission-settings/"  id="sub-menu-Session 방식 접근제어-1" class="gnb-sub-trigger" data-url="/egovframe-runtime/foundation-layer/session-based-access-control-permission-settings/">Session 방식 접근제어</a></li>
+                    <li><a href="/egovframe-runtime/foundation-layer/session-simplification/"  id="sub-menu-Session 방식 접근제어-1" class="gnb-sub-trigger" data-url="/egovframe-runtime/foundation-layer/session-simplification/">Session 방식 접근제어</a></li>
                     
                   
                     
@@ -591,6 +606,10 @@
                           
                           
                           
+                          <li><a href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-annotation-based-controller/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-annotation-based-controller/">Annotation</a></li>
+                          
+                          
+                          
                           <li><a href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-validation/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-validation/">Validation</a></li>
                           
                           
@@ -662,7 +681,7 @@
                           
                           
                           
-                          <li><a href="/egovframe-runtime/presentation-layer/security/security-validationa-add-rules-in-common-validator/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/security/security-validationa-add-rules-in-common-validator/">Validation Rule</a></li>
+                          <li><a href="/egovframe-runtime/presentation-layer/security/security-validation-add-rules-in-common-validator/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/security/security-validation-add-rules-in-common-validator/">Validation Rule</a></li>
                           
                           
                         </ul>
@@ -700,14 +719,6 @@
                   
                     
                     <li><a href="/egovframe-runtime/presentation-layer/bootstrap/"  id="sub-menu-Bootstrap-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/presentation-layer/bootstrap/">Bootstrap</a></li>
-                    
-                  
-                    
-                    <li><a href="/egovframe-runtime/presentation-layer/uxui-controller-component/"  id="sub-menu-모바일 UX/UI-11" class="gnb-sub-trigger" data-url="/egovframe-runtime/presentation-layer/uxui-controller-component/">모바일 UX/UI</a></li>
-                    
-                  
-                    
-                    <li><a href="/egovframe-runtime/presentation-layer/html5-css3.0-javascript-module-app-framework-basic/"  id="sub-menu-JQuery Mobile-12" class="gnb-sub-trigger" data-url="/egovframe-runtime/presentation-layer/html5-css3.0-javascript-module-app-framework-basic/">JQuery Mobile</a></li>
                     
                   
                   </ul>
@@ -916,6 +927,10 @@
                           <li><a href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mapper_xml_files/" class="depth3-trigger" data-url="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mapper_xml_files/">Mapper XML Files</a></li>
                           
                           
+                          
+                          <li><a href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mybatis-dynamic-sql/" class="depth3-trigger" data-url="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mybatis-dynamic-sql/">Dynamic SQL</a></li>
+                          
+                          
                         </ul>
                       </div>
                     
@@ -1049,6 +1064,14 @@
                       </div>
                     
                   
+                    
+                    <li><a href="/egovframe-runtime/persistence-layer/sql-rule/"  id="sub-menu-SQL 작성 규칙-9" class="gnb-sub-trigger" data-url="/egovframe-runtime/persistence-layer/sql-rule/">SQL 작성 규칙</a></li>
+                    
+                  
+                    
+                    <li><a href="/egovframe-runtime/persistence-layer/sql-connection/"  id="sub-menu-DB 다중 접속 가이드-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/persistence-layer/sql-connection/">DB 다중 접속 가이드</a></li>
+                    
+                  
                   </ul>
               </div>
               
@@ -1154,15 +1177,19 @@
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/resource_variable/"  id="sub-menu-Resource Variable-5" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/resource_variable/">Resource Variable</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-whatsnew_5.2/"  id="sub-menu-Spring Batch 5.2 신규 기능-5" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-whatsnew_5.2/">Spring Batch 5.2 신규 기능</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_repository/"  id="sub-menu-JobRepository-6" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_repository/">JobRepository</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/resource_variable/"  id="sub-menu-Resource Variable-6" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/resource_variable/">Resource Variable</a></li>
                     
                   
                     
-                      <a href="/egovframe-runtime/batch-layer/batch-execution-job_launcher/" id="sub-menu-JobLauncher-7" class="gnb-sub-trigger has-depth3">JobLauncher</a>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_repository/"  id="sub-menu-JobRepository-7" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_repository/">JobRepository</a></li>
+                    
+                  
+                    
+                      <a href="/egovframe-runtime/batch-layer/batch-execution-job_launcher/" id="sub-menu-JobLauncher-8" class="gnb-sub-trigger has-depth3">JobLauncher</a>
 									    <div class="depth3-wrap ">
 										    <ul>
                           
@@ -1175,51 +1202,47 @@
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_runner/"  id="sub-menu-JobRunner-8" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_runner/">JobRunner</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_runner/"  id="sub-menu-JobRunner-9" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_runner/">JobRunner</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_registry/"  id="sub-menu-JobRegistry-9" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_registry/">JobRegistry</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_registry/"  id="sub-menu-JobRegistry-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_registry/">JobRegistry</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_explorer/"  id="sub-menu-JobExplorer-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_explorer/">JobExplorer</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_explorer/"  id="sub-menu-JobExplorer-11" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_explorer/">JobExplorer</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_operator/"  id="sub-menu-JobOperator-11" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_operator/">JobOperator</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_operator/"  id="sub-menu-JobOperator-12" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_operator/">JobOperator</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/"  id="sub-menu-Skip/Retry/Repeat-12" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/">Skip/Retry/Repeat</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/"  id="sub-menu-Skip/Retry/Repeat-13" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/">Skip/Retry/Repeat</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-multidata_process/"  id="sub-menu-MultiDataProcessing-13" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-multidata_process/">MultiDataProcessing</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-multidata_process/"  id="sub-menu-MultiDataProcessing-14" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-multidata_process/">MultiDataProcessing</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-history_management/"  id="sub-menu-History Management-14" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-history_management/">History Management</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-history_management/"  id="sub-menu-History Management-15" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-history_management/">History Management</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/"  id="sub-menu-동기/비동기 처리 예제-15" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/">동기/비동기 처리 예제</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/"  id="sub-menu-동기/비동기 처리 예제-16" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/">동기/비동기 처리 예제</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-listener/"  id="sub-menu-Listener-16" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-listener/">Listener</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-listener/"  id="sub-menu-Listener-17" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-listener/">Listener</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-parallel_process/"  id="sub-menu-병행처리-17" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-parallel_process/">병행처리</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-parallel_process/"  id="sub-menu-병행처리-18" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-parallel_process/">병행처리</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-code_base_exception/"  id="sub-menu-CodeBaseException-18" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-code_base_exception/">CodeBaseException</a></li>
-                    
-                  
-                    
-                    <li><a href="/egovframe-runtime/batch-layer/batch-centercut-intro/"  id="sub-menu-센터 컷(CenterCut)-19" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-centercut-intro/">센터 컷(CenterCut)</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-code_base_exception/"  id="sub-menu-CodeBaseException-19" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-code_base_exception/">CodeBaseException</a></li>
                     
                   
                     
@@ -1233,28 +1256,90 @@
                   </ul>
               </div>
               
-            
-          
+              <div class="gnb-sub-list" id="mGnb-anchor8">
+                <a href="/egovframe-runtime/ai-layer/" class="sub-title" data-url="/egovframe-runtime/ai-layer/">AI 통합</a>
+                  
+                  <ul>
+                  
+                    
+                    <li><a href="/egovframe-runtime/ai-layer/ai-intro/"  id="sub-menu-AI 개요-0" class="gnb-sub-trigger" data-url="/egovframe-runtime/ai-layer/ai-intro/">AI 개요</a></li>
+                    
+                  
+                    
+                    <li><a href="/egovframe-runtime/ai-layer/ai-rag-concepts/"  id="sub-menu-RAG 및 고급 개념-1" class="gnb-sub-trigger" data-url="/egovframe-runtime/ai-layer/ai-rag-concepts/">RAG 및 고급 개념</a></li>
+                    
+                  
+                    
+                      <a href="/egovframe-runtime/ai-layer/springai-layer/" id="sub-menu-Spring AI-2" class="gnb-sub-trigger has-depth3">Spring AI</a>
+									    <div class="depth3-wrap ">
+										    <ul>
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-core-apis/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-core-apis/">핵심 API</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-rag-architecture/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-rag-architecture/">RAG 아키텍처</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-etl-guide/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-etl-guide/">ETL Pipeline</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-advisor-guide/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-advisor-guide/">Advisor 패턴</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-project/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-project/">샘플 프로젝트</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-etl/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-etl/">ETL 구현</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-rag/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-rag/">RAG 구현</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-session/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-session/">세션 관리</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-setup-guide/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-setup-guide/">환경 설정</a></li>
+                          
+                          
+                        </ul>
+                      </div>
+                    
+                  
+                    
+                      <a href="/egovframe-runtime/ai-layer/langchain4j-layer/" id="sub-menu-LangChain4j-3" class="gnb-sub-trigger has-depth3">LangChain4j</a>
+									    <div class="depth3-wrap ">
+										    <ul>
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-project/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-project/">샘플 프로젝트</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-implementation/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-implementation/">핵심 구현</a></li>
+                          
+                          
+                        </ul>
+                      </div>
+                    
+                  
+                  </ul>
+              </div>
+              
             
           
             
           
         </div> 
       </div> 
-      
-      
-          
-          
-          
-
-          <div class="gnb-bottom">
-            <a href="https://github.com/eGovFramework/egovframe-docs/tree/contribution/egovframe-runtime/batch-layer/batch-core-step.md" class="krds-btn medium text">페이지보기 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/edit/contribution/egovframe-runtime/batch-layer/batch-core-step.md" class="krds-btn medium text">페이지편집 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/issues/new?title=Step" class="krds-btn medium text">문서에 이슈 생성 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/issues/new" class="krds-btn medium text">프로젝트에 이슈 생성 <i class="svg-icon ico-angle right"></i></a>
-            </div>
-        
-      
     </div>
     
     
@@ -1266,12 +1351,11 @@
     
   </div>
 </nav>
-    
   </header>
   <main id="wrap">
     
       <div id="container" class="krds-in-page-navigation-type">
-          <div class="inner in-between layout">
+          <div class="inner layout  in-between ">              
             
               
 <nav class="krds-side-navigation">
@@ -1459,7 +1543,7 @@
                                     </li>
                                   
                                       <li class="" role="none">
-                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/foundation-layer/server-security/server-security-simplifying-settings/">설정 간소화</a>
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/foundation-layer/server-security/server-security-simplification/">설정 간소화</a>
                                       
                                     </li>
                                   
@@ -1473,7 +1557,7 @@
                             
                             
                             <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/foundation-layer/session-based-access-control-permission-settings/" class="lnb-btn lnb-link" role="menuitem">Session 방식 접근제어</a>
+                              <a href="/egovframe-runtime/foundation-layer/session-simplification/" class="lnb-btn lnb-link" role="menuitem">Session 방식 접근제어</a>
                             </li>
                             
                             
@@ -1729,6 +1813,11 @@
                                     </li>
                                   
                                       <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-annotation-based-controller/">Annotation</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
                                       <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-validation/">Validation</a>
                                       
                                     </li>
@@ -1820,7 +1909,7 @@
                                     </li>
                                   
                                       <li class="" role="none">
-                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/security/security-validationa-add-rules-in-common-validator/">Validation Rule</a>
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/security/security-validation-add-rules-in-common-validator/">Validation Rule</a>
                                       
                                     </li>
                                   </ul>
@@ -1867,16 +1956,6 @@
                             
                             <li class="lnb-subitem">
                               <a href="/egovframe-runtime/presentation-layer/bootstrap/" class="lnb-btn lnb-link" role="menuitem">Bootstrap</a>
-                            </li>
-                            
-                            
-                            <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/presentation-layer/uxui-controller-component/" class="lnb-btn lnb-link" role="menuitem">모바일 UX/UI</a>
-                            </li>
-                            
-                            
-                            <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/presentation-layer/html5-css3.0-javascript-module-app-framework-basic/" class="lnb-btn lnb-link" role="menuitem">JQuery Mobile</a>
                             </li>
                             </ul>
                     </div>
@@ -2059,6 +2138,11 @@
                                       <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mapper_xml_files/">Mapper XML Files</a>
                                       
                                     </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mybatis-dynamic-sql/">Dynamic SQL</a>
+                                      
+                                    </li>
                                   </ul>
                               </div>
                             </li>
@@ -2227,6 +2311,16 @@
                                   </ul>
                               </div>
                             </li>
+                            
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/persistence-layer/sql-rule/" class="lnb-btn lnb-link" role="menuitem">SQL 작성 규칙</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/persistence-layer/sql-connection/" class="lnb-btn lnb-link" role="menuitem">DB 다중 접속 가이드</a>
+                            </li>
                             </ul>
                     </div>
                   
@@ -2359,6 +2453,11 @@
                             
                             
                             <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/batch-layer/batch-core-whatsnew_5.2/" class="lnb-btn lnb-link" role="menuitem">Spring Batch 5.2 신규 기능</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem">
                               <a href="/egovframe-runtime/batch-layer/resource_variable/" class="lnb-btn lnb-link" role="menuitem">Resource Variable</a>
                             </li>
                             
@@ -2441,11 +2540,6 @@
                             
                             
                             <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/batch-layer/batch-centercut-intro/" class="lnb-btn lnb-link" role="menuitem">센터 컷(CenterCut)</a>
-                            </li>
-                            
-                            
-                            <li class="lnb-subitem">
                               <a href="/egovframe-runtime/batch-layer/batch-core-event_notice_template_mgmt/" class="lnb-btn lnb-link" role="menuitem">이벤트알림 템플릿 관리</a>
                             </li>
                             
@@ -2455,9 +2549,104 @@
                             </li>
                             </ul>
                     </div>
+                  
+              
+              <li class="lnb-item" role="none">
+                    <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu8" aria-expanded="false" data-url="/egovframe-runtime/ai-layer/">AI 통합</button>
+                    <div class="lnb-submenu">
+                        <ul id="lnb-menu8" role="menu">
+                          
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/ai-layer/ai-intro/" class="lnb-btn lnb-link" role="menuitem">AI 개요</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/ai-layer/ai-rag-concepts/" class="lnb-btn lnb-link" role="menuitem">RAG 및 고급 개념</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem" role="none">
+                                <button type="button" class="lnb-btn lnb-toggle-popup" role="menuitem" aria-controls="lnbmenu-8" aria-expanded="false" aria-haspopup="true" data-url="/egovframe-runtime/ai-layer/springai-layer/">
+                                  Spring AI<span class="sr-only">열기</span>
+                                </button>
+                              <div class="lnb-submenu-lv2 " id="lnbmenu-8" role="menu">
+                                <button type="button" class="lnb-btn-tit"  data-url="/egovframe-runtime/ai-layer/">Spring AI</button>
+                                <ul>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-core-apis/">핵심 API</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-rag-architecture/">RAG 아키텍처</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-etl-guide/">ETL Pipeline</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-advisor-guide/">Advisor 패턴</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-project/">샘플 프로젝트</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-etl/">ETL 구현</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-rag/">RAG 구현</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-session/">세션 관리</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-setup-guide/">환경 설정</a>
+                                      
+                                    </li>
+                                  </ul>
+                              </div>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem" role="none">
+                                <button type="button" class="lnb-btn lnb-toggle-popup" role="menuitem" aria-controls="lnbmenu-8" aria-expanded="false" aria-haspopup="true" data-url="/egovframe-runtime/ai-layer/langchain4j-layer/">
+                                  LangChain4j<span class="sr-only">열기</span>
+                                </button>
+                              <div class="lnb-submenu-lv2 " id="lnbmenu-8" role="menu">
+                                <button type="button" class="lnb-btn-tit"  data-url="/egovframe-runtime/ai-layer/">LangChain4j</button>
+                                <ul>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-project/">샘플 프로젝트</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-implementation/">핵심 구현</a>
+                                      
+                                    </li>
+                                  </ul>
+                              </div>
+                            </li>
+                            </ul>
+                    </div>
                   </li>
-      </ul>
-    
       </ul>
     
       </ul>
@@ -2496,32 +2685,35 @@
   <ol class="breadcrumb">
     <li class="home">
       
-      <a href="https://hjlee1107.github.io/" class="txt">Home</a>
+      <a href="http://localhost:1313/" class="txt">Home</a>
     </li>
 
         
+           
           
             
-            <li><a href="https://hjlee1107.github.io//egovframe-runtime/" class="txt">실행환경</a></li>
+            <li><a href="http://localhost:1313//egovframe-runtime/" class="txt">실행환경</a></li>
           
-        
         
         
 
+
         
+           
           
             
-            <li><a href="https://hjlee1107.github.io//egovframe-runtime/batch-layer/" class="txt">배치처리</a></li>
+            <li><a href="http://localhost:1313//egovframe-runtime/batch-layer/" class="txt">배치처리</a></li>
           
-        
         
         
 
+
         
+           
           
         
         
-        </ol>
+</ol>
 </nav>
     <div class="conts-area">
         
@@ -2536,14 +2728,7 @@
 
     
     <div class="krds-in-page-navigation-area">
-      <nav class="in-page-navigation-action">
-        <ul>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/tree/contribution/egovframe-runtime/batch-layer/batch-core-step.md" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_page_view"></i> 페이지 보기</a></li>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/edit/contribution/egovframe-runtime/batch-layer/batch-core-step.md" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_page_edit"></i> 페이지 편집</a></li>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/issues/new?title=Step" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_issue"></i> 문서에 이슈 생성</a></li>
-            <li><a href="https://github.com/eGovFramework/egovframe-docs/issues/new" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_issue"></i> 프로젝트에 이슈 생성</a></li>
-            </ul>
-      </nav>
+      
       
   <div class="in-page-navigation-header">
     <p class="quick-caption">이 페이지의 구성</p>
@@ -2554,14 +2739,8 @@
     <nav class="in-page-navigation-list">
   <ul>
     <li><a href="#개요">개요</a></li>
-    <li><a href="#설명">설명</a>
-      <ul>
-        <li><a href="#step-유형">Step 유형</a></li>
-        <li><a href="#stepexecution">StepExecution</a></li>
-        <li><a href="#step-configuration">Step Configuration</a></li>
-      </ul>
-    </li>
-    <li><a href="#참고자료">참고자료</a></li>
+    <li><a href="#설명">설명</a></li>
+    <li><a href="#참고-문서">참고 문서</a></li>
   </ul>
 </nav>
 
@@ -2575,13 +2754,58 @@
             
                 
                     <h1 class="h-tit" id="step">Step</h1>
+<p>본 문서는 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+    
+
+
+
+<a class="krds-btn medium text" href="https://docs.spring.io/spring-batch/reference/5.2/step.html">Spring Batch 5.2 - Configuring a Step<i class="svg-icon ico-go"></i></a>
+
+
+ 및 
+
+
+
+ 
+
+
+     
+
+
+
+
+
+
+
+
+    
+
+
+
+<a class="krds-btn medium text" href="https://docs.spring.io/spring-batch/reference/5.2/domain.html#step">The Domain Language of Batch (Step)<i class="svg-icon ico-go"></i></a>
+
+
+와 정합성을 유지한다.</p>
 
                 
             
                 
                     <div class="conts-wrap section-link" id="section_01">
                         <h2 class="sec-tit" id="개요">개요</h2>
-<p>Step은 Job 내부에 구성되어 실제 배치작업 수행을 위해 작업을 정의하고 제어한다. 즉, Step에서는 입력 자원을 설정하고 어떤 방법으로 어떤 과정을 통해 처리할지 그리고 어떻게 출력 자원을 만들 것인지에 대한 모든 설정을 포함한다.</p>
+<p>Step은 Job 내부에 구성되어 실제 배치작업 수행을 위해 작업을 정의하고 제어한다. 즉, Step에서는 입력 자원을 설정하고 어떤 방법으로 어떤 과정을 통해 처리할지 그리고 어떻게 출력 자원을 만들 것인지에 대한 모든 설정을 포함한다. Spring Batch 5.2에서 Step은 <strong>배치 Job의 독립적·순차적 단계</strong>를 캡슐화하는 도메인 객체이며, 개발자가 원하는 만큼 단순하거나 복잡하게 구성할 수 있다. 단순한 Step은 파일에서 DB로 데이터를 적재하는 수준일 수 있고, 복잡한 Step은 비즈니스 규칙을 적용하는 처리 로직을 포함할 수 있다.</p>
 
                     </div>
                 
@@ -2641,32 +2865,7 @@ Tasklet은 RepeatStatus.FINISHED를 반환하거나 에러가 발생하기 전�
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">&lt;/bean&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/property&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
-</span></span></code></pre></div><h5 id="관련-예제">관련 예제</h5>
-<p>
-
-
-
- 
-
-
-
-
-
-
-
-
-
-    
-        
-    
-
-
-
-<a class="krds-btn medium text" href="/egovframe-runtime/batch-layer/batch-core-stepbatch-example-tasklet_mgmt">단순처리(Tasklet) 예제<i class="svg-icon ico-go"></i></a>
-
-
-</p>
-<h3 class="sec-tit" id="stepexecution">StepExecution</h3>
+</span></span></code></pre></div><h3 class="sec-tit" id="stepexecution">StepExecution</h3>
 <p>Job의 JobExecution과 대응되는 단위로 Step 또한 StepExecution을 갖고 있다.
 JobExecution과 마찬가지로 StepExecution은 Step을 수행하기 위한 단 한번의 Step 시도를 의미하며 매번 시도될 떄마다 생성된다.
 또한, StepExecution은 주로 Step이 실행 중에 어떤 일이 일어났는지에 대한 속성들을 저장하는 저장 메커니즘 역할을 하며 commit count, rollback count, start time, end time 등의 Step 상태정보를 저장한다. (
@@ -2735,12 +2934,28 @@ JobExecution과 마찬가지로 StepExecution은 Step을 수행하기 위한 단
 </table></div>
 <h3 class="sec-tit" id="step-configuration">Step Configuration</h3>
 <p>Step 구성은 개발자에 따라 간단하거나 아주 복잡하게 구성할 수 있다. 다만 구성을 쉽게하기 위해 스프링 배치 네임스페이스를 사용할 수 있다.</p>
-<h4 id="chunk-기반-step-필수-설정">Chunk 기반 Step 필수 설정</h4>
+<h4 id="java-설정chunk-기반-step">Java 설정(Chunk 기반 Step)</h4>
+<p>Chunk 기반 Step은 <code>StepBuilderFactory</code>(또는 <code>StepBuilder</code>)와 <code>chunk()</code>를 사용하여 정의한다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Configuration</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@EnableBatchProcessing</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BatchStepConfig</span> {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">@Bean</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> Step <span style="color:#a6e22e">step1</span>(JobRepository jobRepository, PlatformTransactionManager transactionManager) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> StepBuilder(<span style="color:#e6db74">&#34;step1&#34;</span>, jobRepository)
+</span></span><span style="display:flex;"><span>				.<span style="color:#f92672">&lt;</span>InputType, OutputType<span style="color:#f92672">&gt;</span>chunk(10, transactionManager)
+</span></span><span style="display:flex;"><span>				.<span style="color:#a6e22e">reader</span>(itemReader())
+</span></span><span style="display:flex;"><span>				.<span style="color:#a6e22e">writer</span>(itemWriter())
+</span></span><span style="display:flex;"><span>				.<span style="color:#a6e22e">build</span>();
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><code>ItemProcessor</code>가 있는 경우 <code>.processor(itemProcessor())</code>를 추가한다.</p>
+<h4 id="xml-설정chunk-기반-step-필수-요소">XML 설정(Chunk 기반 Step 필수 요소)</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;job</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;sampleJob&#34;</span> <span style="color:#a6e22e">job-repository=</span><span style="color:#e6db74">&#34;jobRepository&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;step</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;step1&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;tasklet</span> <span style="color:#a6e22e">transaction-manager=</span><span style="color:#e6db74">&#34;transactionManager&#34;</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;chunk</span> <span style="color:#a6e22e">reader=</span><span style="color:#e6db74">&#34;itemReader&#34;</span> <span style="color:#a6e22e">writer=</span><span style="color:#e6db74">&#34;itemWriter&#34;</span> <span style="color:#a6e22e">commit-interval=</span><span style="color:#e6db74">&#34;10&#34;</span><span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;tasklet&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;/tasklet&gt;</span>
 </span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/step&gt;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/job&gt;</span>
 </span></span></code></pre></div><ul>
@@ -2848,16 +3063,14 @@ JobExecution과 마찬가지로 StepExecution은 Step을 수행하기 위한 단
 
 
     
-        
-    
 
 
 
-<a class="krds-btn medium text" href="/egovframe-runtime/batch-layer/batch-core-stepbatch-core-skip-repeat-retry">Retry 설정 자세히 보기<i class="svg-icon ico-go"></i></a>
+<a class="krds-btn medium text" href="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/">Retry 설정 자세히 보기<i class="svg-icon ico-go"></i></a>
 
 
 </p>
-<h4 id="step-흐름제어">Step 흐름제어</h4>
+<h4 id="step-흐름-제어">Step 흐름 제어</h4>
 <p>
 
 
@@ -2876,12 +3089,12 @@ JobExecution과 마찬가지로 StepExecution은 Step을 수행하기 위한 단
 
 
 
-<a class="krds-btn medium text" href="/egovframe-runtime/batch-layer/batch-core-flow_control/">Step 흐름제어(Flow Control) 자세히 보기<i class="svg-icon ico-go"></i></a>
+<a class="krds-btn medium text" href="/egovframe-runtime/batch-layer/batch-core-flow_control/">Step 흐름 제어(Flow Control) 자세히 보기<i class="svg-icon ico-go"></i></a>
 
 
 </p>
-<h4 id="step-흐름제어-1">Step 흐름제어</h4>
-<p>변수 선언 후 Listeners를 통해서 모든 Setp에서 사용자 정의 변수를 사용할 수 있도록 EgovStepVariableListener를 통해서 지원한다.</p>
+<h4 id="step-variable">Step Variable</h4>
+<p>변수 선언 후 Listeners를 통해서 모든 Step에서 사용자 정의 변수를 사용할 수 있도록 EgovStepVariableListener를 통해서 지원한다.</p>
 <p>
 
 
@@ -2910,7 +3123,7 @@ JobExecution과 마찬가지로 StepExecution은 Step을 수행하기 위한 단
             
                 
                     <div class="conts-wrap section-link" id="section_03">
-                        <h2 class="sec-tit" id="참고자료">참고자료</h2>
+                        <h2 class="sec-tit" id="참고-문서">참고 문서</h2>
 <ul>
 <li>
 
@@ -2932,7 +3145,7 @@ JobExecution과 마찬가지로 StepExecution은 Step을 수행하기 위한 단
 
 
 
-<a class="krds-btn medium text" href="http://static.springsource.org/spring-batch/reference/html/domain.html#domainStep">http://static.springsource.org/spring-batch/reference/html/domain.html#domainStep<i class="svg-icon ico-go"></i></a>
+<a class="krds-btn medium text" href="https://docs.spring.io/spring-batch/reference/5.2/domain.html#step">Spring Batch 5.2 - The Domain Language of Batch (Step)<i class="svg-icon ico-go"></i></a>
 
 
 </li>
@@ -2954,7 +3167,31 @@ JobExecution과 마찬가지로 StepExecution은 Step을 수행하기 위한 단
 
 
 
-<a class="krds-btn medium text" href="http://static.springsource.org/spring-batch/reference/html/configureStep.html">http://static.springsource.org/spring-batch/reference/html/configureStep.html<i class="svg-icon ico-go"></i></a>
+<a class="krds-btn medium text" href="https://docs.spring.io/spring-batch/reference/5.2/step.html">Spring Batch 5.2 - Configuring a Step<i class="svg-icon ico-go"></i></a>
+
+
+</li>
+<li>
+
+
+
+ 
+
+
+     
+
+
+
+
+
+
+
+
+    
+
+
+
+<a class="krds-btn medium text" href="https://docs.spring.io/spring-batch/reference/5.2/step.html#section-summary">Step - Late Binding, Flow Control, TaskletStep, Chunk-oriented Processing<i class="svg-icon ico-go"></i></a>
 
 
 </li>

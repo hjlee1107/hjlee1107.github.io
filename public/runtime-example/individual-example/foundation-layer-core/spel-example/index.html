@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="kr" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>SpEL 예제(Spring Expression Language Example) | 표준프레임워크 개발가이드</title>
@@ -12,7 +12,7 @@
 
 
 
-  <link rel="stylesheet" href="https://hjlee1107.github.io/css/custom.css" integrity="" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:1313/css/custom.css">
 
 
 
@@ -22,10 +22,7 @@
 
 
 
-  
-  
-    <script src="https://hjlee1107.github.io/js/custom.js" integrity="" crossorigin="anonymous" defer></script>
-  
+  <script src="http://localhost:1313/js/custom.js" defer></script>
 
 
 
@@ -50,9 +47,32 @@
     
     <div class="header-container">
         <div class="inner" style="padding-bottom:0">
+            <div class="header-utility">
+                <ul class="utility-list">
+                <li>
+                    <div class="krds-drop-wrap">
+                    <button type="button" class="krds-btn small text drop-btn">
+                        버전 <i class="svg-icon ico-toggle"></i>
+                    </button>
+                    <div class="drop-menu">
+                        <div class="drop-in">
+                        <ul class="drop-list">
+                            
+                             
+                                <li><a href="https://www.egovframe.go.kr/docs/5.0/" class="item-link" >5.0</a></li>
+                             
+                                <li><a href="https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:all_index" class="item-link" target="_blank">Archive</a></li>
+                             
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                </ul>
+            </div>
             <div class="header-branding">
                 <h2 class="logo">
-                    <a href="https://hjlee1107.github.io/"></a>
+                    <a href="http://localhost:1313/"></a>
                 </h2>
                 <div class="header-actions">
                     
@@ -62,7 +82,7 @@
     <ul class="gnb-menu">
       
       <li>
-          <a href="/egovframe-development/" class="gnb-main-trigger is-link ">개발환경</a>
+          <a href="/getting-started/" class="gnb-main-trigger is-link ">시작하기</a>
       </li>
       
       <li>
@@ -70,26 +90,28 @@
       </li>
       
       <li>
+          <a href="/egovframe-development/" class="gnb-main-trigger is-link ">개발환경</a>
+      </li>
+      
+      <li>
           <a href="/runtime-example/" class="gnb-main-trigger is-link active">실행환경 예제</a>
       </li>
       
       <li>
-          <a href="/common-component/" class="gnb-main-trigger is-link ">공통컴포넌트</a>
+          <a href="/common-component/" class="gnb-main-trigger is-link ">공통컴포넌트(예정)</a>
       </li>
       
     </ul>
   </div>
 </nav>
-                    
                     <button type="button" class="btn-navi all" aria-controls="mobile-nav"></button>
-                    
                 </div>
             </div>
         </div>
     </div>
 </div>
     
-    
+
 <nav id="mobile-nav" class="krds-main-menu-mobile" style="display:none">
   <div class="gnb-wrap" style="width:80%">
     
@@ -102,13 +124,15 @@
       
       <div class="gnb-service-menu" style="flex-direction:column">
         
-          <a href="/egovframe-development/" class="link" style="width:auto; flex-direction:row; height:auto">개발환경</a>
+          <a href="/getting-started/" class="link" style="width:auto; flex-direction:row; height:auto">시작하기</a>
         
           <a href="/egovframe-runtime/" class="link" style="width:auto; flex-direction:row; height:auto">실행환경</a>
         
+          <a href="/egovframe-development/" class="link" style="width:auto; flex-direction:row; height:auto">개발환경</a>
+        
           <a href="/runtime-example/" class="link" style="width:auto; flex-direction:row; height:auto">실행환경 예제</a>
         
-          <a href="/common-component/" class="link" style="width:auto; flex-direction:row; height:auto">공통컴포넌트</a>
+          <a href="/common-component/" class="link" style="width:auto; flex-direction:row; height:auto">공통컴포넌트(예정)</a>
         
       </div>
       
@@ -120,6 +144,8 @@
       
       <div class="gnb-menu">
         <div class="menu-wrap">
+          
+            
           
             
           
@@ -145,6 +171,8 @@
           
         </div>
         <div class="submenu-wrap">
+          
+            
           
             
           
@@ -409,20 +437,6 @@
           
         </div> 
       </div> 
-      
-      
-          
-          
-          
-
-          <div class="gnb-bottom">
-            <a href="https://github.com/eGovFramework/egovframe-docs/tree/contribution/runtime-example/individual-example/foundation-layer-core/spel-example.md" class="krds-btn medium text">페이지보기 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/edit/contribution/runtime-example/individual-example/foundation-layer-core/spel-example.md" class="krds-btn medium text">페이지편집 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/issues/new?title=SpEL%20%ec%98%88%ec%a0%9c%28Spring%20Expression%20Language%20Example%29" class="krds-btn medium text">문서에 이슈 생성 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/issues/new" class="krds-btn medium text">프로젝트에 이슈 생성 <i class="svg-icon ico-angle right"></i></a>
-            </div>
-        
-      
     </div>
     
     
@@ -434,16 +448,17 @@
     
   </div>
 </nav>
-    
   </header>
   <main id="wrap">
     
       <div id="container" class="krds-in-page-navigation-type">
-          <div class="inner in-between layout">
+          <div class="inner layout  in-between ">              
             
               
 <nav class="krds-side-navigation">
       
+      </ul>
+    
       </ul>
     
       </ul>
@@ -780,41 +795,45 @@
   <ol class="breadcrumb">
     <li class="home">
       
-      <a href="https://hjlee1107.github.io/" class="txt">Home</a>
+      <a href="http://localhost:1313/" class="txt">Home</a>
     </li>
 
         
+           
           
             
-            <li><a href="https://hjlee1107.github.io//runtime-example/" class="txt">실행환경 예제</a></li>
+            <li><a href="http://localhost:1313//runtime-example/" class="txt">실행환경 예제</a></li>
           
-        
         
         
 
+
         
+           
           
             
-            <li><a href="https://hjlee1107.github.io//runtime-example/individual-example/" class="txt">실행환경 개별 예제</a></li>
+            <li><a href="http://localhost:1313//runtime-example/individual-example/" class="txt">실행환경 개별 예제</a></li>
           
-        
         
         
 
+
         
+           
           
             
-            <li><a href="https://hjlee1107.github.io//runtime-example/individual-example/foundation-layer-core/" class="txt">공통기반 핵심 예제</a></li>
+            <li><a href="http://localhost:1313//runtime-example/individual-example/foundation-layer-core/" class="txt">공통기반 핵심 예제</a></li>
           
-        
         
         
 
+
         
+           
           
         
         
-        </ol>
+</ol>
 </nav>
     <div class="conts-area">
         
@@ -829,14 +848,7 @@
 
     
     <div class="krds-in-page-navigation-area">
-      <nav class="in-page-navigation-action">
-        <ul>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/tree/contribution/runtime-example/individual-example/foundation-layer-core/spel-example.md" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_page_view"></i> 페이지 보기</a></li>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/edit/contribution/runtime-example/individual-example/foundation-layer-core/spel-example.md" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_page_edit"></i> 페이지 편집</a></li>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/issues/new?title=SpEL%20%ec%98%88%ec%a0%9c%28Spring%20Expression%20Language%20Example%29" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_issue"></i> 문서에 이슈 생성</a></li>
-            <li><a href="https://github.com/eGovFramework/egovframe-docs/issues/new" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_issue"></i> 프로젝트에 이슈 생성</a></li>
-            </ul>
-      </nav>
+      
       
   <div class="in-page-navigation-header">
     <p class="quick-caption">이 페이지의 구성</p>

@@ -37,7 +37,7 @@
     {{ $issuesURL := printf "%s/issues/new?title=%s" $gh_repo (safeURL $.Title ) -}}
 
     <div class="krds-in-page-navigation-area">
-      <nav class="in-page-navigation-action">
+      {{/*  <nav class="in-page-navigation-action">
         <ul>
           <li><a href="{{ $viewURL }}" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_page_view"></i> 페이지 보기</a></li>
           <li><a href="{{ $editURL }}" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_page_edit"></i> 페이지 편집</a></li>
@@ -47,7 +47,7 @@
               <li><a href="{{ $project_issueURL }}" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_issue"></i> 프로젝트에 이슈 생성</a></li>
             {{ end -}}
         </ul>
-      </nav>
+      </nav>  */}}
       {{ partial "toc.html" . }}
     </div>
 {{/*  </div>  */}}

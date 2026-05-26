@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="kr" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>ItemWriter | 표준프레임워크 개발가이드</title>
@@ -12,7 +12,7 @@
 
 
 
-  <link rel="stylesheet" href="https://hjlee1107.github.io/css/custom.css" integrity="" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:1313/css/custom.css">
 
 
 
@@ -22,10 +22,7 @@
 
 
 
-  
-  
-    <script src="https://hjlee1107.github.io/js/custom.js" integrity="" crossorigin="anonymous" defer></script>
-  
+  <script src="http://localhost:1313/js/custom.js" defer></script>
 
 
 
@@ -50,9 +47,32 @@
     
     <div class="header-container">
         <div class="inner" style="padding-bottom:0">
+            <div class="header-utility">
+                <ul class="utility-list">
+                <li>
+                    <div class="krds-drop-wrap">
+                    <button type="button" class="krds-btn small text drop-btn">
+                        버전 <i class="svg-icon ico-toggle"></i>
+                    </button>
+                    <div class="drop-menu">
+                        <div class="drop-in">
+                        <ul class="drop-list">
+                            
+                             
+                                <li><a href="https://www.egovframe.go.kr/docs/5.0/" class="item-link" >5.0</a></li>
+                             
+                                <li><a href="https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:all_index" class="item-link" target="_blank">Archive</a></li>
+                             
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                </ul>
+            </div>
             <div class="header-branding">
                 <h2 class="logo">
-                    <a href="https://hjlee1107.github.io/"></a>
+                    <a href="http://localhost:1313/"></a>
                 </h2>
                 <div class="header-actions">
                     
@@ -62,7 +82,7 @@
     <ul class="gnb-menu">
       
       <li>
-          <a href="/egovframe-development/" class="gnb-main-trigger is-link ">개발환경</a>
+          <a href="/getting-started/" class="gnb-main-trigger is-link ">시작하기</a>
       </li>
       
       <li>
@@ -70,26 +90,20 @@
       </li>
       
       <li>
-          <a href="/runtime-example/" class="gnb-main-trigger is-link ">실행환경 예제</a>
-      </li>
-      
-      <li>
-          <a href="/common-component/" class="gnb-main-trigger is-link ">공통컴포넌트</a>
+          <a href="/egovframe-development/" class="gnb-main-trigger is-link ">개발환경</a>
       </li>
       
     </ul>
   </div>
 </nav>
-                    
                     <button type="button" class="btn-navi all" aria-controls="mobile-nav"></button>
-                    
                 </div>
             </div>
         </div>
     </div>
 </div>
     
-    
+
 <nav id="mobile-nav" class="krds-main-menu-mobile" style="display:none">
   <div class="gnb-wrap" style="width:80%">
     
@@ -102,13 +116,11 @@
       
       <div class="gnb-service-menu" style="flex-direction:column">
         
-          <a href="/egovframe-development/" class="link" style="width:auto; flex-direction:row; height:auto">개발환경</a>
+          <a href="/getting-started/" class="link" style="width:auto; flex-direction:row; height:auto">시작하기</a>
         
           <a href="/egovframe-runtime/" class="link" style="width:auto; flex-direction:row; height:auto">실행환경</a>
         
-          <a href="/runtime-example/" class="link" style="width:auto; flex-direction:row; height:auto">실행환경 예제</a>
-        
-          <a href="/common-component/" class="link" style="width:auto; flex-direction:row; height:auto">공통컴포넌트</a>
+          <a href="/egovframe-development/" class="link" style="width:auto; flex-direction:row; height:auto">개발환경</a>
         
       </div>
       
@@ -166,9 +178,12 @@
                     <a href="#mGnb-anchor7" class="gnb-main-trigger active ">배치처리</a>
                   </li>
               
+                  
+                  <li>
+                    <a href="#mGnb-anchor8" class="gnb-main-trigger ">AI 통합</a>
+                  </li>
+              
             </ul>
-            
-          
             
           
             
@@ -321,7 +336,7 @@
                           
                           
                           
-                          <li><a href="/egovframe-runtime/foundation-layer/server-security/server-security-simplifying-settings/" class="depth3-trigger" data-url="/egovframe-runtime/foundation-layer/server-security/server-security-simplifying-settings/">설정 간소화</a></li>
+                          <li><a href="/egovframe-runtime/foundation-layer/server-security/server-security-simplification/" class="depth3-trigger" data-url="/egovframe-runtime/foundation-layer/server-security/server-security-simplification/">설정 간소화</a></li>
                           
                           
                           
@@ -333,7 +348,7 @@
                     
                   
                     
-                    <li><a href="/egovframe-runtime/foundation-layer/session-based-access-control-permission-settings/"  id="sub-menu-Session 방식 접근제어-1" class="gnb-sub-trigger" data-url="/egovframe-runtime/foundation-layer/session-based-access-control-permission-settings/">Session 방식 접근제어</a></li>
+                    <li><a href="/egovframe-runtime/foundation-layer/session-simplification/"  id="sub-menu-Session 방식 접근제어-1" class="gnb-sub-trigger" data-url="/egovframe-runtime/foundation-layer/session-simplification/">Session 방식 접근제어</a></li>
                     
                   
                     
@@ -591,6 +606,10 @@
                           
                           
                           
+                          <li><a href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-annotation-based-controller/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-annotation-based-controller/">Annotation</a></li>
+                          
+                          
+                          
                           <li><a href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-validation/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-validation/">Validation</a></li>
                           
                           
@@ -662,7 +681,7 @@
                           
                           
                           
-                          <li><a href="/egovframe-runtime/presentation-layer/security/security-validationa-add-rules-in-common-validator/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/security/security-validationa-add-rules-in-common-validator/">Validation Rule</a></li>
+                          <li><a href="/egovframe-runtime/presentation-layer/security/security-validation-add-rules-in-common-validator/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/security/security-validation-add-rules-in-common-validator/">Validation Rule</a></li>
                           
                           
                         </ul>
@@ -700,14 +719,6 @@
                   
                     
                     <li><a href="/egovframe-runtime/presentation-layer/bootstrap/"  id="sub-menu-Bootstrap-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/presentation-layer/bootstrap/">Bootstrap</a></li>
-                    
-                  
-                    
-                    <li><a href="/egovframe-runtime/presentation-layer/uxui-controller-component/"  id="sub-menu-모바일 UX/UI-11" class="gnb-sub-trigger" data-url="/egovframe-runtime/presentation-layer/uxui-controller-component/">모바일 UX/UI</a></li>
-                    
-                  
-                    
-                    <li><a href="/egovframe-runtime/presentation-layer/html5-css3.0-javascript-module-app-framework-basic/"  id="sub-menu-JQuery Mobile-12" class="gnb-sub-trigger" data-url="/egovframe-runtime/presentation-layer/html5-css3.0-javascript-module-app-framework-basic/">JQuery Mobile</a></li>
                     
                   
                   </ul>
@@ -916,6 +927,10 @@
                           <li><a href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mapper_xml_files/" class="depth3-trigger" data-url="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mapper_xml_files/">Mapper XML Files</a></li>
                           
                           
+                          
+                          <li><a href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mybatis-dynamic-sql/" class="depth3-trigger" data-url="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mybatis-dynamic-sql/">Dynamic SQL</a></li>
+                          
+                          
                         </ul>
                       </div>
                     
@@ -1049,6 +1064,14 @@
                       </div>
                     
                   
+                    
+                    <li><a href="/egovframe-runtime/persistence-layer/sql-rule/"  id="sub-menu-SQL 작성 규칙-9" class="gnb-sub-trigger" data-url="/egovframe-runtime/persistence-layer/sql-rule/">SQL 작성 규칙</a></li>
+                    
+                  
+                    
+                    <li><a href="/egovframe-runtime/persistence-layer/sql-connection/"  id="sub-menu-DB 다중 접속 가이드-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/persistence-layer/sql-connection/">DB 다중 접속 가이드</a></li>
+                    
+                  
                   </ul>
               </div>
               
@@ -1154,15 +1177,19 @@
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/resource_variable/"  id="sub-menu-Resource Variable-5" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/resource_variable/">Resource Variable</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-whatsnew_5.2/"  id="sub-menu-Spring Batch 5.2 신규 기능-5" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-whatsnew_5.2/">Spring Batch 5.2 신규 기능</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_repository/"  id="sub-menu-JobRepository-6" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_repository/">JobRepository</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/resource_variable/"  id="sub-menu-Resource Variable-6" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/resource_variable/">Resource Variable</a></li>
                     
                   
                     
-                      <a href="/egovframe-runtime/batch-layer/batch-execution-job_launcher/" id="sub-menu-JobLauncher-7" class="gnb-sub-trigger has-depth3">JobLauncher</a>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_repository/"  id="sub-menu-JobRepository-7" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_repository/">JobRepository</a></li>
+                    
+                  
+                    
+                      <a href="/egovframe-runtime/batch-layer/batch-execution-job_launcher/" id="sub-menu-JobLauncher-8" class="gnb-sub-trigger has-depth3">JobLauncher</a>
 									    <div class="depth3-wrap ">
 										    <ul>
                           
@@ -1175,51 +1202,47 @@
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_runner/"  id="sub-menu-JobRunner-8" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_runner/">JobRunner</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_runner/"  id="sub-menu-JobRunner-9" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_runner/">JobRunner</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_registry/"  id="sub-menu-JobRegistry-9" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_registry/">JobRegistry</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_registry/"  id="sub-menu-JobRegistry-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_registry/">JobRegistry</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_explorer/"  id="sub-menu-JobExplorer-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_explorer/">JobExplorer</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_explorer/"  id="sub-menu-JobExplorer-11" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_explorer/">JobExplorer</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_operator/"  id="sub-menu-JobOperator-11" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_operator/">JobOperator</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_operator/"  id="sub-menu-JobOperator-12" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_operator/">JobOperator</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/"  id="sub-menu-Skip/Retry/Repeat-12" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/">Skip/Retry/Repeat</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/"  id="sub-menu-Skip/Retry/Repeat-13" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/">Skip/Retry/Repeat</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-multidata_process/"  id="sub-menu-MultiDataProcessing-13" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-multidata_process/">MultiDataProcessing</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-multidata_process/"  id="sub-menu-MultiDataProcessing-14" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-multidata_process/">MultiDataProcessing</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-history_management/"  id="sub-menu-History Management-14" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-history_management/">History Management</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-history_management/"  id="sub-menu-History Management-15" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-history_management/">History Management</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/"  id="sub-menu-동기/비동기 처리 예제-15" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/">동기/비동기 처리 예제</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/"  id="sub-menu-동기/비동기 처리 예제-16" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/">동기/비동기 처리 예제</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-listener/"  id="sub-menu-Listener-16" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-listener/">Listener</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-listener/"  id="sub-menu-Listener-17" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-listener/">Listener</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-parallel_process/"  id="sub-menu-병행처리-17" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-parallel_process/">병행처리</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-parallel_process/"  id="sub-menu-병행처리-18" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-parallel_process/">병행처리</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-code_base_exception/"  id="sub-menu-CodeBaseException-18" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-code_base_exception/">CodeBaseException</a></li>
-                    
-                  
-                    
-                    <li><a href="/egovframe-runtime/batch-layer/batch-centercut-intro/"  id="sub-menu-센터 컷(CenterCut)-19" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-centercut-intro/">센터 컷(CenterCut)</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-code_base_exception/"  id="sub-menu-CodeBaseException-19" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-code_base_exception/">CodeBaseException</a></li>
                     
                   
                     
@@ -1233,28 +1256,90 @@
                   </ul>
               </div>
               
-            
-          
+              <div class="gnb-sub-list" id="mGnb-anchor8">
+                <a href="/egovframe-runtime/ai-layer/" class="sub-title" data-url="/egovframe-runtime/ai-layer/">AI 통합</a>
+                  
+                  <ul>
+                  
+                    
+                    <li><a href="/egovframe-runtime/ai-layer/ai-intro/"  id="sub-menu-AI 개요-0" class="gnb-sub-trigger" data-url="/egovframe-runtime/ai-layer/ai-intro/">AI 개요</a></li>
+                    
+                  
+                    
+                    <li><a href="/egovframe-runtime/ai-layer/ai-rag-concepts/"  id="sub-menu-RAG 및 고급 개념-1" class="gnb-sub-trigger" data-url="/egovframe-runtime/ai-layer/ai-rag-concepts/">RAG 및 고급 개념</a></li>
+                    
+                  
+                    
+                      <a href="/egovframe-runtime/ai-layer/springai-layer/" id="sub-menu-Spring AI-2" class="gnb-sub-trigger has-depth3">Spring AI</a>
+									    <div class="depth3-wrap ">
+										    <ul>
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-core-apis/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-core-apis/">핵심 API</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-rag-architecture/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-rag-architecture/">RAG 아키텍처</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-etl-guide/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-etl-guide/">ETL Pipeline</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-advisor-guide/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-advisor-guide/">Advisor 패턴</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-project/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-project/">샘플 프로젝트</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-etl/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-etl/">ETL 구현</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-rag/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-rag/">RAG 구현</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-session/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-session/">세션 관리</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-setup-guide/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-setup-guide/">환경 설정</a></li>
+                          
+                          
+                        </ul>
+                      </div>
+                    
+                  
+                    
+                      <a href="/egovframe-runtime/ai-layer/langchain4j-layer/" id="sub-menu-LangChain4j-3" class="gnb-sub-trigger has-depth3">LangChain4j</a>
+									    <div class="depth3-wrap ">
+										    <ul>
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-project/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-project/">샘플 프로젝트</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-implementation/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-implementation/">핵심 구현</a></li>
+                          
+                          
+                        </ul>
+                      </div>
+                    
+                  
+                  </ul>
+              </div>
+              
             
           
             
           
         </div> 
       </div> 
-      
-      
-          
-          
-          
-
-          <div class="gnb-bottom">
-            <a href="https://github.com/eGovFramework/egovframe-docs/tree/contribution/egovframe-runtime/batch-layer/batch-core-item_writer.md" class="krds-btn medium text">페이지보기 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/edit/contribution/egovframe-runtime/batch-layer/batch-core-item_writer.md" class="krds-btn medium text">페이지편집 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/issues/new?title=ItemWriter" class="krds-btn medium text">문서에 이슈 생성 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/issues/new" class="krds-btn medium text">프로젝트에 이슈 생성 <i class="svg-icon ico-angle right"></i></a>
-            </div>
-        
-      
     </div>
     
     
@@ -1266,12 +1351,11 @@
     
   </div>
 </nav>
-    
   </header>
   <main id="wrap">
     
       <div id="container" class="krds-in-page-navigation-type">
-          <div class="inner in-between layout">
+          <div class="inner layout  in-between ">              
             
               
 <nav class="krds-side-navigation">
@@ -1459,7 +1543,7 @@
                                     </li>
                                   
                                       <li class="" role="none">
-                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/foundation-layer/server-security/server-security-simplifying-settings/">설정 간소화</a>
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/foundation-layer/server-security/server-security-simplification/">설정 간소화</a>
                                       
                                     </li>
                                   
@@ -1473,7 +1557,7 @@
                             
                             
                             <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/foundation-layer/session-based-access-control-permission-settings/" class="lnb-btn lnb-link" role="menuitem">Session 방식 접근제어</a>
+                              <a href="/egovframe-runtime/foundation-layer/session-simplification/" class="lnb-btn lnb-link" role="menuitem">Session 방식 접근제어</a>
                             </li>
                             
                             
@@ -1729,6 +1813,11 @@
                                     </li>
                                   
                                       <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-annotation-based-controller/">Annotation</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
                                       <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-validation/">Validation</a>
                                       
                                     </li>
@@ -1820,7 +1909,7 @@
                                     </li>
                                   
                                       <li class="" role="none">
-                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/security/security-validationa-add-rules-in-common-validator/">Validation Rule</a>
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/security/security-validation-add-rules-in-common-validator/">Validation Rule</a>
                                       
                                     </li>
                                   </ul>
@@ -1867,16 +1956,6 @@
                             
                             <li class="lnb-subitem">
                               <a href="/egovframe-runtime/presentation-layer/bootstrap/" class="lnb-btn lnb-link" role="menuitem">Bootstrap</a>
-                            </li>
-                            
-                            
-                            <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/presentation-layer/uxui-controller-component/" class="lnb-btn lnb-link" role="menuitem">모바일 UX/UI</a>
-                            </li>
-                            
-                            
-                            <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/presentation-layer/html5-css3.0-javascript-module-app-framework-basic/" class="lnb-btn lnb-link" role="menuitem">JQuery Mobile</a>
                             </li>
                             </ul>
                     </div>
@@ -2059,6 +2138,11 @@
                                       <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mapper_xml_files/">Mapper XML Files</a>
                                       
                                     </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mybatis-dynamic-sql/">Dynamic SQL</a>
+                                      
+                                    </li>
                                   </ul>
                               </div>
                             </li>
@@ -2227,6 +2311,16 @@
                                   </ul>
                               </div>
                             </li>
+                            
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/persistence-layer/sql-rule/" class="lnb-btn lnb-link" role="menuitem">SQL 작성 규칙</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/persistence-layer/sql-connection/" class="lnb-btn lnb-link" role="menuitem">DB 다중 접속 가이드</a>
+                            </li>
                             </ul>
                     </div>
                   
@@ -2359,6 +2453,11 @@
                             
                             
                             <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/batch-layer/batch-core-whatsnew_5.2/" class="lnb-btn lnb-link" role="menuitem">Spring Batch 5.2 신규 기능</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem">
                               <a href="/egovframe-runtime/batch-layer/resource_variable/" class="lnb-btn lnb-link" role="menuitem">Resource Variable</a>
                             </li>
                             
@@ -2441,11 +2540,6 @@
                             
                             
                             <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/batch-layer/batch-centercut-intro/" class="lnb-btn lnb-link" role="menuitem">센터 컷(CenterCut)</a>
-                            </li>
-                            
-                            
-                            <li class="lnb-subitem">
                               <a href="/egovframe-runtime/batch-layer/batch-core-event_notice_template_mgmt/" class="lnb-btn lnb-link" role="menuitem">이벤트알림 템플릿 관리</a>
                             </li>
                             
@@ -2455,9 +2549,104 @@
                             </li>
                             </ul>
                     </div>
+                  
+              
+              <li class="lnb-item" role="none">
+                    <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu8" aria-expanded="false" data-url="/egovframe-runtime/ai-layer/">AI 통합</button>
+                    <div class="lnb-submenu">
+                        <ul id="lnb-menu8" role="menu">
+                          
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/ai-layer/ai-intro/" class="lnb-btn lnb-link" role="menuitem">AI 개요</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/ai-layer/ai-rag-concepts/" class="lnb-btn lnb-link" role="menuitem">RAG 및 고급 개념</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem" role="none">
+                                <button type="button" class="lnb-btn lnb-toggle-popup" role="menuitem" aria-controls="lnbmenu-8" aria-expanded="false" aria-haspopup="true" data-url="/egovframe-runtime/ai-layer/springai-layer/">
+                                  Spring AI<span class="sr-only">열기</span>
+                                </button>
+                              <div class="lnb-submenu-lv2 " id="lnbmenu-8" role="menu">
+                                <button type="button" class="lnb-btn-tit"  data-url="/egovframe-runtime/ai-layer/">Spring AI</button>
+                                <ul>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-core-apis/">핵심 API</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-rag-architecture/">RAG 아키텍처</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-etl-guide/">ETL Pipeline</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-advisor-guide/">Advisor 패턴</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-project/">샘플 프로젝트</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-etl/">ETL 구현</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-rag/">RAG 구현</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-session/">세션 관리</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-setup-guide/">환경 설정</a>
+                                      
+                                    </li>
+                                  </ul>
+                              </div>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem" role="none">
+                                <button type="button" class="lnb-btn lnb-toggle-popup" role="menuitem" aria-controls="lnbmenu-8" aria-expanded="false" aria-haspopup="true" data-url="/egovframe-runtime/ai-layer/langchain4j-layer/">
+                                  LangChain4j<span class="sr-only">열기</span>
+                                </button>
+                              <div class="lnb-submenu-lv2 " id="lnbmenu-8" role="menu">
+                                <button type="button" class="lnb-btn-tit"  data-url="/egovframe-runtime/ai-layer/">LangChain4j</button>
+                                <ul>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-project/">샘플 프로젝트</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-implementation/">핵심 구현</a>
+                                      
+                                    </li>
+                                  </ul>
+                              </div>
+                            </li>
+                            </ul>
+                    </div>
                   </li>
-      </ul>
-    
       </ul>
     
       </ul>
@@ -2496,30 +2685,32 @@
   <ol class="breadcrumb">
     <li class="home">
       
-      <a href="https://hjlee1107.github.io/" class="txt">Home</a>
+      <a href="http://localhost:1313/" class="txt">Home</a>
     </li>
 
         
+           
           
             
-            <li><a href="https://hjlee1107.github.io//egovframe-runtime/" class="txt">실행환경</a></li>
+            <li><a href="http://localhost:1313//egovframe-runtime/" class="txt">실행환경</a></li>
           
-        
         
         
 
+
         
+           
           
             
-            <li><a href="https://hjlee1107.github.io//egovframe-runtime/batch-layer/" class="txt">배치처리</a></li>
+            <li><a href="http://localhost:1313//egovframe-runtime/batch-layer/" class="txt">배치처리</a></li>
           
-        
         
         
 
+
         
         
-        </ol>
+</ol>
 </nav>
     <div class="conts-area">
         
@@ -2534,14 +2725,7 @@
 
     
     <div class="krds-in-page-navigation-area">
-      <nav class="in-page-navigation-action">
-        <ul>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/tree/contribution/egovframe-runtime/batch-layer/batch-core-item_writer.md" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_page_view"></i> 페이지 보기</a></li>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/edit/contribution/egovframe-runtime/batch-layer/batch-core-item_writer.md" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_page_edit"></i> 페이지 편집</a></li>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/issues/new?title=ItemWriter" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_issue"></i> 문서에 이슈 생성</a></li>
-            <li><a href="https://github.com/eGovFramework/egovframe-docs/issues/new" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_issue"></i> 프로젝트에 이슈 생성</a></li>
-            </ul>
-      </nav>
+      
       
   <div class="in-page-navigation-header">
     <p class="quick-caption">이 페이지의 구성</p>
@@ -2552,17 +2736,7 @@
     <nav class="in-page-navigation-list">
   <ul>
     <li><a href="#개요">개요</a></li>
-    <li><a href="#설명">설명</a>
-      <ul>
-        <li><a href="#flatfile-itemwriter">FlatFile ItemWriter</a></li>
-        <li><a href="#xml-itemwriter">XML ItemWriter</a></li>
-        <li><a href="#database-itemwriter">Database ItemWriter</a></li>
-        <li><a href="#전자정부에서-제공하는-egovflatfileitemwriter">전자정부에서 제공하는 eGovFlatFileItemWriter</a></li>
-        <li><a href="#전자정부에서-제공하는-egovdbitemwriter">전자정부에서 제공하는 eGovDBItemWriter</a></li>
-        <li><a href="#전자정부에서-제공하는-egovindexfilewriter">전자정부에서 제공하는 eGovIndexFileWriter</a></li>
-        <li><a href="#전자정부에서-제공하는-egovmybatisbatchitemwriter">전자정부에서 제공하는 EgovMyBatisBatchItemWriter</a></li>
-      </ul>
-    </li>
+    <li><a href="#설명">설명</a></li>
     <li><a href="#참고자료">참고자료</a></li>
   </ul>
 </nav>
@@ -2625,42 +2799,35 @@
   </tbody>
 </table></div>
 <p>아래 Delimited(구분자), Fixed Length(고정길이) 방식으로 설정한 FlatFileItemWriter의 예시를 통해 FlatFileItemWriter, LineAggregator, FieldExtractor의 의존 관계를 볼 수 있다.</p>
-<div class="krds-table-wrap"><table class="tbl col data" class="inline">
-	<tbody><tr class="row0">
-		<th class="col0 centeralign">  Aggregate 방식  </th><th class="col1 centeralign">  설정  </th>
-	</tr>
-	<tr class="row1">
-		<th class="col0"> Delimited (구분자) </th><td class="col1"> <pre class="code xml"><span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">id</span>=<span class="st0">"itemWriter"</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.FlatFileItemWriter"</span> <span class="re0">scope</span>=<span class="st0">"step"</span><span class="re2">&gt;</span></span>
-    <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"resource"</span> <span class="re0">value</span>=<span class="st0">"#{jobParameters[outputFile]}"</span> <span class="re2">/&gt;</span></span>
-    <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"lineAggregator"</span><span class="re2">&gt;</span></span>
-	<span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.transform.DelimitedLineAggregator"</span><span class="re2">&gt;</span></span>
-	    <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"delimiter"</span> <span class="re0">value</span>=<span class="st0">","</span><span class="re2">/&gt;</span></span>
-	    <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"fieldExtractor"</span><span class="re2">&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.transform.BeanWrapperFieldExtractor"</span><span class="re2">&gt;</span></span>
-		    <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"names"</span> <span class="re0">value</span>=<span class="st0">"name,credit"</span><span class="re2">/&gt;</span></span>					
-		<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-	    <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-	<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-    <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span></pre></td>
-	</tr>
-	<tr class="row2">
-		<th class="col0"> Fixed Length (고정길이) </th><td class="col1"> <pre class="code xml"><span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">id</span>=<span class="st0">"itemWriter"</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.FlatFileItemWriter"</span> <span class="re0">scope</span>=<span class="st0">"step"</span><span class="re2">&gt;</span></span>
-    <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"resource"</span> <span class="re0">value</span>=<span class="st0">"#{jobParameters[outputFile]}"</span> <span class="re2">/&gt;</span></span>
-    <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"lineAggregator"</span><span class="re2">&gt;</span></span>
-	<span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.transform.FormatterLineAggregator"</span><span class="re2">&gt;</span></span>
-	    <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"format"</span> <span class="re0">value</span>=<span class="st0">"%-9s%-2s"</span> <span class="re2">/&gt;</span></span>
-	    <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"fieldExtractor"</span><span class="re2">&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.transform.BeanWrapperFieldExtractor"</span><span class="re2">&gt;</span></span>
-		    <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"names"</span> <span class="re0">value</span>=<span class="st0">"name,credit"</span><span class="re2">/&gt;</span></span>					
-		<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-	    <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-	<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-    <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span></pre></td>
-	</tr>
-</tbody></table></div>
-<p>BeanWrapperFieldExtractor에 아래와 같은 항목을 설정해야한다.</p>
+<h4 id="delimited-구분자">Delimited (구분자)</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;itemWriter&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.FlatFileItemWriter&#34;</span> <span style="color:#a6e22e">scope=</span><span style="color:#e6db74">&#34;step&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;resource&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;#{jobParameters[outputFile]}&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;lineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.transform.DelimitedLineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;delimiter&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.transform.BeanWrapperFieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;names&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;name,credit&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span></code></pre></div><h4 id="fixed-length-고정길이">Fixed Length (고정길이)</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;itemWriter&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.FlatFileItemWriter&#34;</span> <span style="color:#a6e22e">scope=</span><span style="color:#e6db74">&#34;step&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;resource&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;#{jobParameters[outputFile]}&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;lineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.transform.FormatterLineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;format&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;%-9s%-2s&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.transform.BeanWrapperFieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		    <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;names&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;name,credit&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span></code></pre></div><p>BeanWrapperFieldExtractor에 아래와 같은 항목을 설정해야한다.</p>
 <div class="krds-table-wrap"><table class="tbl col data">
   <thead>
       <tr>
@@ -2788,42 +2955,35 @@ JdbcCursorItemReader 설정과 마찬가지로 dataSouce 속성으로 DB connect
 <p>✔ 스프링에서 제공하는 FormatterLineAggregator, DelimitedLineAggregator와 EgovFieldExtractor는 동시 사용이 가능하므로 BeanWrapperFieldExtractor 대신 EgovFieldExtractor 사용 시, 보다 좋은 성능으로 write 할 수 있다.</p>
 <p>BeanWrapperFieldExtractor, FormatterLineAggregator(or DelimitedLineAggregator)를 사용한 설정과 EgovFieldExtractor, EgovFixedLineAggregator(or DelimitedLineAggregator)를 사용한 FlatFileItemWriter 설정 비교는 아래와 같다.</p>
 <h4 id="fixed-length고정길이-방식-설정">Fixed Length(고정길이) 방식 설정</h4>
-<div class="krds-table-wrap"><table class="tbl col data" class="inline">
-	<tbody><tr class="row0">
-		<th class="col0 centeralign">  구분  </th><th class="col1 centeralign">  설정  </th>
-	</tr>
-	<tr class="row1">
-		<th class="col0"> 스프링 FlatFileItemWriter </th><td class="col1"> <pre class="code xml"><span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">id</span>=<span class="st0">"itemWriter"</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.FlatFileItemWriter"</span> <span class="re0">scope</span>=<span class="st0">"step"</span><span class="re2">&gt;</span></span>
-   <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"resource"</span> <span class="re0">value</span>=<span class="st0">"#{jobParameters[outputFile]}"</span> <span class="re2">/&gt;</span></span>
-   <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"lineAggregator"</span><span class="re2">&gt;</span></span>
-      <span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.transform.FormatterLineAggregator"</span><span class="re2">&gt;</span></span>
-         <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"fieldExtractor"</span><span class="re2">&gt;</span></span>
-	    <span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.transform.BeanWrapperFieldExtractor"</span><span class="re2">&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"names"</span> <span class="re0">value</span>=<span class="st0">"name,credit"</span> <span class="re2">/&gt;</span></span>
-	    <span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-	 <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-	 <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"format"</span> <span class="re0">value</span>=<span class="st0">"%-9s%-2s"</span> <span class="re2">/&gt;</span></span>
-      <span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-   <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span></pre></td>
-	</tr>
-	<tr class="row2">
-		<th class="col0"> 전자정부 EgovFlatFileItemWriter </th><td class="col1"> <pre class="code xml"><span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">id</span>=<span class="st0">"itemWriter"</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.FlatFileItemWriter"</span> <span class="re0">scope</span>=<span class="st0">"step"</span><span class="re2">&gt;</span></span>
-   <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"resource"</span> <span class="re0">value</span>=<span class="st0">"#{jobParameters[outputFile]}"</span> <span class="re2">/&gt;</span></span>
-   <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"lineAggregator"</span><span class="re2">&gt;</span></span>
-      <span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"egovframework.brte.core.item.file.transform.EgovFixedLengthLineAggregator"</span><span class="re2">&gt;</span></span>
-         <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"fieldExtractor"</span><span class="re2">&gt;</span></span>
-	    <span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"egovframework.brte.core.item.file.transform.EgovFieldExtractor"</span><span class="re2">&gt;</span></span>
-	       <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"names"</span> <span class="re0">value</span>=<span class="st0">"name,credit"</span> <span class="re2">/&gt;</span></span>
-	    <span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-	 <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-	 <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"fieldRanges"</span> <span class="re0">value</span>=<span class="st0">"9,2"</span> <span class="re2">/&gt;</span></span>						
-      <span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-   <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span></pre></td>
-	</tr>
-</tbody></table></div>
-<div class="krds-table-wrap"><table class="tbl col data">
+<p><strong>스프링 FlatFileItemWriter</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;itemWriter&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.FlatFileItemWriter&#34;</span> <span style="color:#a6e22e">scope=</span><span style="color:#e6db74">&#34;step&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;resource&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;#{jobParameters[outputFile]}&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;lineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.transform.FormatterLineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.transform.BeanWrapperFieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;names&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;name,credit&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>	 <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span>	 <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;format&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;%-9s%-2s&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span></code></pre></div><p><strong>전자정부 EgovFlatFileItemWriter</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;itemWriter&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.FlatFileItemWriter&#34;</span> <span style="color:#a6e22e">scope=</span><span style="color:#e6db74">&#34;step&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;resource&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;#{jobParameters[outputFile]}&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;lineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;egovframework.brte.core.item.file.transform.EgovFixedLengthLineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;egovframework.brte.core.item.file.transform.EgovFieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	       <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;names&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;name,credit&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>	 <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span>	 <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fieldRanges&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;9,2&#34;</span> <span style="color:#f92672">/&gt;</span>						
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span></code></pre></div><div class="krds-table-wrap"><table class="tbl col data">
   <thead>
       <tr>
           <th>EgovFlatFileItemWriter 설정항목</th>
@@ -2846,42 +3006,35 @@ JdbcCursorItemReader 설정과 마찬가지로 dataSouce 속성으로 DB connect
   </tbody>
 </table></div>
 <h4 id="delimited구분자-방식-설정">Delimited(구분자) 방식 설정</h4>
-<div class="krds-table-wrap"><table class="tbl col data" class="inline">
-	<tbody><tr class="row0">
-		<th class="col0 centeralign">  구분  </th><th class="col1 centeralign">  설정  </th>
-	</tr>
-	<tr class="row1">
-		<th class="col0"> 스프링 FlatFileItemWriter </th><td class="col1"> <pre class="code xml"><span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">id</span>=<span class="st0">"itemWriter"</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.FlatFileItemWriter"</span> <span class="re0">scope</span>=<span class="st0">"step"</span><span class="re2">&gt;</span></span>
-   <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"resource"</span> <span class="re0">value</span>=<span class="st0">"#{jobParameters[outputFile]}"</span> <span class="re2">/&gt;</span></span>
-   <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"lineAggregator"</span><span class="re2">&gt;</span></span>
-      <span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.transform.DelimitedLineAggregator"</span><span class="re2">&gt;</span></span>
-	 <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"fieldExtractor"</span><span class="re2">&gt;</span></span>
-	    <span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.transform.BeanWrapperFieldExtractor"</span><span class="re2">&gt;</span></span>
-	       <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"names"</span> <span class="re0">value</span>=<span class="st0">"name,credit"</span><span class="re2">/&gt;</span></span>					
-	    <span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-	 <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-         <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"delimiter"</span> <span class="re0">value</span>=<span class="st0">","</span><span class="re2">/&gt;</span></span>
-      <span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-    <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span></pre></td>
-	</tr>
-	<tr class="row2">
-		<th class="col0"> 전자정부 EgovFlatFileItemWriter </th><td class="col1"> <pre class="code xml"><span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">id</span>=<span class="st0">"itemWriter"</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.FlatFileItemWriter"</span> <span class="re0">scope</span>=<span class="st0">"step"</span><span class="re2">&gt;</span></span>
-   <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"resource"</span> <span class="re0">value</span>=<span class="st0">"#{jobParameters[outputFile]}"</span> <span class="re2">/&gt;</span></span>
-   <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"lineAggregator"</span><span class="re2">&gt;</span></span>
-      <span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.file.transform.DelimitedLineAggregator"</span><span class="re2">&gt;</span></span>
-	 <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"fieldExtractor"</span><span class="re2">&gt;</span></span>
-	    <span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"egovframework.brte.core.item.file.transform.EgovFieldExtractor"</span><span class="re2">&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"names"</span> <span class="re0">value</span>=<span class="st0">"name,credit"</span><span class="re2">/&gt;</span></span>					
-	    <span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-	 <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-         <span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"delimiter"</span> <span class="re0">value</span>=<span class="st0">","</span><span class="re2">/&gt;</span></span>
-      <span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span>
-   <span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span></pre></td>
-	</tr>
-</tbody></table></div>
-<div class="krds-table-wrap"><table class="tbl col data">
+<p><strong>스프링 FlatFileItemWriter</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;itemWriter&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.FlatFileItemWriter&#34;</span> <span style="color:#a6e22e">scope=</span><span style="color:#e6db74">&#34;step&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;resource&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;#{jobParameters[outputFile]}&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;lineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.transform.DelimitedLineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	 <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.transform.BeanWrapperFieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	       <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;names&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;name,credit&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>	 <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;delimiter&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span></code></pre></div><p><strong>전자정부 EgovFlatFileItemWriter</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;itemWriter&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.FlatFileItemWriter&#34;</span> <span style="color:#a6e22e">scope=</span><span style="color:#e6db74">&#34;step&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;resource&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;#{jobParameters[outputFile]}&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;lineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.file.transform.DelimitedLineAggregator&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	 <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;fieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;egovframework.brte.core.item.file.transform.EgovFieldExtractor&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;names&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;name,credit&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	    <span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>	 <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span>         <span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;delimiter&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;,&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span></code></pre></div><div class="krds-table-wrap"><table class="tbl col data">
   <thead>
       <tr>
           <th>EgovFlatFileItemWriter 설정항목</th>
@@ -2949,33 +3102,26 @@ JdbcCursorItemReader 설정과 마찬가지로 dataSouce 속성으로 DB connect
   </tbody>
 </table></div>
 <p>자동으로 PreparedStatement를 setter 할 경우 JdbcBatchItemWriter는 BeanPropertyItemSqlParameterSourceProvider클래스를 사용하고 EgovJdbcBatchItemWriter는 EgovMethodMapItemPreparedStatementSetter클래스를 사용한다. 설정은 아래와 같다.</p>
-<div class="krds-table-wrap"><table class="tbl col data" class="inline">
-	<tbody><tr class="row0">
-		<th class="col0 centeralign">  구분  </th><th class="col1 centeralign">  설정  </th>
-	</tr>
-	<tr class="row1">
-		<th class="col0">JdbcBatchItemWriter</th><td class="col1"><pre class="code xml">	<span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">id</span>=<span class="st0">"itemWriter"</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.database.JdbcBatchItemWriter"</span><span class="re2">&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"assertUpdates"</span> <span class="re0">value</span>=<span class="st0">"true"</span> <span class="re2">/&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"itemSqlParameterSourceProvider"</span><span class="re2">&gt;</span></span>
-			<span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"org.springframework.batch.item.database.BeanPropertyItemSqlParameterSourceProvider"</span> <span class="re2">/&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-		<span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"sql"</span> <span class="re0">value</span>=<span class="st0">"UPDATE CUSTOMER set credit = :credit where id = :id"</span> <span class="re2">/&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"dataSource"</span> <span class="re0">ref</span>=<span class="st0">"dataSource"</span> <span class="re2">/&gt;</span></span>
-	<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span></pre></td>
-	</tr>
-	<tr class="row2">
-		<th class="col0">EgovJdbcBatchItemWriter</th><td class="col1"><pre class="code xml">	<span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">id</span>=<span class="st0">"itemWriter"</span> <span class="re0">class</span>=<span class="st0">"egovframework.brte.core.item.database.EgovJdbcBatchItemWriter"</span><span class="re2">&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"assertUpdates"</span> <span class="re0">value</span>=<span class="st0">"true"</span> <span class="re2">/&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"itemPreparedStatementSetter"</span><span class="re2">&gt;</span></span>
-			<span class="sc3"><span class="re1">&lt;bean</span> <span class="re0">class</span>=<span class="st0">"egovframework.brte.core.item.database.support.EgovMethodMapItemPreparedStatementSetter"</span> <span class="re2">/&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;/property<span class="re2">&gt;</span></span></span>
-		<span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"sql"</span> <span class="re0">value</span>=<span class="st0">"UPDATE CUSTOMER set credit =? where id =?"</span><span class="re2">/&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"params"</span> <span class="re0">value</span>=<span class="st0">"credit,id"</span><span class="re2">/&gt;</span></span>
-		<span class="sc3"><span class="re1">&lt;property</span> <span class="re0">name</span>=<span class="st0">"dataSource"</span> <span class="re0">ref</span>=<span class="st0">"dataSource"</span> <span class="re2">/&gt;</span></span>
-	<span class="sc3"><span class="re1">&lt;/bean<span class="re2">&gt;</span></span></span></pre></td>
-	</tr>
-</tbody></table></div>
-<p>✔ EgovMethodMapItemPreparedStatementSetter에는 파라미터의 값둘을 params의 value 값으로 설정한다.</p>
+<p><strong>JdbcBatchItemWriter</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;itemWriter&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.database.JdbcBatchItemWriter&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;assertUpdates&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;itemSqlParameterSourceProvider&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.batch.item.database.BeanPropertyItemSqlParameterSourceProvider&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;sql&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;UPDATE CUSTOMER set credit = :credit where id = :id&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;dataSource&#34;</span> <span style="color:#a6e22e">ref=</span><span style="color:#e6db74">&#34;dataSource&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span></code></pre></div><p><strong>EgovJdbcBatchItemWriter</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;itemWriter&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;egovframework.brte.core.item.database.EgovJdbcBatchItemWriter&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;assertUpdates&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;itemPreparedStatementSetter&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;egovframework.brte.core.item.database.support.EgovMethodMapItemPreparedStatementSetter&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/property&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;sql&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;UPDATE CUSTOMER set credit =? where id =?&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;params&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;credit,id&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;dataSource&#34;</span> <span style="color:#a6e22e">ref=</span><span style="color:#e6db74">&#34;dataSource&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
+</span></span></code></pre></div><p>✔ EgovMethodMapItemPreparedStatementSetter에는 파라미터의 값둘을 params의 value 값으로 설정한다.</p>
 <p>보다 자세히 설명하면,</p>
 <div class="krds-table-wrap"><table class="tbl col data">
   <thead>
@@ -3165,7 +3311,7 @@ NDX 파일명 치환 : “[이름]_NDX(Index)” 형식의 파일명은 해당 �
 
 
 
-<a class="krds-btn medium text" href="http://static.springsource.org/spring-batch/reference/html/readersAndWriters.html">http://static.springsource.org/spring-batch/reference/html/readersAndWriters.html<i class="svg-icon ico-go"></i></a>
+<a class="krds-btn medium text" href="https://docs.spring.io/spring-batch/reference/5.2/readersAndWriters.html">Readers and Writers<i class="svg-icon ico-go"></i></a>
 
 
 </li>

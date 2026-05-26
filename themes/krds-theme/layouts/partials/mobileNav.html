@@ -1,4 +1,5 @@
 {{$link := .RelPermalink}}
+{{ $isHomeLink := .IsHome }}
 <nav id="mobile-nav" class="krds-main-menu-mobile" style="display:none">
   <div class="gnb-wrap" style="width:80%">
     <!-- gnb-header -->
@@ -24,7 +25,7 @@
       <div class="gnb-menu">
         <div class="menu-wrap">
           {{ range sort .Site.Menus.depth "Weight"}}
-            {{ if hasPrefix $link .URL}}
+            {{ if or $isHomeLink (hasPrefix $link .URL)}}
             <ul>
               {{ range $index, $page := sort .Children "Weight" }}
                   {{ $isActive := eq $link .URL }}
@@ -38,7 +39,7 @@
         </div>
         <div class="submenu-wrap">
           {{ range sort .Site.Menus.depth "Weight"}}
-            {{ if hasPrefix $link .URL}}
+            {{ if or $isHomeLink (hasPrefix $link .URL)}}
               {{ range $index, $page := sort .Children "Weight" }}
               <div class="gnb-sub-list" id="mGnb-anchor{{$index}}">
                 <a href="{{.URL}}" class="sub-title" data-url="{{.URL}}">{{.Name}}</a>
@@ -97,37 +98,6 @@
           {{end}}
         </div> <!-- //sub menu wrap -->
       </div> <!-- //gnb-menu -->
-      <!-- gnb-bottom -->
-      {{ if .File -}}
-          {{ $fullPath := strings.TrimPrefix (add hugo.WorkingDir "/") .File.Filename }}
-          {{ $relativePath := index (strings.Split $fullPath "content") 1 }}
-          {{ $path := print "content" $relativePath }}
-          {{ $path = strings.Replace $path "\\" "/" -1 }}
-
-          {{ $gh_repo := $.Param "github_repo" -}}
-          {{ $gh_subdir := $.Param "github_subdir" | default "" -}}
-          {{ $gh_project_repo := $.Param "github_project_repo" -}}
-          {{ $gh_branch := $.Param "github_branch" | default "main" -}}
-
-            {{ $gh_repo_path := printf "%s/%s/%s" $gh_branch $gh_subdir $path -}}
-            {{ $gh_repo_path = replaceRE "//+" "/" $gh_repo_path -}}
-            {{ $gh_repo_path = replace $gh_repo_path "content/" "" -}}
-
-            {{ $viewURL := printf "%s/tree/%s" $gh_repo $gh_repo_path -}}
-            {{ $editURL := printf "%s/edit/%s" $gh_repo $gh_repo_path -}}
-          
-            {{ $issuesURL := printf "%s/issues/new?title=%s" $gh_repo (safeURL $.Title ) -}}
-          <div class="gnb-bottom">
-            <a href="{{ $viewURL }}" class="krds-btn medium text">페이지보기 <i class="svg-icon ico-angle right"></i></a>
-            <a href="{{ $editURL }}" class="krds-btn medium text">페이지편집 <i class="svg-icon ico-angle right"></i></a>
-            <a href="{{ $issuesURL }}" class="krds-btn medium text">문서에 이슈 생성 <i class="svg-icon ico-angle right"></i></a>
-            {{ with $gh_project_repo -}}
-              {{ $project_issueURL := printf "%s/issues/new" $gh_project_repo -}}
-            <a href="{{ $project_issueURL }}" class="krds-btn medium text">프로젝트에 이슈 생성 <i class="svg-icon ico-angle right"></i></a>
-            {{ end -}}
-          </div>
-        {{ end }}
-      <!-- //gnb-bottom -->
     </div>
     <!-- //gnb-body -->
     

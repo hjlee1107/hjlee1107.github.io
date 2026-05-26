@@ -363,14 +363,16 @@ const krds_mainMenuMobile = {
 
     /* 모바일 active 이동 (추가)*/
     const activeTrigger = document.querySelector("#mobile-nav .gnb-main-trigger.active");
-    const href = activeTrigger.getAttribute("href");
-    if(activeTrigger){
-      const subtrigger = document.getElementById(href.slice(1));
-      const subBtn = subtrigger.querySelector(".gnb-sub-trigger.active") || subtrigger.querySelector(".gnb-sub-trigger.selected");
-      if(subBtn){
-        document.location="#"+subBtn.getAttribute("id")
-      }else{
-        document.location=href;
+    if (activeTrigger) {
+      const href = activeTrigger.getAttribute("href");
+      const subtrigger = href ? document.getElementById(href.slice(1)) : null;
+      const subBtn = subtrigger
+        ? subtrigger.querySelector(".gnb-sub-trigger.active") || subtrigger.querySelector(".gnb-sub-trigger.selected")
+        : null;
+      if (subBtn) {
+        document.location = "#" + subBtn.getAttribute("id");
+      } else if (href) {
+        document.location = href;
       }
       
     }

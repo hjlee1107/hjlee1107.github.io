@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="kr" dir="ltr">
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>Crypto 간소화 서비스 | 표준프레임워크 개발가이드</title>
@@ -12,7 +12,7 @@
 
 
 
-  <link rel="stylesheet" href="https://hjlee1107.github.io/css/custom.css" integrity="" crossorigin="anonymous">
+  <link rel="stylesheet" href="http://localhost:1313/css/custom.css">
 
 
 
@@ -22,10 +22,7 @@
 
 
 
-  
-  
-    <script src="https://hjlee1107.github.io/js/custom.js" integrity="" crossorigin="anonymous" defer></script>
-  
+  <script src="http://localhost:1313/js/custom.js" defer></script>
 
 
 
@@ -50,9 +47,32 @@
     
     <div class="header-container">
         <div class="inner" style="padding-bottom:0">
+            <div class="header-utility">
+                <ul class="utility-list">
+                <li>
+                    <div class="krds-drop-wrap">
+                    <button type="button" class="krds-btn small text drop-btn">
+                        버전 <i class="svg-icon ico-toggle"></i>
+                    </button>
+                    <div class="drop-menu">
+                        <div class="drop-in">
+                        <ul class="drop-list">
+                            
+                             
+                                <li><a href="https://www.egovframe.go.kr/docs/5.0/" class="item-link" >5.0</a></li>
+                             
+                                <li><a href="https://www.egovframe.go.kr/wiki/doku.php?id=egovframework:all_index" class="item-link" target="_blank">Archive</a></li>
+                             
+                        </ul>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                </ul>
+            </div>
             <div class="header-branding">
                 <h2 class="logo">
-                    <a href="https://hjlee1107.github.io/"></a>
+                    <a href="http://localhost:1313/"></a>
                 </h2>
                 <div class="header-actions">
                     
@@ -62,7 +82,7 @@
     <ul class="gnb-menu">
       
       <li>
-          <a href="/egovframe-development/" class="gnb-main-trigger is-link ">개발환경</a>
+          <a href="/getting-started/" class="gnb-main-trigger is-link ">시작하기</a>
       </li>
       
       <li>
@@ -70,26 +90,20 @@
       </li>
       
       <li>
-          <a href="/runtime-example/" class="gnb-main-trigger is-link ">실행환경 예제</a>
-      </li>
-      
-      <li>
-          <a href="/common-component/" class="gnb-main-trigger is-link ">공통컴포넌트</a>
+          <a href="/egovframe-development/" class="gnb-main-trigger is-link ">개발환경</a>
       </li>
       
     </ul>
   </div>
 </nav>
-                    
                     <button type="button" class="btn-navi all" aria-controls="mobile-nav"></button>
-                    
                 </div>
             </div>
         </div>
     </div>
 </div>
     
-    
+
 <nav id="mobile-nav" class="krds-main-menu-mobile" style="display:none">
   <div class="gnb-wrap" style="width:80%">
     
@@ -102,13 +116,11 @@
       
       <div class="gnb-service-menu" style="flex-direction:column">
         
-          <a href="/egovframe-development/" class="link" style="width:auto; flex-direction:row; height:auto">개발환경</a>
+          <a href="/getting-started/" class="link" style="width:auto; flex-direction:row; height:auto">시작하기</a>
         
           <a href="/egovframe-runtime/" class="link" style="width:auto; flex-direction:row; height:auto">실행환경</a>
         
-          <a href="/runtime-example/" class="link" style="width:auto; flex-direction:row; height:auto">실행환경 예제</a>
-        
-          <a href="/common-component/" class="link" style="width:auto; flex-direction:row; height:auto">공통컴포넌트</a>
+          <a href="/egovframe-development/" class="link" style="width:auto; flex-direction:row; height:auto">개발환경</a>
         
       </div>
       
@@ -166,9 +178,12 @@
                     <a href="#mGnb-anchor7" class="gnb-main-trigger ">배치처리</a>
                   </li>
               
+                  
+                  <li>
+                    <a href="#mGnb-anchor8" class="gnb-main-trigger ">AI 통합</a>
+                  </li>
+              
             </ul>
-            
-          
             
           
             
@@ -321,7 +336,7 @@
                           
                           
                           
-                          <li><a href="/egovframe-runtime/foundation-layer/server-security/server-security-simplifying-settings/" class="depth3-trigger" data-url="/egovframe-runtime/foundation-layer/server-security/server-security-simplifying-settings/">설정 간소화</a></li>
+                          <li><a href="/egovframe-runtime/foundation-layer/server-security/server-security-simplification/" class="depth3-trigger" data-url="/egovframe-runtime/foundation-layer/server-security/server-security-simplification/">설정 간소화</a></li>
                           
                           
                           
@@ -333,7 +348,7 @@
                     
                   
                     
-                    <li><a href="/egovframe-runtime/foundation-layer/session-based-access-control-permission-settings/"  id="sub-menu-Session 방식 접근제어-1" class="gnb-sub-trigger" data-url="/egovframe-runtime/foundation-layer/session-based-access-control-permission-settings/">Session 방식 접근제어</a></li>
+                    <li><a href="/egovframe-runtime/foundation-layer/session-simplification/"  id="sub-menu-Session 방식 접근제어-1" class="gnb-sub-trigger" data-url="/egovframe-runtime/foundation-layer/session-simplification/">Session 방식 접근제어</a></li>
                     
                   
                     
@@ -591,6 +606,10 @@
                           
                           
                           
+                          <li><a href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-annotation-based-controller/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-annotation-based-controller/">Annotation</a></li>
+                          
+                          
+                          
                           <li><a href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-validation/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-validation/">Validation</a></li>
                           
                           
@@ -662,7 +681,7 @@
                           
                           
                           
-                          <li><a href="/egovframe-runtime/presentation-layer/security/security-validationa-add-rules-in-common-validator/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/security/security-validationa-add-rules-in-common-validator/">Validation Rule</a></li>
+                          <li><a href="/egovframe-runtime/presentation-layer/security/security-validation-add-rules-in-common-validator/" class="depth3-trigger" data-url="/egovframe-runtime/presentation-layer/security/security-validation-add-rules-in-common-validator/">Validation Rule</a></li>
                           
                           
                         </ul>
@@ -700,14 +719,6 @@
                   
                     
                     <li><a href="/egovframe-runtime/presentation-layer/bootstrap/"  id="sub-menu-Bootstrap-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/presentation-layer/bootstrap/">Bootstrap</a></li>
-                    
-                  
-                    
-                    <li><a href="/egovframe-runtime/presentation-layer/uxui-controller-component/"  id="sub-menu-모바일 UX/UI-11" class="gnb-sub-trigger" data-url="/egovframe-runtime/presentation-layer/uxui-controller-component/">모바일 UX/UI</a></li>
-                    
-                  
-                    
-                    <li><a href="/egovframe-runtime/presentation-layer/html5-css3.0-javascript-module-app-framework-basic/"  id="sub-menu-JQuery Mobile-12" class="gnb-sub-trigger" data-url="/egovframe-runtime/presentation-layer/html5-css3.0-javascript-module-app-framework-basic/">JQuery Mobile</a></li>
                     
                   
                   </ul>
@@ -916,6 +927,10 @@
                           <li><a href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mapper_xml_files/" class="depth3-trigger" data-url="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mapper_xml_files/">Mapper XML Files</a></li>
                           
                           
+                          
+                          <li><a href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mybatis-dynamic-sql/" class="depth3-trigger" data-url="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mybatis-dynamic-sql/">Dynamic SQL</a></li>
+                          
+                          
                         </ul>
                       </div>
                     
@@ -1049,6 +1064,14 @@
                       </div>
                     
                   
+                    
+                    <li><a href="/egovframe-runtime/persistence-layer/sql-rule/"  id="sub-menu-SQL 작성 규칙-9" class="gnb-sub-trigger" data-url="/egovframe-runtime/persistence-layer/sql-rule/">SQL 작성 규칙</a></li>
+                    
+                  
+                    
+                    <li><a href="/egovframe-runtime/persistence-layer/sql-connection/"  id="sub-menu-DB 다중 접속 가이드-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/persistence-layer/sql-connection/">DB 다중 접속 가이드</a></li>
+                    
+                  
                   </ul>
               </div>
               
@@ -1154,15 +1177,19 @@
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/resource_variable/"  id="sub-menu-Resource Variable-5" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/resource_variable/">Resource Variable</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-whatsnew_5.2/"  id="sub-menu-Spring Batch 5.2 신규 기능-5" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-whatsnew_5.2/">Spring Batch 5.2 신규 기능</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_repository/"  id="sub-menu-JobRepository-6" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_repository/">JobRepository</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/resource_variable/"  id="sub-menu-Resource Variable-6" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/resource_variable/">Resource Variable</a></li>
                     
                   
                     
-                      <a href="/egovframe-runtime/batch-layer/batch-execution-job_launcher/" id="sub-menu-JobLauncher-7" class="gnb-sub-trigger has-depth3">JobLauncher</a>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_repository/"  id="sub-menu-JobRepository-7" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_repository/">JobRepository</a></li>
+                    
+                  
+                    
+                      <a href="/egovframe-runtime/batch-layer/batch-execution-job_launcher/" id="sub-menu-JobLauncher-8" class="gnb-sub-trigger has-depth3">JobLauncher</a>
 									    <div class="depth3-wrap ">
 										    <ul>
                           
@@ -1175,51 +1202,47 @@
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_runner/"  id="sub-menu-JobRunner-8" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_runner/">JobRunner</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-execution-job_runner/"  id="sub-menu-JobRunner-9" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-execution-job_runner/">JobRunner</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_registry/"  id="sub-menu-JobRegistry-9" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_registry/">JobRegistry</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_registry/"  id="sub-menu-JobRegistry-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_registry/">JobRegistry</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_explorer/"  id="sub-menu-JobExplorer-10" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_explorer/">JobExplorer</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_explorer/"  id="sub-menu-JobExplorer-11" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_explorer/">JobExplorer</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_operator/"  id="sub-menu-JobOperator-11" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_operator/">JobOperator</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-job_operator/"  id="sub-menu-JobOperator-12" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-job_operator/">JobOperator</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/"  id="sub-menu-Skip/Retry/Repeat-12" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/">Skip/Retry/Repeat</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/"  id="sub-menu-Skip/Retry/Repeat-13" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-skip_repeat_retry/">Skip/Retry/Repeat</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-multidata_process/"  id="sub-menu-MultiDataProcessing-13" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-multidata_process/">MultiDataProcessing</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-multidata_process/"  id="sub-menu-MultiDataProcessing-14" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-multidata_process/">MultiDataProcessing</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-history_management/"  id="sub-menu-History Management-14" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-history_management/">History Management</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-history_management/"  id="sub-menu-History Management-15" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-history_management/">History Management</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/"  id="sub-menu-동기/비동기 처리 예제-15" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/">동기/비동기 처리 예제</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/"  id="sub-menu-동기/비동기 처리 예제-16" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-example-sync_async_v3.7/">동기/비동기 처리 예제</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-listener/"  id="sub-menu-Listener-16" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-listener/">Listener</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-listener/"  id="sub-menu-Listener-17" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-listener/">Listener</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-parallel_process/"  id="sub-menu-병행처리-17" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-parallel_process/">병행처리</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-parallel_process/"  id="sub-menu-병행처리-18" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-parallel_process/">병행처리</a></li>
                     
                   
                     
-                    <li><a href="/egovframe-runtime/batch-layer/batch-core-code_base_exception/"  id="sub-menu-CodeBaseException-18" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-code_base_exception/">CodeBaseException</a></li>
-                    
-                  
-                    
-                    <li><a href="/egovframe-runtime/batch-layer/batch-centercut-intro/"  id="sub-menu-센터 컷(CenterCut)-19" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-centercut-intro/">센터 컷(CenterCut)</a></li>
+                    <li><a href="/egovframe-runtime/batch-layer/batch-core-code_base_exception/"  id="sub-menu-CodeBaseException-19" class="gnb-sub-trigger" data-url="/egovframe-runtime/batch-layer/batch-core-code_base_exception/">CodeBaseException</a></li>
                     
                   
                     
@@ -1233,28 +1256,90 @@
                   </ul>
               </div>
               
-            
-          
+              <div class="gnb-sub-list" id="mGnb-anchor8">
+                <a href="/egovframe-runtime/ai-layer/" class="sub-title" data-url="/egovframe-runtime/ai-layer/">AI 통합</a>
+                  
+                  <ul>
+                  
+                    
+                    <li><a href="/egovframe-runtime/ai-layer/ai-intro/"  id="sub-menu-AI 개요-0" class="gnb-sub-trigger" data-url="/egovframe-runtime/ai-layer/ai-intro/">AI 개요</a></li>
+                    
+                  
+                    
+                    <li><a href="/egovframe-runtime/ai-layer/ai-rag-concepts/"  id="sub-menu-RAG 및 고급 개념-1" class="gnb-sub-trigger" data-url="/egovframe-runtime/ai-layer/ai-rag-concepts/">RAG 및 고급 개념</a></li>
+                    
+                  
+                    
+                      <a href="/egovframe-runtime/ai-layer/springai-layer/" id="sub-menu-Spring AI-2" class="gnb-sub-trigger has-depth3">Spring AI</a>
+									    <div class="depth3-wrap ">
+										    <ul>
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-core-apis/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-core-apis/">핵심 API</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-rag-architecture/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-rag-architecture/">RAG 아키텍처</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-etl-guide/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-etl-guide/">ETL Pipeline</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-advisor-guide/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-advisor-guide/">Advisor 패턴</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-project/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-project/">샘플 프로젝트</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-etl/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-etl/">ETL 구현</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-rag/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-rag/">RAG 구현</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-session/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-sample-session/">세션 관리</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/springai-layer/springai-setup-guide/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/springai-layer/springai-setup-guide/">환경 설정</a></li>
+                          
+                          
+                        </ul>
+                      </div>
+                    
+                  
+                    
+                      <a href="/egovframe-runtime/ai-layer/langchain4j-layer/" id="sub-menu-LangChain4j-3" class="gnb-sub-trigger has-depth3">LangChain4j</a>
+									    <div class="depth3-wrap ">
+										    <ul>
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-project/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-project/">샘플 프로젝트</a></li>
+                          
+                          
+                          
+                          <li><a href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-implementation/" class="depth3-trigger" data-url="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-implementation/">핵심 구현</a></li>
+                          
+                          
+                        </ul>
+                      </div>
+                    
+                  
+                  </ul>
+              </div>
+              
             
           
             
           
         </div> 
       </div> 
-      
-      
-          
-          
-          
-
-          <div class="gnb-bottom">
-            <a href="https://github.com/eGovFramework/egovframe-docs/tree/contribution/egovframe-runtime/foundation-layer/crypto-simplification.md" class="krds-btn medium text">페이지보기 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/edit/contribution/egovframe-runtime/foundation-layer/crypto-simplification.md" class="krds-btn medium text">페이지편집 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/issues/new?title=Crypto%20%ea%b0%84%ec%86%8c%ed%99%94%20%ec%84%9c%eb%b9%84%ec%8a%a4" class="krds-btn medium text">문서에 이슈 생성 <i class="svg-icon ico-angle right"></i></a>
-            <a href="https://github.com/eGovFramework/egovframe-docs/issues/new" class="krds-btn medium text">프로젝트에 이슈 생성 <i class="svg-icon ico-angle right"></i></a>
-            </div>
-        
-      
     </div>
     
     
@@ -1266,12 +1351,11 @@
     
   </div>
 </nav>
-    
   </header>
   <main id="wrap">
     
       <div id="container" class="krds-in-page-navigation-type">
-          <div class="inner in-between layout">
+          <div class="inner layout  in-between ">              
             
               
 <nav class="krds-side-navigation">
@@ -1459,7 +1543,7 @@
                                     </li>
                                   
                                       <li class="" role="none">
-                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/foundation-layer/server-security/server-security-simplifying-settings/">설정 간소화</a>
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/foundation-layer/server-security/server-security-simplification/">설정 간소화</a>
                                       
                                     </li>
                                   
@@ -1473,7 +1557,7 @@
                             
                             
                             <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/foundation-layer/session-based-access-control-permission-settings/" class="lnb-btn lnb-link" role="menuitem">Session 방식 접근제어</a>
+                              <a href="/egovframe-runtime/foundation-layer/session-simplification/" class="lnb-btn lnb-link" role="menuitem">Session 방식 접근제어</a>
                             </li>
                             
                             
@@ -1729,6 +1813,11 @@
                                     </li>
                                   
                                       <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-annotation-based-controller/">Annotation</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
                                       <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/web-servlet/web-servlet-validation/">Validation</a>
                                       
                                     </li>
@@ -1820,7 +1909,7 @@
                                     </li>
                                   
                                       <li class="" role="none">
-                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/security/security-validationa-add-rules-in-common-validator/">Validation Rule</a>
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/presentation-layer/security/security-validation-add-rules-in-common-validator/">Validation Rule</a>
                                       
                                     </li>
                                   </ul>
@@ -1867,16 +1956,6 @@
                             
                             <li class="lnb-subitem">
                               <a href="/egovframe-runtime/presentation-layer/bootstrap/" class="lnb-btn lnb-link" role="menuitem">Bootstrap</a>
-                            </li>
-                            
-                            
-                            <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/presentation-layer/uxui-controller-component/" class="lnb-btn lnb-link" role="menuitem">모바일 UX/UI</a>
-                            </li>
-                            
-                            
-                            <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/presentation-layer/html5-css3.0-javascript-module-app-framework-basic/" class="lnb-btn lnb-link" role="menuitem">JQuery Mobile</a>
                             </li>
                             </ul>
                     </div>
@@ -2059,6 +2138,11 @@
                                       <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mapper_xml_files/">Mapper XML Files</a>
                                       
                                     </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/persistence-layer/dataaccess-mybatis/dataaccess-mybatis-dynamic-sql/">Dynamic SQL</a>
+                                      
+                                    </li>
                                   </ul>
                               </div>
                             </li>
@@ -2227,6 +2311,16 @@
                                   </ul>
                               </div>
                             </li>
+                            
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/persistence-layer/sql-rule/" class="lnb-btn lnb-link" role="menuitem">SQL 작성 규칙</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/persistence-layer/sql-connection/" class="lnb-btn lnb-link" role="menuitem">DB 다중 접속 가이드</a>
+                            </li>
                             </ul>
                     </div>
                   
@@ -2359,6 +2453,11 @@
                             
                             
                             <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/batch-layer/batch-core-whatsnew_5.2/" class="lnb-btn lnb-link" role="menuitem">Spring Batch 5.2 신규 기능</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem">
                               <a href="/egovframe-runtime/batch-layer/resource_variable/" class="lnb-btn lnb-link" role="menuitem">Resource Variable</a>
                             </li>
                             
@@ -2441,11 +2540,6 @@
                             
                             
                             <li class="lnb-subitem">
-                              <a href="/egovframe-runtime/batch-layer/batch-centercut-intro/" class="lnb-btn lnb-link" role="menuitem">센터 컷(CenterCut)</a>
-                            </li>
-                            
-                            
-                            <li class="lnb-subitem">
                               <a href="/egovframe-runtime/batch-layer/batch-core-event_notice_template_mgmt/" class="lnb-btn lnb-link" role="menuitem">이벤트알림 템플릿 관리</a>
                             </li>
                             
@@ -2455,9 +2549,104 @@
                             </li>
                             </ul>
                     </div>
+                  
+              
+              <li class="lnb-item" role="none">
+                    <button type="button" class="lnb-btn lnb-toggle" role="menuitem" aria-controls="lnbmenu8" aria-expanded="false" data-url="/egovframe-runtime/ai-layer/">AI 통합</button>
+                    <div class="lnb-submenu">
+                        <ul id="lnb-menu8" role="menu">
+                          
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/ai-layer/ai-intro/" class="lnb-btn lnb-link" role="menuitem">AI 개요</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem">
+                              <a href="/egovframe-runtime/ai-layer/ai-rag-concepts/" class="lnb-btn lnb-link" role="menuitem">RAG 및 고급 개념</a>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem" role="none">
+                                <button type="button" class="lnb-btn lnb-toggle-popup" role="menuitem" aria-controls="lnbmenu-8" aria-expanded="false" aria-haspopup="true" data-url="/egovframe-runtime/ai-layer/springai-layer/">
+                                  Spring AI<span class="sr-only">열기</span>
+                                </button>
+                              <div class="lnb-submenu-lv2 " id="lnbmenu-8" role="menu">
+                                <button type="button" class="lnb-btn-tit"  data-url="/egovframe-runtime/ai-layer/">Spring AI</button>
+                                <ul>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-core-apis/">핵심 API</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-rag-architecture/">RAG 아키텍처</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-etl-guide/">ETL Pipeline</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-advisor-guide/">Advisor 패턴</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-project/">샘플 프로젝트</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-etl/">ETL 구현</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-rag/">RAG 구현</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-sample-session/">세션 관리</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/springai-layer/springai-setup-guide/">환경 설정</a>
+                                      
+                                    </li>
+                                  </ul>
+                              </div>
+                            </li>
+                            
+                            
+                            <li class="lnb-subitem" role="none">
+                                <button type="button" class="lnb-btn lnb-toggle-popup" role="menuitem" aria-controls="lnbmenu-8" aria-expanded="false" aria-haspopup="true" data-url="/egovframe-runtime/ai-layer/langchain4j-layer/">
+                                  LangChain4j<span class="sr-only">열기</span>
+                                </button>
+                              <div class="lnb-submenu-lv2 " id="lnbmenu-8" role="menu">
+                                <button type="button" class="lnb-btn-tit"  data-url="/egovframe-runtime/ai-layer/">LangChain4j</button>
+                                <ul>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-project/">샘플 프로젝트</a>
+                                      
+                                    </li>
+                                  
+                                      <li class="" role="none">
+                                      <a class="lnb-btn" role="menuitem" href="/egovframe-runtime/ai-layer/langchain4j-layer/langchain4j-sample-implementation/">핵심 구현</a>
+                                      
+                                    </li>
+                                  </ul>
+                              </div>
+                            </li>
+                            </ul>
+                    </div>
                   </li>
-      </ul>
-    
       </ul>
     
       </ul>
@@ -2496,39 +2685,42 @@
   <ol class="breadcrumb">
     <li class="home">
       
-      <a href="https://hjlee1107.github.io/" class="txt">Home</a>
+      <a href="http://localhost:1313/" class="txt">Home</a>
     </li>
 
         
+           
           
             
-            <li><a href="https://hjlee1107.github.io//egovframe-runtime/" class="txt">실행환경</a></li>
+            <li><a href="http://localhost:1313//egovframe-runtime/" class="txt">실행환경</a></li>
           
-        
         
         
 
+
         
+           
           
             
-            <li><a href="https://hjlee1107.github.io//egovframe-runtime/foundation-layer/" class="txt">공통기반</a></li>
+            <li><a href="http://localhost:1313//egovframe-runtime/foundation-layer/" class="txt">공통기반</a></li>
           
-        
         
         
 
+
         
+           
           
             
-            <li><a href="https://hjlee1107.github.io//egovframe-runtime/foundation-layer/crypto/" class="txt">Crypto</a></li>
+            <li><a href="http://localhost:1313//egovframe-runtime/foundation-layer/crypto/" class="txt">Crypto</a></li>
           
-        
         
         
 
+
         
         
-        </ol>
+</ol>
 </nav>
     <div class="conts-area">
         
@@ -2543,14 +2735,7 @@
 
     
     <div class="krds-in-page-navigation-area">
-      <nav class="in-page-navigation-action">
-        <ul>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/tree/contribution/egovframe-runtime/foundation-layer/crypto-simplification.md" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_page_view"></i> 페이지 보기</a></li>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/edit/contribution/egovframe-runtime/foundation-layer/crypto-simplification.md" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_page_edit"></i> 페이지 편집</a></li>
-          <li><a href="https://github.com/eGovFramework/egovframe-docs/issues/new?title=Crypto%20%ea%b0%84%ec%86%8c%ed%99%94%20%ec%84%9c%eb%b9%84%ec%8a%a4" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_issue"></i> 문서에 이슈 생성</a></li>
-            <li><a href="https://github.com/eGovFramework/egovframe-docs/issues/new" class="krds-btn text small" target="_blank" rel="noopener"><i class="svg-icon ico_issue"></i> 프로젝트에 이슈 생성</a></li>
-            </ul>
-      </nav>
+      
       
   <div class="in-page-navigation-header">
     <p class="quick-caption">이 페이지의 구성</p>
@@ -2561,21 +2746,14 @@
     <nav class="in-page-navigation-list">
   <ul>
     <li><a href="#개요">개요</a></li>
-    <li><a href="#xml-namespace-및-schema-설정">XML namespace 및 schema 설정</a></li>
-    <li><a href="#crypto-config-설정">Crypto Config 설정</a>
-      <ul>
-        <li><a href="#속성-설명">속성 설명</a></li>
-      </ul>
-    </li>
-    <li><a href="#crypto-algorithmkey-algorithmkeyhash-생성">Crypto algorithmKey, algorithmKeyHash 생성</a></li>
-    <li><a href="#환경설정-파일globalsproperties-암호화">환경설정 파일(globals.properties) 암호화</a>
-      <ul>
-        <li><a href="#환경설정-파일globalsproperties의-데이터베이스-연결-항목url-username-password-인코딩-값-생성">환경설정 파일(globals.properties)의 데이터베이스 연결 항목(Url, UserName, Password) 인코딩 값 생성</a></li>
-        <li><a href="#환경설정-파일globalsproperties-인코딩-값-설정">환경설정 파일(globals.properties) 인코딩 값 설정</a></li>
-        <li><a href="#context-datasourcexml-파일의-데이터베이스-연결-항목url-username-password-디코딩-연결-설정">context-datasource.xml 파일의 데이터베이스 연결 항목(Url, UserName, Password) 디코딩 연결 설정</a></li>
-        <li><a href="#was-vm-arguments-환경-변수-등록옵션">WAS VM arguments 환경 변수 등록(옵션)</a></li>
-      </ul>
-    </li>
+    <li><a href="#라이브러리-적용">라이브러리 적용</a></li>
+    <li><a href="#설정-방법">설정 방법</a></li>
+    <li><a href="#spring-설정">Spring 설정</a></li>
+    <li><a href="#algorithmkey-algorithmkeyhash-생성">algorithmKey, algorithmKeyHash 생성</a></li>
+    <li><a href="#globalsproperties-db-암호화-값-생성">globals.properties DB 암호화 값 생성</a></li>
+    <li><a href="#평문-사용-cryptofalse">평문 사용 (crypto=false)</a></li>
+    <li><a href="#사용법">사용법</a></li>
+    <li><a href="#적용-사례">적용 사례</a></li>
   </ul>
 </nav>
 
@@ -2588,277 +2766,286 @@
         <div class="conts-wrap scroll-check">
             
                 
-                    <h1 class="h-tit" id="crypto-간소화-서비스">Crypto 간소화 서비스</h1>
+                    <h1 class="h-tit" id="crypto-간소화서비스-설정">Crypto 간소화서비스 설정</h1>
+<p>전자정부 표준프레임워크 실행환경 구성요소인 Crypto 간소화서비스를 사용한 암호화 설정 및 사용법을 정리한 문서입니다.</p>
 
                 
             
                 
                     <div class="conts-wrap section-link" id="section_01">
                         <h2 class="sec-tit" id="개요">개요</h2>
-<p>표준프레임워크 3.8 부터 ARIA 블록암호 알고리즘 기반 암/복호화 설정을 간소화 할 수 있는 방법을 제공한다.
-내부적으로 필요한 설정을 가지고 있고, <acronym title="Extensible Markup Language">XML</acronym> Schema를 통해 필요한 설정만을 추가할 수 있도록 제공한다.
-또한 globals.properties 설정 파일의 중요 정보 Url, UserName, Password 항목을 암/복호화 처리 할 수 있도록 제공한다.
-그외에 정보는 properties 파일에 암호화 데이터 설정후 #{egovEnvCryptoService.decrypt(&rsquo;…&rsquo;)} 복호화 기능을 제공한다.</p>
+<p>Crypto 간소화서비스는 ARIA 블록암호 알고리즘 기반 암/복호화 기능을 제공합니다. globals.properties의 DB 연결 정보(Url, UserName, Password) 및 기타 민감 정보를 암호화하여 보호할 수 있습니다.</p>
 
                     </div>
                 
             
                 
                     <div class="conts-wrap section-link" id="section_02">
-                        <h2 class="sec-tit" id="xml-namespace-및-schema-설정">XML namespace 및 schema 설정</h2>
-<p>설정 간소화 기능을 사용하기 위해서는 다음과 같은 xml 선언이 필요하다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;beans</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/beans&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">xmlns:xsi=</span><span style="color:#e6db74">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">xmlns:egov-crypto=</span><span style="color:#e6db74">&#34;http://maven.egovframe.go.kr/schema/egov-crypto&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">xsi:schemaLocation=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">		http://maven.egovframe.go.kr/schema/egov-crypto http://maven.egovframe.go.kr/schema/egov-crypto/egov-crypto-4.2.0.xsd&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span></code></pre></div>
+                        <h2 class="sec-tit" id="라이브러리-적용">라이브러리 적용</h2>
+<h3 class="sec-tit" id="pomxml-의존성-추가">pom.xml 의존성 추가</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;dependency&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;groupId&gt;</span>org.egovframe.rte<span style="color:#f92672">&lt;/groupId&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;artifactId&gt;</span>egovframe-rte-fdl-crypto<span style="color:#f92672">&lt;/artifactId&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/dependency&gt;</span>
+</span></span></code></pre></div><ul>
+<li>전자정부 Maven 저장소(<code>https://maven.egovframe.go.kr/maven/</code>)에서 의존성 해결</li>
+<li>parent POM의 <code>egovframe.rte.version</code>에 따라 버전 관리</li>
+</ul>
+
                     </div>
                 
             
                 
                     <div class="conts-wrap section-link" id="section_03">
-                        <h2 class="sec-tit" id="crypto-config-설정">Crypto Config 설정</h2>
-<p>Security에 대한 기본 설정 정보를 제공한다.
-<strong>algorithmKey</strong>, <strong>algorithmKeyHash</strong> 값을 하단 <b>[Crypto algorithmKey, algorithmKeyHash 생성]에 의해 생성된 값을 입력</b>한다.
-algorithmKey, algorithmKeyHash 키의 노출을 피하고 싶다면 설정 파일에서 해당 항목 삭제 후
-하단 [WAS VM arguments 환경 변수 등록(옵션)]을 참고하여 진행한다.</p>
-<p>예:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;egov-crypto:config</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;egovCryptoConfig&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">initial=</span><span style="color:#e6db74">&#34;true&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">crypto=</span><span style="color:#e6db74">&#34;true&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">algorithm=</span><span style="color:#e6db74">&#34;SHA-256&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">algorithmKey=</span><span style="color:#e6db74">&#34;(생성값)&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">algorithmKeyHash=</span><span style="color:#e6db74">&#34;(생성값)&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">cryptoBlockSize=</span><span style="color:#e6db74">&#34;1024&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">/&gt;</span>
-</span></span></code></pre></div><h3 class="sec-tit" id="속성-설명">속성 설명</h3>
+                        <h2 class="sec-tit" id="설정-방법">설정 방법</h2>
+<h3 class="sec-tit" id="1-globalsproperties">1. globals.properties</h3>
+<p><strong>경로:</strong> <code>src/main/resources/egovframework/egovProps/globals.properties</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-properties" data-lang="properties"><span style="display:flex;"><span><span style="color:#75715e"># 접근제어 설정 파일 경로 (egov-crypto 모듈이 참조)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Globals.CryptoConfigPath</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">egovframework/egovProps/conf/egov-crypto-config.properties</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># File ID 암호화 키 (반드시 기본값 &#34;egovframe&#34;을 다른 값으로 변경하여 사용)</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Globals.File.algorithmKey</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">egovframe</span>
+</span></span></code></pre></div><h3 class="sec-tit" id="2-egov-crypto-configproperties">2. egov-crypto-config.properties</h3>
+<p><strong>경로:</strong> <code>src/main/resources/egovframework/egovProps/conf/egov-crypto-config.properties</code></p>
 <div class="krds-table-wrap"><table class="tbl col data">
   <thead>
       <tr>
-          <th>속성</th>
+          <th>항목</th>
+          <th>필수</th>
           <th>설명</th>
-          <th>필수여부</th>
-          <th>비고</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>initial</td>
-          <td>globals.properties 연계 Url, UserName, Password 값 로드 여부(true, false)</td>
-          <td>필수</td>
-          <td></td>
+          <td><code>id</code></td>
+          <td>O</td>
+          <td>암호화 설정 빈 식별자</td>
       </tr>
       <tr>
-          <td>crypto</td>
-          <td>계정 암호화 여부(true, false)</td>
-          <td>필수</td>
-          <td></td>
+          <td><code>initial</code></td>
+          <td>O</td>
+          <td>globals.properties의 Url, UserName, Password 로드 여부 (<code>true</code>, <code>false</code>)</td>
       </tr>
       <tr>
-          <td>algorithm</td>
-          <td>계정 암호화 알고리즘</td>
-          <td>필수</td>
-          <td></td>
+          <td><code>crypto</code></td>
+          <td>O</td>
+          <td>계정 암호화 여부 (<code>true</code>: 암호화 사용, <code>false</code>: 평문 사용)</td>
       </tr>
       <tr>
-          <td>algorithmKey</td>
-          <td>계정 암호화키 키</td>
-          <td>필수</td>
-          <td></td>
+          <td><code>algorithm</code></td>
+          <td>O</td>
+          <td>계정 암호화 알고리즘 (MD5, SHA-1, SHA-256)</td>
       </tr>
       <tr>
-          <td>algorithmKeyHash</td>
-          <td>계정 암호화 키 해쉬값</td>
-          <td>필수</td>
-          <td></td>
+          <td><code>algorithmKey</code></td>
+          <td>O</td>
+          <td>계정 암호화 키</td>
       </tr>
       <tr>
-          <td>cryptoBlockSize</td>
-          <td>계정 암호화키 블록사이즈</td>
-          <td>필수</td>
-          <td></td>
+          <td><code>algorithmKeyHash</code></td>
+          <td>O</td>
+          <td>algorithmKey의 해시값</td>
       </tr>
       <tr>
-          <td>cryptoPropertyLocation</td>
-          <td>설정파일 암복호화 경로</td>
-          <td>선택</td>
-          <td>default=“classpath:/egovframework/egovProps/globals.properties”</td>
+          <td><code>cryptoBlockSize</code></td>
+          <td>O</td>
+          <td>계정 암호화 블록 사이즈</td>
+      </tr>
+      <tr>
+          <td><code>cryptoPropertyLocation</code></td>
+          <td>O</td>
+          <td>암복호화 대상 설정 파일 경로</td>
+      </tr>
+      <tr>
+          <td><code>plainDigest</code></td>
+          <td>O</td>
+          <td>평문 다이제스트 사용 여부 (<code>true</code>, <code>false</code>)</td>
       </tr>
   </tbody>
 </table></div>
+<p><strong>예시 설정:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-properties" data-lang="properties"><span style="display:flex;"><span><span style="color:#a6e22e">id</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">egovCryptoConfig</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">initial</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">crypto</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">algorithm</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">SHA-256</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">algorithmKey</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">egovframe</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">algorithmKeyHash</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">gdyYs/IZqY86VcWhT8emCYfqY1ahw2vtLG+/FzNqtrQ=</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cryptoBlockSize</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">1024</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">cryptoPropertyLocation</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">classpath:/egovframework/egovProps/globals.properties</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">plainDigest</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">false</span>
+</span></span></code></pre></div><blockquote>
+<p><strong>보안 주의:</strong> <code>algorithmKey</code>, <code>algorithmKeyHash</code> 값은 반드시 기본값에서 변경하여 사용하세요. 노출을 피하려면 <code>egov-crypto-config.properties</code>에서 해당 항목을 삭제하고 WAS VM arguments에 <code>-Degov.crypto.algorithmKey=&quot;(사용자정의 값)&quot;</code>, <code>-Degov.crypto.algorithmKeyHash=&quot;(생성값)&quot;</code>으로 등록할 수 있습니다.</p>
+</blockquote>
 
                     </div>
                 
             
                 
                     <div class="conts-wrap section-link" id="section_04">
-                        <h2 class="sec-tit" id="crypto-algorithmkey-algorithmkeyhash-생성">Crypto algorithmKey, algorithmKeyHash 생성</h2>
-<p>Crypto Config 설정에 algorithmKey, algorithmKeyHash 인코딩 키 생성 방법을 제공한다.
-<strong>하단 코드에서 계정암호화키 키 값을 원하는 값으로 설정한다.</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> org.slf4j.Logger;
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.slf4j.LoggerFactory;
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.egovframe.rte.fdl.cryptography.EgovPasswordEncoder;
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EgovEnvCryptoAlgorithmCreateTest</span> {
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> Logger LOGGER <span style="color:#f92672">=</span> LoggerFactory.<span style="color:#a6e22e">getLogger</span>(EgovEnvCryptoAlgorithmCreateTest.<span style="color:#a6e22e">class</span>);
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">//계정암호화키 키</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> String algorithmKey <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;(사용자정의 값)&#34;</span>;
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">//계정암호화 알고리즘(MD5, SHA-1, SHA-256)</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> String algorithm <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;SHA-256&#34;</span>;
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">//계정암호화키 블럭사이즈</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> algorithmBlockSize <span style="color:#f92672">=</span> 1024;
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
-</span></span><span style="display:flex;"><span>		EgovEnvCryptoAlgorithmCreateTest cryptoTest <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> EgovEnvCryptoAlgorithmCreateTest();
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>		EgovPasswordEncoder egovPasswordEncoder <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> EgovPasswordEncoder();
-</span></span><span style="display:flex;"><span>		egovPasswordEncoder.<span style="color:#a6e22e">setAlgorithm</span>(cryptoTest.<span style="color:#a6e22e">algorithm</span>);
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>		LOGGER.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;------------------------------------------------------&#34;</span>);
-</span></span><span style="display:flex;"><span>		LOGGER.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;알고리즘(algorithm) : &#34;</span><span style="color:#f92672">+</span>cryptoTest.<span style="color:#a6e22e">algorithm</span>);
-</span></span><span style="display:flex;"><span>		LOGGER.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;알고리즘 키(algorithmKey) : &#34;</span><span style="color:#f92672">+</span>cryptoTest.<span style="color:#a6e22e">algorithmKey</span>);
-</span></span><span style="display:flex;"><span>		LOGGER.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;알고리즘 키 Hash(algorithmKeyHash) : &#34;</span><span style="color:#f92672">+</span>egovPasswordEncoder.<span style="color:#a6e22e">encryptPassword</span>(cryptoTest.<span style="color:#a6e22e">algorithmKey</span>));
-</span></span><span style="display:flex;"><span>		LOGGER.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;알고리즘 블럭사이즈(algorithmBlockSize)  :&#34;</span><span style="color:#f92672">+</span>cryptoTest.<span style="color:#a6e22e">algorithmBlockSize</span>);
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+                        <h2 class="sec-tit" id="spring-설정">Spring 설정</h2>
+<h3 class="sec-tit" id="context-cryptoxml">context-crypto.xml</h3>
+<p><strong>경로:</strong> <code>src/main/resources/egovframework/spring/com/context-crypto.xml</code></p>
+<p>egovframe-rte-fdl-crypto의 <code>@Configuration</code> 클래스를 스캔하여 <code>egovEnvCryptoService</code>, <code>egovEnvPasswordEncoderService</code> 등 빈을 자동 등록합니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;context:component-scan</span> <span style="color:#a6e22e">base-package=</span><span style="color:#e6db74">&#34;org.egovframe.rte.fdl.crypto&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;context:include-filter</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;annotation&#34;</span> <span style="color:#a6e22e">expression=</span><span style="color:#e6db74">&#34;org.springframework.context.annotation.Configuration&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;context:include-filter</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;annotation&#34;</span> <span style="color:#a6e22e">expression=</span><span style="color:#e6db74">&#34;org.springframework.stereotype.Component&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;context:include-filter</span> <span style="color:#a6e22e">type=</span><span style="color:#e6db74">&#34;annotation&#34;</span> <span style="color:#a6e22e">expression=</span><span style="color:#e6db74">&#34;org.springframework.stereotype.Service&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/context:component-scan&gt;</span>
+</span></span></code></pre></div><h3 class="sec-tit" id="context-datasourcexml---db-암호화-복호화">context-datasource.xml - DB 암호화 복호화</h3>
+<p>DataSource의 password는 <code>egovPasswordResolver.resolvePassword()</code>로 복호화합니다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;#{egovPasswordResolver.resolvePassword(&#39;Globals.mysql.Password&#39;)}&#34;</span><span style="color:#f92672">/&gt;</span>
+</span></span></code></pre></div><ul>
+<li><code>EgovPasswordResolver</code>: <code>EgovEnvCryptoService</code>의 <code>crypto</code> 설정에 따라 암호화된 값 복호화 또는 평문 반환</li>
+</ul>
+
                     </div>
                 
             
                 
                     <div class="conts-wrap section-link" id="section_05">
-                        <h2 class="sec-tit" id="환경설정-파일globalsproperties-암호화">환경설정 파일(globals.properties) 암호화</h2>
-<h3 class="sec-tit" id="환경설정-파일globalsproperties의-데이터베이스-연결-항목url-username-password-인코딩-값-생성">환경설정 파일(globals.properties)의 데이터베이스 연결 항목(Url, UserName, Password) 인코딩 값 생성</h3>
-<p>환경설정 파일에서 데이터베이스 연결 항목(Url, UserName, Password) 인코딩 키 생성 방법을 제공한다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- EgovEnvCryptoUserTest.java 설정 파일 --&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- context-crypto-test.xml --&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;beans</span> <span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/beans&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">xmlns:xsi=</span><span style="color:#e6db74">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">xmlns:egov-crypto=</span><span style="color:#e6db74">&#34;http://maven.egovframe.go.kr/schema/egov-crypto&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">xsi:schemaLocation=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">		http://maven.egovframe.go.kr/schema/egov-crypto http://maven.egovframe.go.kr/schema/egov-crypto/egov-crypto-4.1.0.xsd&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;messageSource&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.springframework.context.support.ResourceBundleMessageSource&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;useCodeAsDefaultMessage&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;value&gt;</span>true<span style="color:#f92672">&lt;/value&gt;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/property&gt;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;basenames&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;list&gt;</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#f92672">&lt;value&gt;</span>classpath:/egovframework/egovProps/globals<span style="color:#f92672">&lt;/value&gt;</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;/list&gt;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/property&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/bean&gt;</span>
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;egov-crypto:config</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;egovCryptoConfig&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">initial=</span><span style="color:#e6db74">&#34;false&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">crypto=</span><span style="color:#e6db74">&#34;true&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">algorithm=</span><span style="color:#e6db74">&#34;SHA-256&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">algorithmKey=</span><span style="color:#e6db74">&#34;(사용자정의 값)&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">algorithmKeyHash=</span><span style="color:#e6db74">&#34;(생성값)&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">cryptoBlockSize=</span><span style="color:#e6db74">&#34;1024&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/beans&gt;</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// 데이터베이스 연결 항목(Url, UserName, Password) 인코딩 값 생성 JAVA</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.slf4j.Logger;
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.slf4j.LoggerFactory;
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.springframework.context.ApplicationContext;
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.egovframe.rte.fdl.cryptography.EgovEnvCryptoService;
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> org.egovframe.rte.fdl.cryptography.impl.EgovEnvCryptoServiceImpl;
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">EgovEnvCryptoUserTest</span> {
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">final</span> Logger LOGGER <span style="color:#f92672">=</span> LoggerFactory.<span style="color:#a6e22e">getLogger</span>(EgovEnvCryptoUserTest.<span style="color:#a6e22e">class</span>);
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span>(String<span style="color:#f92672">[]</span> args) {
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>		String<span style="color:#f92672">[]</span> arrCryptoString <span style="color:#f92672">=</span> { 
-</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;userId&#34;</span>,         <span style="color:#75715e">//데이터베이스 접속 계정 설정</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;userPassword&#34;</span>,   <span style="color:#75715e">//데이터베이스 접속 패드워드 설정</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;url&#34;</span>,            <span style="color:#75715e">//데이터베이스 접속 주소 설정</span>
-</span></span><span style="display:flex;"><span>			<span style="color:#e6db74">&#34;databaseDriver&#34;</span>  <span style="color:#75715e">//데이터베이스 드라이버</span>
-</span></span><span style="display:flex;"><span>		};
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>		LOGGER.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;------------------------------------------------------&#34;</span>);		
-</span></span><span style="display:flex;"><span>		ApplicationContext context <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ClassPathXmlApplicationContext(<span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]</span>{<span style="color:#e6db74">&#34;classpath:/context-crypto-test.xml&#34;</span>});
-</span></span><span style="display:flex;"><span>		EgovEnvCryptoService cryptoService <span style="color:#f92672">=</span> context.<span style="color:#a6e22e">getBean</span>(EgovEnvCryptoServiceImpl.<span style="color:#a6e22e">class</span>);
-</span></span><span style="display:flex;"><span>		LOGGER.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;------------------------------------------------------&#34;</span>);
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>		String label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
-</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">try</span> {
-</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>0; i <span style="color:#f92672">&lt;</span> arrCryptoString.<span style="color:#a6e22e">length</span>; i<span style="color:#f92672">++</span>) {		
-</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">if</span>(i<span style="color:#f92672">==</span>0)label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;사용자 아이디&#34;</span>;
-</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">if</span>(i<span style="color:#f92672">==</span>1)label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;사용자 비밀번호&#34;</span>;
-</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">if</span>(i<span style="color:#f92672">==</span>2)label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;접속 주소&#34;</span>;
-</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">if</span>(i<span style="color:#f92672">==</span>3)label <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;데이터 베이스 드라이버&#34;</span>;
-</span></span><span style="display:flex;"><span>				LOGGER.<span style="color:#a6e22e">info</span>(label<span style="color:#f92672">+</span><span style="color:#e6db74">&#34; 원본(orignal):&#34;</span> <span style="color:#f92672">+</span> arrCryptoString<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span>);
-</span></span><span style="display:flex;"><span>				LOGGER.<span style="color:#a6e22e">info</span>(label<span style="color:#f92672">+</span><span style="color:#e6db74">&#34; 인코딩(encrypted):&#34;</span> <span style="color:#f92672">+</span> cryptoService.<span style="color:#a6e22e">encrypt</span>(arrCryptoString<span style="color:#f92672">[</span>i<span style="color:#f92672">]</span>));
-</span></span><span style="display:flex;"><span>				LOGGER.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;------------------------------------------------------&#34;</span>);
-</span></span><span style="display:flex;"><span>			}
-</span></span><span style="display:flex;"><span>		} <span style="color:#66d9ef">catch</span> (IllegalArgumentException e) {
-</span></span><span style="display:flex;"><span>			LOGGER.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#34;[&#34;</span><span style="color:#f92672">+</span>e.<span style="color:#a6e22e">getClass</span>()<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;] IllegalArgumentException : &#34;</span> <span style="color:#f92672">+</span> e.<span style="color:#a6e22e">getMessage</span>());
-</span></span><span style="display:flex;"><span>		} <span style="color:#66d9ef">catch</span> (Exception e) {
-</span></span><span style="display:flex;"><span>			LOGGER.<span style="color:#a6e22e">error</span>(<span style="color:#e6db74">&#34;[&#34;</span><span style="color:#f92672">+</span>e.<span style="color:#a6e22e">getClass</span>()<span style="color:#f92672">+</span><span style="color:#e6db74">&#34;] Exception : &#34;</span> <span style="color:#f92672">+</span> e.<span style="color:#a6e22e">getMessage</span>());
-</span></span><span style="display:flex;"><span>		}
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 class="sec-tit" id="환경설정-파일globalsproperties-인코딩-값-설정">환경설정 파일(globals.properties) 인코딩 값 설정</h3>
-<ul>
-<li>앞에서 생성된 데이터베이스 연결 항목(Url, UserName, Password)을 (생성값)에 입력</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-properties" data-lang="properties"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">......</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#mysql</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Globals.mysql.DriverClassName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">(생성값)</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Globals.mysql.Url</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">(생성값)</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Globals.mysql.UserName</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">(생성값)</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">Globals.mysql.Password</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">(생성값)</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"> </span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">......</span>
-</span></span></code></pre></div><h3 class="sec-tit" id="context-datasourcexml-파일의-데이터베이스-연결-항목url-username-password-디코딩-연결-설정">context-datasource.xml 파일의 데이터베이스 연결 항목(Url, UserName, Password) 디코딩 연결 설정</h3>
-<p>데이터베이스 설정 파일에서 데이터베이스 연결 항목을 디코딩 하는 설정 방법을 제공한다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;beans</span> 
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">xmlns=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/beans&#34;</span> 
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">xmlns:xsi=</span><span style="color:#e6db74">&#34;http://www.w3.org/2001/XMLSchema-instance&#34;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">xmlns:util=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/util&#34;</span> 
-</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">xsi:schemaLocation=</span><span style="color:#e6db74">&#34;http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>......
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>	<span style="color:#75715e">&lt;!-- MySQL --&gt;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;beans</span> <span style="color:#a6e22e">profile=</span><span style="color:#e6db74">&#34;mysql&#34;</span><span style="color:#f92672">&gt;</span>  
-</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;bean</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;dataSource&#34;</span> <span style="color:#a6e22e">class=</span><span style="color:#e6db74">&#34;org.apache.commons.dbcp2.BasicDataSource&#34;</span> <span style="color:#a6e22e">destroy-method=</span><span style="color:#e6db74">&#34;close&#34;</span><span style="color:#f92672">&gt;</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;driverClassName&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;#{egovEnvCryptoService.decrypt(&#39;${Globals.mysql.DriverClassName}&#39;)}&#34;</span><span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;url&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;#{egovEnvCryptoService.getUrl()}&#34;</span> <span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;username&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;#{egovEnvCryptoService.getUsername()}&#34;</span> <span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span>		<span style="color:#f92672">&lt;property</span> <span style="color:#a6e22e">name=</span><span style="color:#e6db74">&#34;password&#34;</span> <span style="color:#a6e22e">value=</span><span style="color:#e6db74">&#34;#{egovEnvCryptoService.getPassword()}&#34;</span> <span style="color:#f92672">/&gt;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/bean&gt;</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/beans&gt;</span>
-</span></span><span style="display:flex;"><span> 
-</span></span><span style="display:flex;"><span>......
-</span></span></code></pre></div><h3 class="sec-tit" id="was-vm-arguments-환경-변수-등록옵션">WAS VM arguments 환경 변수 등록(옵션)</h3>
-<ul>
-<li>간소화 설정 파일에서 algorithmKey, algorithmKeyHash 키의 노출을 피하고 싶다면
-<ul>
-<li>간소화 설정 파일에서 algorithmKey, algorithmKeyHash 키를 삭제 하고 WAS VM arguments 환경 변수를 등록 한다.</li>
-<li>globals.properties 설정 파일의 중요 정보 Url, UserName, Password 항목에 대해 암/복호화 처리 할 수 있도록 제공한다.</li>
-</ul>
+                        <h2 class="sec-tit" id="algorithmkey-algorithmkeyhash-생성">algorithmKey, algorithmKeyHash 생성</h2>
+<p><code>egov-crypto-config.properties</code>에 사용할 <code>algorithmKeyHash</code> 생성 방법:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> org.egovframe.rte.fdl.crypto.EgovPasswordEncoder;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>EgovPasswordEncoder egovPasswordEncoder <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> EgovPasswordEncoder();
+</span></span><span style="display:flex;"><span>egovPasswordEncoder.<span style="color:#a6e22e">setAlgorithm</span>(<span style="color:#e6db74">&#34;SHA-256&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>String algorithmKey <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;(사용자정의 값)&#34;</span>;
+</span></span><span style="display:flex;"><span>String algorithmKeyHash <span style="color:#f92672">=</span> egovPasswordEncoder.<span style="color:#a6e22e">encryptPassword</span>(algorithmKey);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// algorithmKeyHash 출력 후 egov-crypto-config.properties에 설정</span>
+</span></span></code></pre></div>
+                    </div>
+                
+            
+                
+                    <div class="conts-wrap section-link" id="section_06">
+                        <h2 class="sec-tit" id="globalsproperties-db-암호화-값-생성">globals.properties DB 암호화 값 생성</h2>
+<p>DB 연결 정보(Url, UserName, Password)를 암호화하는 방법:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> org.egovframe.rte.fdl.crypto.EgovEnvCryptoService;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>EgovEnvCryptoService cryptoService <span style="color:#f92672">=</span> context.<span style="color:#a6e22e">getBean</span>(EgovEnvCryptoService.<span style="color:#a6e22e">class</span>);
+</span></span><span style="display:flex;"><span>String plainText <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;데이터베이스_접속_비밀번호&#34;</span>;
+</span></span><span style="display:flex;"><span>String encrypted <span style="color:#f92672">=</span> cryptoService.<span style="color:#a6e22e">encrypt</span>(plainText);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// encrypted 값을 globals.properties의 Globals.mysql.Password 등에 설정</span>
+</span></span></code></pre></div>
+                    </div>
+                
+            
+                
+                    <div class="conts-wrap section-link" id="section_07">
+                        <h2 class="sec-tit" id="평문-사용-cryptofalse">평문 사용 (crypto=false)</h2>
+<p>개발/테스트 시 평문을 사용하려면:</p>
+<ol>
+<li>
+<p><strong>egov-crypto-config.properties</strong> 수정:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-properties" data-lang="properties"><span style="display:flex;"><span><span style="color:#a6e22e">initial</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">false</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">crypto</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">false</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>context-datasource.xml</strong>에서 <code>egovPasswordResolver.resolvePassword()</code>로 조회 시 평문 그대로 반환됨</p>
 </li>
-</ul>
-<pre tabindex="0"><code>-Degov.crypto.algorithmKey=&#34;(사용자정의 값)&#34; -Degov.crypto.algorithmKeyHash=&#34;(생성값)&#34;
+</ol>
+
+                    </div>
+                
+            
+                
+                    <div class="conts-wrap section-link" id="section_08">
+                        <h2 class="sec-tit" id="사용법">사용법</h2>
+<h3 class="sec-tit" id="egovenvcryptoservice---암호화복호화">EgovEnvCryptoService - 암호화/복호화</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> org.egovframe.rte.fdl.crypto.EgovEnvCryptoService;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Resource</span>(name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;egovEnvCryptoService&#34;</span>)
+</span></span><span style="display:flex;"><span>EgovEnvCryptoService cryptoService;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 암호화 (URL 인코딩 처리)</span>
+</span></span><span style="display:flex;"><span>String encrypted <span style="color:#f92672">=</span> cryptoService.<span style="color:#a6e22e">encrypt</span>(plainText);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 암호화 (URL 인코딩 미처리)</span>
+</span></span><span style="display:flex;"><span>String encrypted <span style="color:#f92672">=</span> cryptoService.<span style="color:#a6e22e">encryptNone</span>(plainText);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 복호화 (URL 디코딩 처리)</span>
+</span></span><span style="display:flex;"><span>String decrypted <span style="color:#f92672">=</span> cryptoService.<span style="color:#a6e22e">decrypt</span>(encrypted);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 복호화 (URL 디코딩 미처리)</span>
+</span></span><span style="display:flex;"><span>String decrypted <span style="color:#f92672">=</span> cryptoService.<span style="color:#a6e22e">decryptNone</span>(encrypted);
+</span></span></code></pre></div><h3 class="sec-tit" id="egovpasswordencoder---비밀번호-해시">EgovPasswordEncoder - 비밀번호 해시</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#f92672">import</span> org.egovframe.rte.fdl.crypto.EgovPasswordEncoder;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@Resource</span>(name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;egovEnvPasswordEncoderService&#34;</span>)
+</span></span><span style="display:flex;"><span>EgovPasswordEncoder egovPasswordEncoder;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 비밀번호 해시 생성</span>
+</span></span><span style="display:flex;"><span>String hashedPassword <span style="color:#f92672">=</span> egovPasswordEncoder.<span style="color:#a6e22e">encryptPassword</span>(plainPassword);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 비밀번호 검증</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">boolean</span> matches <span style="color:#f92672">=</span> egovPasswordEncoder.<span style="color:#a6e22e">checkPassword</span>(plainPassword, hashedPassword);
+</span></span></code></pre></div><h3 class="sec-tit" id="egovcomutlcontroller---id-암호화복호화">EgovComUtlController - ID 암호화/복호화</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// 문자열 암호화 (Base64, URL 인코딩)</span>
+</span></span><span style="display:flex;"><span>String encrypted <span style="color:#f92672">=</span> EgovComUtlController.<span style="color:#a6e22e">encryptId</span>(plainText);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 암호화 문자열 복호화</span>
+</span></span><span style="display:flex;"><span>String decrypted <span style="color:#f92672">=</span> EgovComUtlController.<span style="color:#a6e22e">decryptId</span>(encrypted);
+</span></span></code></pre></div><h3 class="sec-tit" id="egovfilemngcontroller---파일-id-암호화">EgovFileMngController - 파일 ID 암호화</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// 파일 ID 암호화</span>
+</span></span><span style="display:flex;"><span>String encrypted <span style="color:#f92672">=</span> EgovFileMngController.<span style="color:#a6e22e">encrypt</span>(atchFileId);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 세션 ID 포함 파일 ID 암호화 (URL 노출 시 세션 검증용)</span>
+</span></span><span style="display:flex;"><span>String encrypted <span style="color:#f92672">=</span> EgovFileMngController.<span style="color:#a6e22e">encryptSession</span>(atchFileId, sessionId);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// 암호화된 파일 ID 복호화</span>
+</span></span><span style="display:flex;"><span>String decrypted <span style="color:#f92672">=</span> EgovFileMngController.<span style="color:#a6e22e">decrypt</span>(base64CipherId);
+</span></span></code></pre></div><h3 class="sec-tit" id="jsp에서-사용-egovc-tld">JSP에서 사용 (egovc TLD)</h3>
+<pre tabindex="0"><code class="language-jsp" data-lang="jsp">&lt;%@ taglib prefix=&#34;egovc&#34; uri=&#34;/WEB-INF/tlds/egovc.tld&#34; %&gt;
+
+&lt;!-- 문자열 암호화 --&gt;
+${egovc:encrypt(atchFileId)}
+
+&lt;!-- 세션 ID 포함 암호화 (파일 다운로드 링크 등) --&gt;
+${egovc:encryptSession(fileVO.atchFileId, pageContext.session.id)}
+
+&lt;!-- ID 암호화 (URL 인코딩 미처리) --&gt;
+${egovc:encryptId(plainId)}
 </code></pre>
+                    </div>
+                
+            
+                
+                    <div class="conts-wrap section-link" id="section_09">
+                        <h2 class="sec-tit" id="적용-사례">적용 사례</h2>
+<div class="krds-table-wrap"><table class="tbl col data">
+  <thead>
+      <tr>
+          <th>용도</th>
+          <th>사용처</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>DB 연결 비밀번호</td>
+          <td>context-datasource.xml, EgovPasswordResolver</td>
+      </tr>
+      <tr>
+          <td>첨부파일 ID</td>
+          <td>EgovFileMngController, EgovFileDownloadController, getImage.do</td>
+      </tr>
+      <tr>
+          <td>파일 다운로드 URL</td>
+          <td>egovc:encryptSession (세션 검증 포함)</td>
+      </tr>
+      <tr>
+          <td>ID 파라미터 암호화</td>
+          <td>EgovComUtlController.encryptId/decryptId, EgovCipherIdPropertyEditor</td>
+      </tr>
+      <tr>
+          <td>암호화/복호화 테스트 UI</td>
+          <td>EgovCryptoController (/sec/pki/EgovCryptoInfo.do)</td>
+      </tr>
+  </tbody>
+</table></div>
+
                     </div>
                 
             
